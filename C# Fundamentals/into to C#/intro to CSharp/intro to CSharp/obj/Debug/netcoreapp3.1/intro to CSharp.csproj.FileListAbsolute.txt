@@ -1,0 +1,13 @@
+D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\bin\Debug\netcoreapp3.1\intro to CSharp.exe
+D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\bin\Debug\netcoreapp3.1\intro to CSharp.deps.json
+D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\bin\Debug\netcoreapp3.1\intro to CSharp.runtimeconfig.json
+D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\bin\Debug\netcoreapp3.1\intro to CSharp.runtimeconfig.dev.json
+D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\bin\Debug\netcoreapp3.1\intro to CSharp.dll
+D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\bin\Debug\netcoreapp3.1\intro to CSharp.pdb
+D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\obj\Debug\netcoreapp3.1\intro to CSharp.csprojAssemblyReference.cache
+D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\obj\Debug\netcoreapp3.1\intro to CSharp.AssemblyInfoInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\obj\Debug\netcoreapp3.1\intro to CSharp.AssemblyInfo.cs
+D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\obj\Debug\netcoreapp3.1\intro to CSharp.csproj.CoreCompileInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\obj\Debug\netcoreapp3.1\intro to CSharp.dll
+D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\obj\Debug\netcoreapp3.1\intro to CSharp.pdb
+D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\obj\Debug\netcoreapp3.1\intro to CSharp.genruntimeconfig.cache
