@@ -11,3 +11,8 @@ D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\i
 D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\obj\Debug\netcoreapp3.1\intro to CSharp.dll
 D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\obj\Debug\netcoreapp3.1\intro to CSharp.pdb
 D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\obj\Debug\netcoreapp3.1\intro to CSharp.genruntimeconfig.cache
+D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\bin\Debug\netcoreapp3.1\xunit.abstractions.dll
+D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\bin\Debug\netcoreapp3.1\xunit.assert.dll
+D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\bin\Debug\netcoreapp3.1\xunit.core.dll
+D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\bin\Debug\netcoreapp3.1\xunit.execution.dotnet.dll
+D:\Git_Projects\ASP.Net-MentorShip-\C# Fundamentals\into to C#\intro to CSharp\intro to CSharp\obj\Debug\netcoreapp3.1\intro to CSharp.csproj.CopyComplete
