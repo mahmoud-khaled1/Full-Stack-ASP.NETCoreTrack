@@ -5,6 +5,7 @@ namespace intro_to_CSharp
     
     class Program
     {
+       
         static void Main(string[] args)
         {
 
@@ -36,12 +37,7 @@ namespace intro_to_CSharp
 
             #endregion
 
-            #region References type and value type
-
-
-            #endregion
-
-
+            
 
 
 

@@ -1,0 +1,16 @@
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BLTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BLTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BLTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BLTest\bin\Debug\ACM.BLTest.dll
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BLTest\bin\Debug\ACM.BLTest.pdb
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BLTest\bin\Debug\ACM.BL.dll
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BLTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BLTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BLTest\bin\Debug\ACM.BL.pdb
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BLTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BLTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BLTest\obj\Debug\ACM.BLTest.csprojAssemblyReference.cache
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BLTest\obj\Debug\ACM.BLTest.csproj.CoreCompileInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BLTest\obj\Debug\ACM.BLTest.csproj.CopyComplete
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BLTest\obj\Debug\ACM.BLTest.dll
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BLTest\obj\Debug\ACM.BLTest.pdb

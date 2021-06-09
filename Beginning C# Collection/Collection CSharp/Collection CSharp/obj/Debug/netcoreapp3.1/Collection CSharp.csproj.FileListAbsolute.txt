@@ -1,0 +1,13 @@
+D:\Git_Projects\ASP.Net-MentorShip-\Beginning C# Collection\Collection CSharp\Collection CSharp\bin\Debug\netcoreapp3.1\Collection CSharp.exe
+D:\Git_Projects\ASP.Net-MentorShip-\Beginning C# Collection\Collection CSharp\Collection CSharp\bin\Debug\netcoreapp3.1\Collection CSharp.deps.json
+D:\Git_Projects\ASP.Net-MentorShip-\Beginning C# Collection\Collection CSharp\Collection CSharp\bin\Debug\netcoreapp3.1\Collection CSharp.runtimeconfig.json
+D:\Git_Projects\ASP.Net-MentorShip-\Beginning C# Collection\Collection CSharp\Collection CSharp\bin\Debug\netcoreapp3.1\Collection CSharp.runtimeconfig.dev.json
+D:\Git_Projects\ASP.Net-MentorShip-\Beginning C# Collection\Collection CSharp\Collection CSharp\bin\Debug\netcoreapp3.1\Collection CSharp.dll
+D:\Git_Projects\ASP.Net-MentorShip-\Beginning C# Collection\Collection CSharp\Collection CSharp\bin\Debug\netcoreapp3.1\Collection CSharp.pdb
+D:\Git_Projects\ASP.Net-MentorShip-\Beginning C# Collection\Collection CSharp\Collection CSharp\obj\Debug\netcoreapp3.1\Collection CSharp.csprojAssemblyReference.cache
+D:\Git_Projects\ASP.Net-MentorShip-\Beginning C# Collection\Collection CSharp\Collection CSharp\obj\Debug\netcoreapp3.1\Collection CSharp.AssemblyInfoInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip-\Beginning C# Collection\Collection CSharp\Collection CSharp\obj\Debug\netcoreapp3.1\Collection CSharp.AssemblyInfo.cs
+D:\Git_Projects\ASP.Net-MentorShip-\Beginning C# Collection\Collection CSharp\Collection CSharp\obj\Debug\netcoreapp3.1\Collection CSharp.csproj.CoreCompileInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip-\Beginning C# Collection\Collection CSharp\Collection CSharp\obj\Debug\netcoreapp3.1\Collection CSharp.dll
+D:\Git_Projects\ASP.Net-MentorShip-\Beginning C# Collection\Collection CSharp\Collection CSharp\obj\Debug\netcoreapp3.1\Collection CSharp.pdb
+D:\Git_Projects\ASP.Net-MentorShip-\Beginning C# Collection\Collection CSharp\Collection CSharp\obj\Debug\netcoreapp3.1\Collection CSharp.genruntimeconfig.cache

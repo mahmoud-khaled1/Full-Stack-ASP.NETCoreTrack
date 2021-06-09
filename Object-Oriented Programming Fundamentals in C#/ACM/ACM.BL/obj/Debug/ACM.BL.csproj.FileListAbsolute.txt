@@ -1,0 +1,6 @@
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BL\bin\Debug\ACM.BL.dll
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BL\bin\Debug\ACM.BL.pdb
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BL\obj\Debug\ACM.BL.csprojAssemblyReference.cache
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BL\obj\Debug\ACM.BL.csproj.CoreCompileInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BL\obj\Debug\ACM.BL.dll
+D:\Git_Projects\ASP.Net-MentorShip-\Object-Oriented Programming Fundamentals in C#\ACM\ACM.BL\obj\Debug\ACM.BL.pdb
