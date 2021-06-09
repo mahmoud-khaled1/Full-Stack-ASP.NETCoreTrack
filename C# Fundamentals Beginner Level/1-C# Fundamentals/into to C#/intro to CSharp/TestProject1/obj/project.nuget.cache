@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oFnnOlh8nUHt8AoaPbGvFnGcxr20nktLV0ESFQp0VUGIjKMLWB26rl11mv/XGF8RE9xMgtD+hrAy7I1DBx114Q==",
+  "dgSpecHash": "reDmxOOYF7pc8h+nDiGFVs1f5+0ISMIESrpGt5YGlmNi8d/Dgz3Z1HfOWMmlEbE0vjIocDq0v3hAiVOVjQOn+A==",
   "success": true,
-  "projectFilePath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals\\into to C#\\intro to CSharp\\TestProject1\\TestProject1.csproj",
+  "projectFilePath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals Beginner Level\\1-C# Fundamentals\\into to C#\\intro to CSharp\\TestProject1\\TestProject1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\20102\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\20102\\.nuget\\packages\\microsoft.codecoverage\\16.7.1\\microsoft.codecoverage.16.7.1.nupkg.sha512",

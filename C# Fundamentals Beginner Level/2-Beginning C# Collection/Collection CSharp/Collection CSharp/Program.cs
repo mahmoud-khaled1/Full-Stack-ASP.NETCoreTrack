@@ -158,35 +158,35 @@ namespace Collection_CSharp
             #endregion
 
             #region Collections of Collections
-            // Display Countries in Region like --> user type :South America app display :Brazil,Colombia,...
-            //We will use Dictionary <string,Lsit<country>>
+            //Display Countries in Region like --> user type: South America app display :Brazil,Colombia,...
+           // We will use Dictionary<string, Lsit<country>>
 
 
-            //string filepath = @"D:\Git_Projects\ASP.Net-MentorShip-\Beginning C# Collection\Pop by Largest Final.csv";
-            //CsvReader reader = new CsvReader(filepath);
-            //Dictionary<string,List<Country>> countries = reader.ReadAllCountriesbyRegioninDictionary();
+            string filepath = @"D:\Git_Projects\ASP.Net-MentorShip-\Beginning C# Collection\Pop by Largest Final.csv";
+            CsvReader reader = new CsvReader(filepath);
+            Dictionary<string, List<Country>> countries = reader.ReadAllCountriesbyRegioninDictionary();
 
 
-            //foreach (var item in countries.Keys)
-            //{
-            //    Console.WriteLine(item);
-            //}
-            //Console.WriteLine("-----------------------");
+            foreach (var item in countries.Keys)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("-----------------------");
 
-            //Console.WriteLine("Enter Region Name :");
-            //string inputRegion = Console.ReadLine();
+            Console.WriteLine("Enter Region Name :");
+            string inputRegion = Console.ReadLine();
 
-            //if(countries.ContainsKey(inputRegion))
-            //{
-            //    foreach ( Country country in countries[inputRegion])
-            //    {
-            //        Console.WriteLine($"Country name :{country.Name}\nCountry Population :{country.Population}");
-            //    }
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Invaid Region !");
-            //}
+            if (countries.ContainsKey(inputRegion))
+            {
+                foreach (Country country in countries[inputRegion])
+                {
+                    Console.WriteLine($"Country name :{country.Name}\nCountry Population :{country.Population}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Invaid Region !");
+            }
 
 
             #endregion

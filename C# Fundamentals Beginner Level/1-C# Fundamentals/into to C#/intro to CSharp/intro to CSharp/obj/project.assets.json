@@ -4651,11 +4651,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals\\into to C#\\intro to CSharp\\intro to CSharp\\intro to CSharp.csproj",
+      "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals Beginner Level\\1-C# Fundamentals\\into to C#\\intro to CSharp\\intro to CSharp\\intro to CSharp.csproj",
       "projectName": "intro to CSharp",
-      "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals\\into to C#\\intro to CSharp\\intro to CSharp\\intro to CSharp.csproj",
+      "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals Beginner Level\\1-C# Fundamentals\\into to C#\\intro to CSharp\\intro to CSharp\\intro to CSharp.csproj",
       "packagesPath": "C:\\Users\\20102\\.nuget\\packages\\",
-      "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals\\into to C#\\intro to CSharp\\intro to CSharp\\obj\\",
+      "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals Beginner Level\\1-C# Fundamentals\\into to C#\\intro to CSharp\\intro to CSharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\20102\\AppData\\Roaming\\NuGet\\NuGet.Config",

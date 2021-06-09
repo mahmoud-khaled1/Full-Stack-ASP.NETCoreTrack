@@ -4,7 +4,7 @@ using System.Text;
 
 namespace intro_to_CSharp
 {
-     class Book
+    public class Book
     {
         private List<double> li;
         private string name;

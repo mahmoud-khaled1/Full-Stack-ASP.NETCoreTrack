@@ -5646,11 +5646,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals\\into to C#\\intro to CSharp\\TestProject1\\TestProject1.csproj",
+      "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals Beginner Level\\1-C# Fundamentals\\into to C#\\intro to CSharp\\TestProject1\\TestProject1.csproj",
       "projectName": "TestProject1",
-      "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals\\into to C#\\intro to CSharp\\TestProject1\\TestProject1.csproj",
+      "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals Beginner Level\\1-C# Fundamentals\\into to C#\\intro to CSharp\\TestProject1\\TestProject1.csproj",
       "packagesPath": "C:\\Users\\20102\\.nuget\\packages\\",
-      "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals\\into to C#\\intro to CSharp\\TestProject1\\obj\\",
+      "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals Beginner Level\\1-C# Fundamentals\\into to C#\\intro to CSharp\\TestProject1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\20102\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5667,8 +5667,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals\\into to C#\\intro to CSharp\\intro to CSharp\\intro to CSharp.csproj": {
-              "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals\\into to C#\\intro to CSharp\\intro to CSharp\\intro to CSharp.csproj"
+            "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals Beginner Level\\1-C# Fundamentals\\into to C#\\intro to CSharp\\intro to CSharp\\intro to CSharp.csproj": {
+              "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals Beginner Level\\1-C# Fundamentals\\into to C#\\intro to CSharp\\intro to CSharp\\intro to CSharp.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XUaz6Xnhw53w6cborGySybuBXUYGbn2FgOfcdCcyPPlzTyss1q1YtFHXNwqSYyie30u3mAD5yFI13ppEiBr6Bg==",
+  "dgSpecHash": "avgweWNQzWDebitlkZ3RNV1xRs5nXo4PTw3c8+Bgm52CeKiFI6741Jpjb7D404hxNfWUoWEOK8jSIByjc+qiKw==",
   "success": true,
-  "projectFilePath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals\\into to C#\\intro to CSharp\\intro to CSharp\\intro to CSharp.csproj",
+  "projectFilePath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals Beginner Level\\1-C# Fundamentals\\into to C#\\intro to CSharp\\intro to CSharp\\intro to CSharp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\20102\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\20102\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

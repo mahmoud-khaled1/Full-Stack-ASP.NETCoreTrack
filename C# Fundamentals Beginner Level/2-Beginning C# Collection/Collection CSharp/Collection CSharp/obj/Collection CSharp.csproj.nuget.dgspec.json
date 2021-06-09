@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git_Projects\\ASP.Net-MentorShip-\\Beginning C# Collection\\Collection CSharp\\Collection CSharp\\Collection CSharp.csproj": {}
+    "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals Beginner Level\\2-Beginning C# Collection\\Collection CSharp\\Collection CSharp\\Collection CSharp.csproj": {}
   },
   "projects": {
-    "D:\\Git_Projects\\ASP.Net-MentorShip-\\Beginning C# Collection\\Collection CSharp\\Collection CSharp\\Collection CSharp.csproj": {
+    "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals Beginner Level\\2-Beginning C# Collection\\Collection CSharp\\Collection CSharp\\Collection CSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip-\\Beginning C# Collection\\Collection CSharp\\Collection CSharp\\Collection CSharp.csproj",
+        "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals Beginner Level\\2-Beginning C# Collection\\Collection CSharp\\Collection CSharp\\Collection CSharp.csproj",
         "projectName": "Collection CSharp",
-        "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\Beginning C# Collection\\Collection CSharp\\Collection CSharp\\Collection CSharp.csproj",
+        "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals Beginner Level\\2-Beginning C# Collection\\Collection CSharp\\Collection CSharp\\Collection CSharp.csproj",
         "packagesPath": "C:\\Users\\20102\\.nuget\\packages\\",
-        "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\Beginning C# Collection\\Collection CSharp\\Collection CSharp\\obj\\",
+        "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\C# Fundamentals Beginner Level\\2-Beginning C# Collection\\Collection CSharp\\Collection CSharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\20102\\AppData\\Roaming\\NuGet\\NuGet.Config",
