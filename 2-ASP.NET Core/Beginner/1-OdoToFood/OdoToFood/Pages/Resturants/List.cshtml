@@ -1,0 +1,49 @@
+﻿@page
+@model OdoToFood.Pages.Resturants.ListModel
+@{
+}
+<h6 class="text text-danger" style="margin-left:400px;">Welcome Mahmoud </h6>
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="search" class="form-control" asp-for="SearchTerm"/>
+                  
+            <span class="input-group-btn">
+                <button class="btn btn-default">
+                    <i class="glyphicon glyphicon-search "></i>
+                </button>
+            </span>
+        </div>
+    </div>
+</form>
+<table class="table table-bordered table-active table-hover table-success">
+
+    <tr>
+        <td class="bg-info">Resturant Name</td>
+        <td class="bg-info">Resturant Location</td>
+        <td class="bg-info">Resturant Cuisine</td>
+    </tr>
+    @foreach (var item in Model.Resturants)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Location</td>
+            <td>@item.Cuisine</td>
+            <td>
+                <a class="btn btn-lg" asp-page="./Details" asp-route-restID="@item.Id">
+                    Show Details
+                </a>
+                <a class="btn btn-lg" asp-page="./Edit" asp-route-restID="@item.Id">
+                    Edit
+                </a>
+                @*<a class="btn btn-lg" href="/Resturants/Details?restID=@item.Id" >
+            <i class="glyphicon glyphicon-zoom-in" ></i>
+        </a>*@
+            </td>
+        </tr>
+    }
+
+
+</table>
+
+<div>@Model.Message</div>

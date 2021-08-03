@@ -1,0 +1,15 @@
+﻿@model ShoppingCartViewModel
+
+@if (Model.ShoppingCart.ShoppingCartItems.Count > 0)
+{
+    <li>
+        <a>
+            <div class="mt-2 ml-4">
+                <span class="bi bi-cart-plus-fill"></span>
+                <span id="cart-status">
+                    @Model.ShoppingCart.ShoppingCartItems.Count
+                </span>
+            </div>
+        </a>
+    </li>
+}

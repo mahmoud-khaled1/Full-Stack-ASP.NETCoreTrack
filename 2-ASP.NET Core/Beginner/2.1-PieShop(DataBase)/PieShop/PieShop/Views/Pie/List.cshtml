@@ -1,0 +1,19 @@
+﻿@*@model IEnumerable<PieShop.Models.Pie>*@
+@*@model PieShop.ViewModels.PieListViewModel*@
+@model PieListViewModel
+@{
+    ViewData["Title"] = "List";
+}
+
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<h1 class="text-info">@Model.CurrentCategory</h1>
+<div class="row">
+    @foreach (var pie in Model.Pies)
+     {
+        <partial name="_PieCard" model="pie"/>
+
+     }
+</div>

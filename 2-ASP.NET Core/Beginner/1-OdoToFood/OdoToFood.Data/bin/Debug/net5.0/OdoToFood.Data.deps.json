@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "OdoToFood.Data/1.0.0": {
+        "dependencies": {
+          "OdeToFood.Core": "1.0.0"
+        },
+        "runtime": {
+          "OdoToFood.Data.dll": {}
+        }
+      },
+      "OdeToFood.Core/1.0.0": {
+        "runtime": {
+          "OdeToFood.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OdoToFood.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OdeToFood.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

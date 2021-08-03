@@ -1,0 +1,187 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Git_Projects\\ASP.Net-MentorShip-\\ASP.NetCore Fundamental Beginner\\OdoToFood\\OdoToFood\\OdoToFood.csproj": {}
+  },
+  "projects": {
+    "D:\\Git_Projects\\ASP.Net-MentorShip-\\ASP.NetCore Fundamental Beginner\\OdoToFood\\OdeToFood.Core\\OdeToFood.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip-\\ASP.NetCore Fundamental Beginner\\OdoToFood\\OdeToFood.Core\\OdeToFood.Core.csproj",
+        "projectName": "OdeToFood.Core",
+        "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\ASP.NetCore Fundamental Beginner\\OdoToFood\\OdeToFood.Core\\OdeToFood.Core.csproj",
+        "packagesPath": "C:\\Users\\20102\\.nuget\\packages\\",
+        "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\ASP.NetCore Fundamental Beginner\\OdoToFood\\OdeToFood.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\20102\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Git_Projects\\ASP.Net-MentorShip-\\ASP.NetCore Fundamental Beginner\\OdoToFood\\OdoToFood.Data\\OdoToFood.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip-\\ASP.NetCore Fundamental Beginner\\OdoToFood\\OdoToFood.Data\\OdoToFood.Data.csproj",
+        "projectName": "OdoToFood.Data",
+        "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\ASP.NetCore Fundamental Beginner\\OdoToFood\\OdoToFood.Data\\OdoToFood.Data.csproj",
+        "packagesPath": "C:\\Users\\20102\\.nuget\\packages\\",
+        "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\ASP.NetCore Fundamental Beginner\\OdoToFood\\OdoToFood.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\20102\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Git_Projects\\ASP.Net-MentorShip-\\ASP.NetCore Fundamental Beginner\\OdoToFood\\OdeToFood.Core\\OdeToFood.Core.csproj": {
+                "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\ASP.NetCore Fundamental Beginner\\OdoToFood\\OdeToFood.Core\\OdeToFood.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Git_Projects\\ASP.Net-MentorShip-\\ASP.NetCore Fundamental Beginner\\OdoToFood\\OdoToFood\\OdoToFood.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip-\\ASP.NetCore Fundamental Beginner\\OdoToFood\\OdoToFood\\OdoToFood.csproj",
+        "projectName": "OdoToFood",
+        "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\ASP.NetCore Fundamental Beginner\\OdoToFood\\OdoToFood\\OdoToFood.csproj",
+        "packagesPath": "C:\\Users\\20102\\.nuget\\packages\\",
+        "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\ASP.NetCore Fundamental Beginner\\OdoToFood\\OdoToFood\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\20102\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Git_Projects\\ASP.Net-MentorShip-\\ASP.NetCore Fundamental Beginner\\OdoToFood\\OdoToFood.Data\\OdoToFood.Data.csproj": {
+                "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\ASP.NetCore Fundamental Beginner\\OdoToFood\\OdoToFood.Data\\OdoToFood.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

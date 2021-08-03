@@ -1,0 +1,55 @@
+﻿@model PieShop.Models.Pie
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Pie</h4>
+    <hr />
+    <dl class="row">
+       
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ShortDescription)
+        </dt>
+        <dd class = "col-sm-10 text-secondary">
+            @Html.DisplayFor(model => model.ShortDescription)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LongDescription)
+        </dt>
+        <dd class = "col-sm-10 text-info">
+            @Html.DisplayFor(model => model.LongDescription)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class = "col-sm-10 text-danger font-weight-bold">
+            @Html.DisplayFor(model => model.Price) $
+        </dd>
+        <dt class = "col-sm-2">
+           <img src="@Model.ImageUrl" />
+        </dt>
+        
+    </dl>
+</div>
+<div class="addToCart">
+    <p class="button">
+        <a class="btn btn-primary"
+           asp-controller="ShoppingCart"
+           asp-action="AddToShoppingCart"
+           asp-route-pieId="@Model.PieId">Add to cart</a>
+    </p>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

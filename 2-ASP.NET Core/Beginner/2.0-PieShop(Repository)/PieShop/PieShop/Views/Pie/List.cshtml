@@ -1,0 +1,28 @@
+﻿@*@model IEnumerable<PieShop.Models.Pie>*@
+@*@model PieShop.ViewModels.PieListViewModel*@
+@model PieListViewModel
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>List</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<h1 class="text-info">@Model.CurrentCategory</h1>
+<div class="card-deck">
+    @foreach (var pie in Model.Pies)
+     {
+        <div class=" card m-1 " style="width: 20rem; ">
+            <img class="card-img-top h-50" src="@pie.ImageThumbnailUrl" />
+            <div class="card-body">
+                <h3 class="text-dark">@pie.Name</h3>
+                <h5 class="text-danger">@pie.ShortDescription</h5>
+                <h3 class="pull-right text-info">@pie.Price.ToString("c")</h3>
+                <a href="#" class=" btn btn-warning float-left">Details</a>
+            </div>
+        </div>
+
+     }
+</div>

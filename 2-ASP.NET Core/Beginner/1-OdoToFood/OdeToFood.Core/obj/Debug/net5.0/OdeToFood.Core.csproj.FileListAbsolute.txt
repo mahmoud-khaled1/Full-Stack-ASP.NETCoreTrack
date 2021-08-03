@@ -1,0 +1,12 @@
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdeToFood.Core\bin\Debug\net5.0\OdeToFood.Core.deps.json
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdeToFood.Core\bin\Debug\net5.0\OdeToFood.Core.dll
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdeToFood.Core\bin\Debug\net5.0\ref\OdeToFood.Core.dll
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdeToFood.Core\bin\Debug\net5.0\OdeToFood.Core.pdb
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdeToFood.Core\obj\Debug\net5.0\OdeToFood.Core.csprojAssemblyReference.cache
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdeToFood.Core\obj\Debug\net5.0\OdeToFood.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdeToFood.Core\obj\Debug\net5.0\OdeToFood.Core.AssemblyInfoInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdeToFood.Core\obj\Debug\net5.0\OdeToFood.Core.AssemblyInfo.cs
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdeToFood.Core\obj\Debug\net5.0\OdeToFood.Core.csproj.CoreCompileInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdeToFood.Core\obj\Debug\net5.0\OdeToFood.Core.dll
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdeToFood.Core\obj\Debug\net5.0\ref\OdeToFood.Core.dll
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdeToFood.Core\obj\Debug\net5.0\OdeToFood.Core.pdb

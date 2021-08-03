@@ -1,0 +1,15 @@
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdoToFood.Data\bin\Debug\net5.0\OdoToFood.Data.deps.json
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdoToFood.Data\bin\Debug\net5.0\OdoToFood.Data.dll
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdoToFood.Data\bin\Debug\net5.0\ref\OdoToFood.Data.dll
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdoToFood.Data\bin\Debug\net5.0\OdoToFood.Data.pdb
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdoToFood.Data\bin\Debug\net5.0\OdeToFood.Core.dll
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdoToFood.Data\bin\Debug\net5.0\OdeToFood.Core.pdb
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdoToFood.Data\obj\Debug\net5.0\OdoToFood.Data.csprojAssemblyReference.cache
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdoToFood.Data\obj\Debug\net5.0\OdoToFood.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdoToFood.Data\obj\Debug\net5.0\OdoToFood.Data.AssemblyInfoInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdoToFood.Data\obj\Debug\net5.0\OdoToFood.Data.AssemblyInfo.cs
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdoToFood.Data\obj\Debug\net5.0\OdoToFood.Data.csproj.CoreCompileInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdoToFood.Data\obj\Debug\net5.0\OdoToFood.Data.csproj.CopyComplete
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdoToFood.Data\obj\Debug\net5.0\OdoToFood.Data.dll
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdoToFood.Data\obj\Debug\net5.0\ref\OdoToFood.Data.dll
+D:\Git_Projects\ASP.Net-MentorShip-\ASP.NetCore Fundamental Beginner\OdoToFood\OdoToFood.Data\obj\Debug\net5.0\OdoToFood.Data.pdb
