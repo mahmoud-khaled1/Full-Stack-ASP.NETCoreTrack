@@ -2,73 +2,115 @@
 // By :Mahmoud Khaled 
 namespace Tic_Tac_toe_game
 {
+    public static class Global
+    {
+        public static int X = 4;
+
+    }
     class Program
     {
+
         static void DrowWallsFirstTime()
         {
-            string Walls = "|   ||   ||   |\n|   ||   ||   |\n|   ||   ||   |";
-            Console.WriteLine(Walls);
+            for (int i = 0; i < Global.X; i++)
+            {
+                for (int k = 0; k <= Global.X; k++)
+                {
+                    if (k == 0)
+                    {
+                        Console.Write("|   ");
+                    }
+                    else if (k == Global.X)
+                    {
+                        Console.WriteLine("|");
+                    }
+                    else
+                    {
+                        Console.Write("||   ");
+                    }
+                }
+            }
         }
         static bool CheckIfPlayerWin(char[,] mat,char Player)
         {
             //check Rows
-            int SumRow = 0;
-            for (int i = 0; i < 3; i++)
+            int sumRow = 0;
+            for (int i = 0; i < Global.X; i++)
             {
-                for (int j = 0; j < 3; j++)
+                for (int j = 0; j < Global.X; j++)
                 {
                     if (mat[i, j] == Player)
-                        SumRow++;
+                        sumRow++;
                 }
-                if (SumRow == 3)
+                if (sumRow == Global.X)
                 {
                     return true;
                 }
-                SumRow = 0;
+                sumRow = 0;
             }
             //check columns
-            int SumCol = 0;
-            for (int i = 0; i < 3; i++)
+            int sumCol = 0;
+            for (int i = 0; i < Global.X; i++)
             {
-                for (int j = 0; j < 3; j++)
+                for (int j = 0; j < Global.X; j++)
                 {
                     if (mat[j, i] == Player)
-                        SumCol++;
+                        sumCol++;
                 }
-                if (SumCol == 3)
+                if (sumCol == Global.X)
                 {
                     return true;
                 }
-                SumCol = 0;
+                sumCol = 0;
             }
-            //check Diagonal
-            if (mat[0, 0] == Player && mat[1, 1] == Player&& mat[2, 2] == Player)
+            //check Diagonal from Left to right 
+            int sumDiagonalLeft = 0;
+            for (int i = 0; i < Global.X; i++)
             {
-                return true;
+                for (int j = 0; j < Global.X; j++)
+                {
+                    if (i==j && mat[j, i] == Player)
+                        sumDiagonalLeft++;
+                }
             }
-            if (mat[0, 2] == Player && mat[1, 1] ==Player && mat[2, 0] == Player)
+            if (sumDiagonalLeft == Global.X)
+                return true;
+
+            //Check Diagonal From right to left
+            int sumDiagonalRight = 0;
+            int column = Global.X - 1;
+            for (int i = 0; i < Global.X; i++)
             {
-                return true;
+                if (mat[i, column] == Player)
+                {
+                    sumDiagonalRight++;
+                    column--;
+                }
+
             }
+            if (sumDiagonalRight == Global.X)
+                return true;
+
             return false;
+
         }
         static void PrintMatrix(char[,] matrix)
         {
             //Print The Matrix 
             int wall = 0;
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < Global.X ; i++)
             {
-                for (int j = 0; j < 3; j++)
+                for (int j = 0; j < Global.X ; j++)
                 {
                     if (wall == 0)
                         Console.Write("| " + matrix[i, j]);
-                    else if (wall == 1)
-                        Console.Write(" || " + matrix[i, j]);
-                    else if (wall == 2)
+                    else if (wall == Global.X - 1)
                     {
                         Console.Write(" || " + matrix[i, j]);
                         Console.Write(" |");
                     }
+                    else 
+                        Console.Write(" || " + matrix[i, j]);
                     wall++;
                 }
                 wall = 0;
@@ -77,7 +119,7 @@ namespace Tic_Tac_toe_game
         }
         static bool CheckIfInputIsCorrect(int row ,int col)
         {
-            if ((row >= 0 && row <= 2) && (col >= 0 && col <= 2))
+            if ((row >= 0 && row <= Global.X-1) && (col >= 0 && col <= Global.X - 1))
                 return true;
             else
                 return false;
@@ -92,14 +134,14 @@ namespace Tic_Tac_toe_game
         static void RunGame()
         {
             //if ChangePlayer is even then 'X' will play other 'O'
-            int ChangePlayer = 0;
+            int changePlayer = 0;
             // Get Input from user as string that contain Row and Column
-            string Position = "";
-            //Create Matrix 3x3 and initilized it with . 
-            char[,] matrix = new char[3, 3];
-            for (int i = 0; i < 3; i++)
+            string position = "";
+            //Create Matrix x*x and initilized it with . 
+            char[,] matrix = new char[Global.X, Global.X];
+            for (int i = 0; i < Global.X; i++)
             {
-                for (int j = 0; j < 3; j++)
+                for (int j = 0; j < Global.X; j++)
                 {
                     matrix[i, j] = '.';
                 }
@@ -107,18 +149,18 @@ namespace Tic_Tac_toe_game
 
             int row = 0;
             int col = 0;
-            bool Running = true;
+            bool running = true;
             //Running The Console untile Player Win
-            while (Running)
+            while (running)
             {
                 // if ChangePlayer is even then player X will play .
-                if (ChangePlayer % 2 == 0)
+                if (changePlayer % 2 == 0)
                 {
                     //Get Row and Column from User and convert it to int 
                     Console.WriteLine("Enter X Position:");
-                    Position = Console.ReadLine();
-                    row = Position[0] - '0';
-                    col = Position[2] - '0';
+                    position = Console.ReadLine();
+                    row = position[0] - '0';
+                    col = position[2] - '0';
                     //Check If Input Is Correct
                     if (!CheckIfInputIsCorrect(row, col))
                     {
@@ -137,16 +179,19 @@ namespace Tic_Tac_toe_game
                             //Check if PLayer 'X' is Win or not 
                             if (CheckIfPlayerWin(matrix, 'X'))
                             {
+                                Console.Clear();
                                 Console.BackgroundColor = ConsoleColor.Yellow;
                                 Console.WriteLine("X is Wins");
                                 Console.ResetColor();
-                                Running = false;
+                                running = false;
                             }
+                            else
+                                Console.Clear();
                             //Print The Matrix 
                             PrintMatrix(matrix);
 
                             //Change Player From 'X' To 'O'
-                            ChangePlayer++;
+                            changePlayer++;
                         }
                     }
                 }
@@ -154,9 +199,9 @@ namespace Tic_Tac_toe_game
                 {
                     //Get Row and Column from User and convert it to int
                     Console.WriteLine("Enter O Position:");
-                    Position = Console.ReadLine();
-                    row = Position[0] - '0';
-                    col = Position[2] - '0';
+                    position = Console.ReadLine();
+                    row = position[0] - '0';
+                    col = position[2] - '0';
                     //Check If Input Is Correct
                     if (!CheckIfInputIsCorrect(row, col))
                     {
@@ -175,15 +220,18 @@ namespace Tic_Tac_toe_game
                             //Check if PLayer 'O' is Win or not 
                             if (CheckIfPlayerWin(matrix, 'O'))
                             {
+                                Console.Clear();
                                 Console.BackgroundColor = ConsoleColor.Yellow;
                                 Console.WriteLine("O is Wins");
                                 Console.ResetColor();
-                                Running = false;
+                                running = false;
                             }
+                            else
+                                Console.Clear();
                             //Print The Matrix 
                             PrintMatrix(matrix);
                             //Change Player From 'O' To 'X'
-                            ChangePlayer++;
+                            changePlayer++;
                         }
                     }
                 }
@@ -191,6 +239,7 @@ namespace Tic_Tac_toe_game
         }
         static void Main(string[] args)
         {
+             
             //Note For User  
             Console.BackgroundColor = ConsoleColor.White;
             Console.WriteLine("Note : Enter Position in Format --> position of Row,Position Of Column\nexample => 0,1");
