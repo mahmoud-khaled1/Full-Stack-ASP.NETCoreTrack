@@ -85,4 +85,78 @@ started in using databases, then begin with learning about SQL.
 
 */
 
+/*
+ -Order of execution of the various Clauses that make up a Sql statement
+  from         ---> 1    Define The Source Data Set
+  where        ---> 2	 Row Filter
+  Groub By     ---> 3    Combines rows into Groups
+  Having       ---> 4    Group Filter
+  select       ---> 5	 List of Expressions to return 
+  Oder By      ---> 6    Presention Order 
+  OFFSET-FETCh ---> 7	 paging specification 
+*/
+-- Some basics Query :
+select 7*2 as Multi ,SQRT(16)as SqrtRoot ;
+select cast('20210105'as Date) ;
+
+--Drop database if exists then Create one ans use it  ; 
+DROP DATABASE IF EXISTS TSQLDemoDB;
+CREATE DATABASE TSQLDemoDB;
+use TSQLDemoDB;
+
+-- Create Table Customers
+CREATE TABLE Customers 
+(
+   Customer VARCHAR(20) NOT NULL PRIMARY KEY,
+   Country VARCHAR(20) NULL
+);
+
+--Create table Items
+CREATE TABLE Items
+(
+   Item VARCHAR(30) NOT NULL PRIMARY KEY,
+   Color VARCHAR(30) NOT NULL
+   CHECK (Color IN ('Black', 'White', 'Yellow', 'Blue', 'Red'))
+);
+-- Create Table Orders
+CREATE TABLE Orders	
+(
+	OrderID INTEGER NOT NULL PRIMARY KEY,
+	OrderDate DATE NOT NULL,
+	Customer VARCHAR(20) NOT NULL 
+	REFERENCES Customers(Customer) 
+);
+--Create table OrderItems
+CREATE TABLE OrderItems 
+(
+    OrderID INTEGER NOT NULL REFERENCES Orders(OrderID),
+    Item VARCHAR(30) NOT NULL REFERENCES Items(Item),
+    Quantity INTEGER NOT NULL 
+	CHECK (Quantity > 0),
+    Price DECIMAL(9,2) NOT NULL 
+	CHECK (Price > 0),
+    PRIMARY KEY (OrderID, Item)
+);
+
+-- Insertion into those Tables 
+
+INSERT INTO Customers (Customer, Country)
+VALUES	('Jack', 'USA'), ('Kelly', 'USA'), ('Sunil', 'India'), 
+		('Chen', 'China'), ('Bob', NULL);
+
+INSERT INTO Items (Item, Color)
+VALUES  ('Headphones', 'White'), ('MP3 Player', 'Black'), 
+		('Audio Cable', 'Blue'), ('Amplifier', 'Black'), ('Turntable', 'White');
+
+INSERT INTO Orders (OrderID, OrderDate, Customer)
+VALUES  (1, '20190101', 'Jack'), (2, '20190101', 'Bob'), 
+		(3, '20190115', 'Jack'), (4, '20190116', 'Chen');
+
+INSERT INTO OrderItems (OrderID, Item, Quantity, Price)
+VALUES  (1, 'MP3 Player', 1, 27.00), (1, 'Headphones', 1, 35.50),
+        (2, 'Turntable', 1, 170.00),
+        (3, 'Amplifier', 1, 148.00), (3, 'Audio Cable', 3, 12.50),
+        (4, 'Amplifier', 1, 133.50), (4, 'Audio Cable', 2, 11.00), (4, 'Turntable', 2, 155.50);
+
+--- Create Some Query in those Tables 
 
