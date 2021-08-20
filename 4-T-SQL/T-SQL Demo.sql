@@ -311,3 +311,20 @@ where Country is not null;
 select Distinct ISNULL(Country,'N/A') as Country 
 from Customers
 
+/*
+ - ORDER BY :The ORDER BY keyword is used to sort the result-set in 
+		     ascending or descending order.
+
+
+*/
+
+select * from Orders
+order by (OrderDate) ASC;
+
+select * from Orders
+order by (OrderDate) Desc;
+
+select top(5) Item, Sum(Quantity) as NumberOfItemSold
+from OrderItems 
+Group BY (Item) 
+order by (NumberOfItemSold) DESC;
