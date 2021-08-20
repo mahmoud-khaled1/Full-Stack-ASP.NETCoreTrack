@@ -160,3 +160,154 @@ VALUES  (1, 'MP3 Player', 1, 27.00), (1, 'Headphones', 1, 35.50),
 
 --- Create Some Query in those Tables 
 
+select * from Customers;
+
+select * from Orders;
+
+-- Joins 
+/*
+A JOIN clause is used to combine rows from two or more tables, based on a related 
+column between them.
+Here are the different types of the JOINs in SQL:
+
+(INNER) JOIN: Returns records that have matching values in both tables
+
+LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records
+from the right table
+
+RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched 
+records from the left table
+
+FULL (OUTER) JOIN: Returns all records when there is a match in either left 
+or right table
+
+*/
+
+select * from Customers
+inner  join Orders
+on Customers.Customer =Orders.Customer;
+
+select * from Customers
+left  join Orders
+on Customers.Customer =Orders.Customer;
+
+select * from Customers
+full  join Orders
+on Customers.Customer =Orders.Customer;
+
+
+/*
+-Logical Predicates and operator
+
+Predicate                True When 
+-X > All(A,B,C,D)        X>A AND X>B AND X>C AND X>D
+-X > ANY(A,B,C)          X>A OR X>B OR X>C
+-X IN(A,B,C)             X=A OR X=B OR X=C
+-X NOT IN(A,B,C)         X<>A AND X<>B AND X<>C
+-X BETWEEN A AND B       X>=A AND X<=B
+-X LIKE (<pattern>)	     X match widcard pattern 
+- X IS NULL              if X is NULL  
+- X IS NOT NULL          if X is not NULL 
+*/
+
+select * from Customers 
+where Country is  null;
+
+
+select * from Customers 
+where Country is  not null;
+
+select * from Orders 
+where OrderDate between '20190101' and '20190115';
+
+select * from Items
+where item in ('Turntable','Amplifier');
+
+-- Select All Item that begin with Char 'A'
+
+select * from Items 
+where Item Like 'A%';
+
+-- Select All Item that end with Char 'A'
+
+select * from Items 
+where Item Like '%A';
+
+-- Select All Item that contain with Char 'A'
+
+select * from Items 
+where Item Like '%A%';
+
+/*
+- Group :The GROUP BY statement groups rows that have the same values into summary
+		 rows, like "find the number of customers in each country".
+		 The GROUP BY statement is often used with aggregate functions 
+		 (COUNT(), MAX(), MIN(), SUM(), AVG()) to group the result-set by one 
+		 or more columns.
+-GROUP BY Syntax
+
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+ORDER BY column_name(s);
+
+*/
+
+select Country ,Count(*) AS NumberOfCustomer
+from Customers 
+where Country is not Null
+Group by (Country) 
+Order by count(Country);
+
+/*
+- Different between Where and Having ?
+  the only different between where and Having is when they occur 
+  the where clause took place right after the from Clause so it only have access to
+  individuals rows , and having caluse take place after the set has been grouped 
+  by the BROUP BY Clause , ot operates on the group set and can no longer reference	
+  the individuals rows.
+
+  The HAVING clause was added to SQL because the WHERE keyword cannot be used 
+  with aggregate functions.
+
+
+*/
+
+select Country ,Count(*) AS NumberOfCustomer
+from Customers 
+where Country is not Null
+Group by (Country) 
+having count(*)>1;
+
+select Country ,Count(*) AS NumberOfCustomer
+from Customers 
+where Country is not Null
+Group by (Country) 
+having Country is not null;
+
+SELECT Customers.Customer, COUNT(Orders.OrderID) AS NumberOfOrders
+FROM (Orders
+INNER JOIN Customers ON Orders.Customer = Customers.Customer)
+GROUP BY (Customers.Customer)
+HAVING COUNT(Orders.OrderID) > 0;
+
+
+use TSQLDemoDB;
+
+select item,Quantity,Price,(Quantity*Price) as Total ,(Quantity*Price)*0.3 as Discount
+from OrderItems ;
+
+/*
+ ISNULL(X,Y)  ---> if X is null return it with value Y 
+*/
+
+-- return all distict country and is not null also 
+select Distinct(Country) 
+from Customers
+where Country is not null;
+
+-- we can do this also and retrun 'N/A' if Country is null 
+select Distinct ISNULL(Country,'N/A') as Country 
+from Customers
+
