@@ -1,0 +1,15 @@
+D:\Git_Projects\ASP.Net-MentorShip-\5-Entity Framework Core\Beginner\SamuraiApp\SamuraiApp.Domain\bin\Debug\net5.0\SamuraiApp.Domain.deps.json
+D:\Git_Projects\ASP.Net-MentorShip-\5-Entity Framework Core\Beginner\SamuraiApp\SamuraiApp.Domain\bin\Debug\net5.0\SamuraiApp.Domain.dll
+D:\Git_Projects\ASP.Net-MentorShip-\5-Entity Framework Core\Beginner\SamuraiApp\SamuraiApp.Domain\bin\Debug\net5.0\ref\SamuraiApp.Domain.dll
+D:\Git_Projects\ASP.Net-MentorShip-\5-Entity Framework Core\Beginner\SamuraiApp\SamuraiApp.Domain\bin\Debug\net5.0\SamuraiApp.Domain.pdb
+D:\Git_Projects\ASP.Net-MentorShip-\5-Entity Framework Core\Beginner\SamuraiApp\SamuraiApp.Domain\obj\Debug\net5.0\SamuraiApp.Domain.csprojAssemblyReference.cache
+D:\Git_Projects\ASP.Net-MentorShip-\5-Entity Framework Core\Beginner\SamuraiApp\SamuraiApp.Domain\obj\Debug\net5.0\SamuraiApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git_Projects\ASP.Net-MentorShip-\5-Entity Framework Core\Beginner\SamuraiApp\SamuraiApp.Domain\obj\Debug\net5.0\SamuraiApp.Domain.AssemblyInfoInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip-\5-Entity Framework Core\Beginner\SamuraiApp\SamuraiApp.Domain\obj\Debug\net5.0\SamuraiApp.Domain.AssemblyInfo.cs
+D:\Git_Projects\ASP.Net-MentorShip-\5-Entity Framework Core\Beginner\SamuraiApp\SamuraiApp.Domain\obj\Debug\net5.0\SamuraiApp.Domain.csproj.CoreCompileInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip-\5-Entity Framework Core\Beginner\SamuraiApp\SamuraiApp.Domain\obj\Debug\net5.0\SamuraiApp.Domain.dll
+D:\Git_Projects\ASP.Net-MentorShip-\5-Entity Framework Core\Beginner\SamuraiApp\SamuraiApp.Domain\obj\Debug\net5.0\ref\SamuraiApp.Domain.dll
+D:\Git_Projects\ASP.Net-MentorShip-\5-Entity Framework Core\Beginner\SamuraiApp\SamuraiApp.Domain\obj\Debug\net5.0\SamuraiApp.Domain.pdb
+D:\Git_Projects\ASP.Net-MentorShip-\5-Entity Framework Core\Beginner\SamuraiApp\SamuraiApp.Domain\bin\Debug\net5.0\SamuraiApp.Domain.runtimeconfig.json
+D:\Git_Projects\ASP.Net-MentorShip-\5-Entity Framework Core\Beginner\SamuraiApp\SamuraiApp.Domain\bin\Debug\net5.0\SamuraiApp.Domain.runtimeconfig.dev.json
+D:\Git_Projects\ASP.Net-MentorShip-\5-Entity Framework Core\Beginner\SamuraiApp\SamuraiApp.Domain\obj\Debug\net5.0\SamuraiApp.Domain.genruntimeconfig.cache
