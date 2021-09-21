@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ijo9bhGap4lIdZo1UA2yHJaSlFy2qENm6hRd+T2uN9hCad060hMtQTau9Yk+wP8nKkUmq8cC5tvYePMkAMmVSA==",
+  "dgSpecHash": "OyBeXNzXMo/Jy9B4b9MsQrOK04/YzlZs6xcALqVMi/ommotIx1hSqul4DUQ8QJBJtnNn7C59OvtBWiCT5NE5OQ==",
   "success": true,
-  "projectFilePath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj",
+  "projectFilePath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\20102\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\20102\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2LHiqeFcHjZpAuv683oLAgT6Nrqs6oKYYTbj4CfhXXSc20SvZXw4woPuYSo41bDRsUzdH5+YM48t3Y24A/ZxZw==",
+  "dgSpecHash": "2ggRnZoCfX5jgrmYq/Lmm2sQyGrTUl9VmrecR/QnAQfZ1keG/iErZhNzaSkUztlTO4gVG8diGaKW7nrYYR5XqQ==",
   "success": true,
-  "projectFilePath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.UI\\SamuraiApp.UI.csproj",
+  "projectFilePath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.UI\\SamuraiApp.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\20102\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\20102\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -12,6 +12,7 @@
     "C:\\Users\\20102\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.9\\microsoft.entityframeworkcore.abstractions.5.0.9.nupkg.sha512",
     "C:\\Users\\20102\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.9\\microsoft.entityframeworkcore.analyzers.5.0.9.nupkg.sha512",
     "C:\\Users\\20102\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.9\\microsoft.entityframeworkcore.design.5.0.9.nupkg.sha512",
+    "C:\\Users\\20102\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\5.0.0\\microsoft.entityframeworkcore.inmemory.5.0.0.nupkg.sha512",
     "C:\\Users\\20102\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.9\\microsoft.entityframeworkcore.relational.5.0.9.nupkg.sha512",
     "C:\\Users\\20102\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.9\\microsoft.entityframeworkcore.sqlserver.5.0.9.nupkg.sha512",
     "C:\\Users\\20102\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.9\\microsoft.entityframeworkcore.tools.5.0.9.nupkg.sha512",

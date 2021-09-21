@@ -142,6 +142,18 @@
           "build/netcoreapp3.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.InMemory/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/5.0.9": {
         "type": "package",
         "dependencies": {
@@ -1758,6 +1770,20 @@
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.xml",
         "microsoft.entityframeworkcore.design.5.0.9.nupkg.sha512",
         "microsoft.entityframeworkcore.design.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/5.0.0": {
+      "sha512": "4p98EdOJXs56nr7N+UjKvwEhAMs0uiJnJjXFSgpiaq9ZbAa5PEMklC0Q6yDEg6I5B4/GvVgb5vMhjn6P2t15Bg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.5.0.0.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/5.0.9": {
@@ -5811,6 +5837,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Microsoft.EntityFrameworkCore >= 5.0.9",
+      "Microsoft.EntityFrameworkCore.InMemory >= 5.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.9",
       "SamuraiApp.Domain >= 1.0.0"
@@ -5822,11 +5849,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamurailApp.Data\\SamurailApp.Data.csproj",
+      "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamurailApp.Data\\SamurailApp.Data.csproj",
       "projectName": "SamurailApp.Data",
-      "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamurailApp.Data\\SamurailApp.Data.csproj",
+      "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamurailApp.Data\\SamurailApp.Data.csproj",
       "packagesPath": "C:\\Users\\20102\\.nuget\\packages\\",
-      "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamurailApp.Data\\obj\\",
+      "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamurailApp.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\20102\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5843,8 +5870,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj": {
-              "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj"
+            "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj": {
+              "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj"
             }
           }
         }
@@ -5862,6 +5889,10 @@
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[5.0.9, )"
+          },
+          "Microsoft.EntityFrameworkCore.InMemory": {
+            "target": "Package",
+            "version": "[5.0.0, )"
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",

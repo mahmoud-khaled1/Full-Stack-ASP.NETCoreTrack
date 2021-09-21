@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.UI\\SamuraiApp.UI.csproj": {}
+    "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.UI\\SamuraiApp.UI.csproj": {}
   },
   "projects": {
-    "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj": {
+    "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj",
+        "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj",
         "projectName": "SamuraiApp.Domain",
-        "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj",
+        "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj",
         "packagesPath": "C:\\Users\\20102\\.nuget\\packages\\",
-        "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\obj\\",
+        "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\20102\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -74,14 +74,14 @@
         }
       }
     },
-    "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.UI\\SamuraiApp.UI.csproj": {
+    "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.UI\\SamuraiApp.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.UI\\SamuraiApp.UI.csproj",
+        "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.UI\\SamuraiApp.UI.csproj",
         "projectName": "SamuraiApp.UI",
-        "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.UI\\SamuraiApp.UI.csproj",
+        "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.UI\\SamuraiApp.UI.csproj",
         "packagesPath": "C:\\Users\\20102\\.nuget\\packages\\",
-        "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.UI\\obj\\",
+        "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\20102\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -98,11 +98,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj": {
-                "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj"
+              "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj": {
+                "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj"
               },
-              "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamurailApp.Data\\SamurailApp.Data.csproj": {
-                "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamurailApp.Data\\SamurailApp.Data.csproj"
+              "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamurailApp.Data\\SamurailApp.Data.csproj": {
+                "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamurailApp.Data\\SamurailApp.Data.csproj"
               }
             }
           }
@@ -151,14 +151,14 @@
         }
       }
     },
-    "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamurailApp.Data\\SamurailApp.Data.csproj": {
+    "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamurailApp.Data\\SamurailApp.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamurailApp.Data\\SamurailApp.Data.csproj",
+        "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamurailApp.Data\\SamurailApp.Data.csproj",
         "projectName": "SamurailApp.Data",
-        "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamurailApp.Data\\SamurailApp.Data.csproj",
+        "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamurailApp.Data\\SamurailApp.Data.csproj",
         "packagesPath": "C:\\Users\\20102\\.nuget\\packages\\",
-        "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamurailApp.Data\\obj\\",
+        "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamurailApp.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\20102\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -175,8 +175,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj": {
-                "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj"
+              "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj": {
+                "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj"
               }
             }
           }
@@ -194,6 +194,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
