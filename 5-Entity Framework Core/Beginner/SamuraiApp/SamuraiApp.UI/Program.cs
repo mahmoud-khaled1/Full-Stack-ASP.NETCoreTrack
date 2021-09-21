@@ -97,7 +97,7 @@ namespace SamuraiApp.UI
             {
                 samurai = separateOperation.Samurais.Include(s => s.BattleSamurai)
                                                     .ThenInclude(sb => sb.Battle)
-                                           .SingleOrDefault(s => s.Id == 3);
+                                           .SingleOrDefault(s => s.ID == 3);
             }
             var sbToRemove = samurai.BattleSamurai.SingleOrDefault(sb => sb.BattleId == 1);
             samurai.BattleSamurai.Remove(sbToRemove);
@@ -111,9 +111,9 @@ namespace SamuraiApp.UI
             //Goal:Remove join between Shichirōji(Id=3) and Battle of Okehazama (Id=1)
             var samurai = _context.Samurais.Include(s => s.BattleSamurai)
                                            .ThenInclude(sb => sb.Battle)
-                                  .SingleOrDefault(s => s.Id == 3);
-            var sbToRemove = samurai.SamuraiBattles.SingleOrDefault(sb => sb.BattleId == 1);
-            samurai.SamuraiBattles.Remove(sbToRemove); //remove via List<T>
+                                  .SingleOrDefault(s => s.ID == 3);
+            var sbToRemove = samurai.BattleSamurai.SingleOrDefault(sb => sb.BattleId == 1);
+            samurai.BattleSamurai.Remove(sbToRemove); //remove via List<T>
                                                        //_context.Remove(sbToRemove); //remove using DbContext
             _context.ChangeTracker.DetectChanges(); //here for debugging
             _context.SaveChanges();
@@ -134,10 +134,10 @@ namespace SamuraiApp.UI
         {
             var samuraiWithBattles = _context.Samurais
                 .Include(s => s.BattleSamurai)
-                .ThenInclude(sb => sb.Battle).FirstOrDefault(s => s.Id == 1);
-            var battle = samuraiWithBattles.SamuraiBattles.First().Battle;
+                .ThenInclude(sb => sb.Battle).FirstOrDefault(s => s.ID == 1);
+            var battle = samuraiWithBattles.BattleSamurai.First().Battle;
             var allTheBattles = new List<Battle>();
-            foreach (var samuraiBattle in samuraiWithBattles.SamuraiBattles)
+            foreach (var samuraiBattle in samuraiWithBattles.BattleSamurai)
             {
                 allTheBattles.Add(samuraiBattle.Battle);
             }
