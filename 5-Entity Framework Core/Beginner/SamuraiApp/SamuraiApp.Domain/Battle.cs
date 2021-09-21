@@ -8,8 +8,12 @@ namespace SamuraiApp.Domain
 {
     public class Battle
     {
+        public Battle()
+        {
+            BattleSamurai = new List<BattleSamurai>();   
+        }
         public int BattleId { get; set; }
         public string Name { get; set; }
-        public List<Samurai> Samurais { get; set; } = new List<Samurai>();
+        public List<BattleSamurai> BattleSamurai { get; set; } = new List<BattleSamurai>();
     }
 }

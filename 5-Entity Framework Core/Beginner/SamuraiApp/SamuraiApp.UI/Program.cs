@@ -52,62 +52,178 @@ namespace SamuraiApp.UI
 
         }
 
-       
+
         // Many To Many RelationShip
-        private static void RemoveSamuraisFromBattleExplicit()
+        private static void PrePopulateSamuraisAndBattles()
         {
-            var b_s = _context.Set<BattleSamurai>()
-                .SingleOrDefault(bs => bs.BattleId == 1 && bs.SamuraiId == 10);
-            if(b_s!=null)
+            _context.AddRange(
+             new Samurai { Name = "Kikuchiyo" },
+             new Samurai { Name = "Kambei Shimada" },
+             new Samurai { Name = "Shichirōji " },
+             new Samurai { Name = "Katsushirō Okamoto" },
+             new Samurai { Name = "Heihachi Hayashida" },
+             new Samurai { Name = "Kyūzō" },
+             new Samurai { Name = "Gorōbei Katayama" }
+           );
+
+            _context.Battles.AddRange(
+             new Battle { Name = "Battle of Okehazama", StartDate = new DateTime(1560, 05, 01), EndDate = new DateTime(1560, 06, 15) },
+             new Battle { Name = "Battle of Shiroyama", StartDate = new DateTime(1877, 9, 24), EndDate = new DateTime(1877, 9, 24) },
+             new Battle { Name = "Siege of Osaka", StartDate = new DateTime(1614, 1, 1), EndDate = new DateTime(1615, 12, 31) },
+             new Battle { Name = "Boshin War", StartDate = new DateTime(1868, 1, 1), EndDate = new DateTime(1869, 1, 1) }
+           );
+            _context.SaveChanges();
+        }
+        private static void JoinBattleAndSamurai()
+        {
+            //Kikuchiyo id is 1, Siege of Osaka id is 3
+            var sbJoin = new BattleSamurai { SamuraiId = 1, BattleId = 3 };
+            _context.Add(sbJoin);
+            _context.SaveChanges();
+        }
+        private static void EnlistSamuraiIntoABattle()
+        {
+            var battle = _context.Battles.Find(1);
+            battle.BattleSamurai
+                .Add(new BattleSamurai { SamuraiId = 3 });
+            _context.SaveChanges();
+        }
+
+        private static void RemoveBattleFromSamuraiWhenDisconnected()
+        {
+            //Goal:Remove join between Shichirōji(Id=3) and Battle of Okehazama (Id=1)
+            Samurai samurai;
+            using (var separateOperation = new SamuraiContext())
             {
-                _context.Set<BattleSamurai>().Remove(b_s);
-                _context.SaveChanges();
+                samurai = separateOperation.Samurais.Include(s => s.BattleSamurai)
+                                                    .ThenInclude(sb => sb.Battle)
+                                           .SingleOrDefault(s => s.Id == 3);
+            }
+            var sbToRemove = samurai.BattleSamurai.SingleOrDefault(sb => sb.BattleId == 1);
+            samurai.BattleSamurai.Remove(sbToRemove);
+            //_context.Attach(samurai);
+            //_context.ChangeTracker.DetectChanges();
+            _context.Remove(sbToRemove);
+            _context.SaveChanges();
+        }
+        private static void RemoveBattleFromSamurai()
+        {
+            //Goal:Remove join between Shichirōji(Id=3) and Battle of Okehazama (Id=1)
+            var samurai = _context.Samurais.Include(s => s.BattleSamurai)
+                                           .ThenInclude(sb => sb.Battle)
+                                  .SingleOrDefault(s => s.Id == 3);
+            var sbToRemove = samurai.SamuraiBattles.SingleOrDefault(sb => sb.BattleId == 1);
+            samurai.SamuraiBattles.Remove(sbToRemove); //remove via List<T>
+                                                       //_context.Remove(sbToRemove); //remove using DbContext
+            _context.ChangeTracker.DetectChanges(); //here for debugging
+            _context.SaveChanges();
+        }
+        private static void RemoveJoinBetweenSamuraiAndBattleSimple()
+        {
+            var join = new BattleSamurai { BattleId = 1, SamuraiId = 8 };
+            _context.Remove(join);
+            _context.SaveChanges();
+        }
+        private static void GetBattlesForSamuraiInMemory()
+        {
+            var battle = _context.Battles.Find(1);
+            _context.Entry(battle).Collection(b => b.BattleSamurai).Query().Include(sb => sb.Samurai).Load();
+
+        }
+        private static void GetSamuraiWithBattles()
+        {
+            var samuraiWithBattles = _context.Samurais
+                .Include(s => s.BattleSamurai)
+                .ThenInclude(sb => sb.Battle).FirstOrDefault(s => s.Id == 1);
+            var battle = samuraiWithBattles.SamuraiBattles.First().Battle;
+            var allTheBattles = new List<Battle>();
+            foreach (var samuraiBattle in samuraiWithBattles.SamuraiBattles)
+            {
+                allTheBattles.Add(samuraiBattle.Battle);
             }
         }
-        private static void RemoveSamuraisFromBattle()
+        private static void AddNewSamuraiViaDisconnectedBattleObject()
         {
-            var battlewithsamurai = _context.Battles
-                .Include(b => b.Samurais.Where(s => s.ID == 12))
-                .Single(s => s.BattleId == 1);
-            var samurai = battlewithsamurai.Samurais[0];
-            battlewithsamurai.Samurais.Remove(samurai);
-            _context.SaveChanges();
-
-
-        }
-        private static void AddAllSamuraisToAllBattles()
-        {
-            var allSamurais = _context.Samurais.ToList();
-            var allBattles = _context.Battles.Include(b=>b.Samurais).ToList();
-            foreach (var battle in allBattles)
+            Battle battle;
+            using (var separateOperation = new SamuraiContext())
             {
-                battle.Samurais.AddRange(allSamurais);
+                battle = separateOperation.Battles.Find(1);
             }
+            var newSamurai = new Samurai { Name = "SampsonSan" };
+            battle.BattleSamurai.Add(new BattleSamurai { Samurai = newSamurai });
+            _context.Battles.Attach(battle);
+            _context.ChangeTracker.DetectChanges();
             _context.SaveChanges();
         }
-        private static void ReturnAllBattleWithSamurais()
+
+        private static void EnlistSamuraiIntoABattleUntracked()
         {
-            var battle = _context.Battles.Include(b => b.Samurais).ToList();
+            Battle battle;
+            using (var separateOperation = new SamuraiContext())
+            {
+                battle = separateOperation.Battles.Find(1);
+            }
+            battle.BattleSamurai.Add(new BattleSamurai { SamuraiId = 2 });
+            _context.Battles.Attach(battle);
+            _context.ChangeTracker.DetectChanges(); //here to show you debugging info
+            _context.SaveChanges();
 
         }
-        private static void ReturnBattleWithSamurais()
-        {
-            var battle = _context.Battles.Include(b => b.Samurais).FirstOrDefault();
 
-        }
-        private static void AddingNewSamuraiToAnExsitingBattle()
-        {
-            var battle = _context.Battles.FirstOrDefault();
-            battle.Samurais.Add(new Samurai { Name = "Aly Ahmed" });
-            _context.SaveChanges();
-        }
-        private static void ModyfingRelatedDataWhenTracked()
-        {
-            var samurai = _context.Samurais.Include(s => s.Quotes)
-                .FirstOrDefault(s => s.ID ==2);
-            samurai.Quotes[0].Text = "Did You hear me !!";
-            _context.SaveChanges();
-        }
+        //private static void RemoveSamuraisFromBattleExplicit()
+        //{
+        //    var b_s = _context.Set<BattleSamurai>()
+        //        .SingleOrDefault(bs => bs.BattleId == 1 && bs.SamuraiId == 10);
+        //    if(b_s!=null)
+        //    {
+        //        _context.Set<BattleSamurai>().Remove(b_s);
+        //        _context.SaveChanges();
+        //    }
+        //}
+        //private static void RemoveSamuraisFromBattle()
+        //{
+        //    var battlewithsamurai = _context.Battles
+        //        .Include(b => b.BattleSamurai.Where(s => s.Samurai.ID== 12))
+        //        .Single(s => s.BattleId == 1);
+        //    var samurai = battlewithsamurai.BattleSamurai[0];
+        //    battlewithsamurai.BattleSamurai.Remove(samurai);
+        //    _context.SaveChanges();
+
+
+        //}
+        //private static void AddAllSamuraisToAllBattles()
+        //{
+        //    var allSamurais = _context.Samurais.ToList();
+        //    var allBattles = _context.Battles.Include(b=>b.BattleSamurai).ToList();
+        //    foreach (var battle in allBattles)
+        //    {
+        //        battle.Samurais.AddRange(allSamurais);
+        //    }
+        //    _context.SaveChanges();
+        //}
+        //private static void ReturnAllBattleWithSamurais()
+        //{
+        //    var battle = _context.Battles.Include(b => b.Samurais).ToList();
+
+        //}
+        //private static void ReturnBattleWithSamurais()
+        //{
+        //    var battle = _context.Battles.Include(b => b.Samurais).FirstOrDefault();
+
+        //}
+        //private static void AddingNewSamuraiToAnExsitingBattle()
+        //{
+        //    var battle = _context.Battles.FirstOrDefault();
+        //    battle.Samurais.Add(new Samurai { Name = "Aly Ahmed" });
+        //    _context.SaveChanges();
+        //}
+        //private static void ModyfingRelatedDataWhenTracked()
+        //{
+        //    var samurai = _context.Samurais.Include(s => s.Quotes)
+        //        .FirstOrDefault(s => s.ID ==2);
+        //    samurai.Quotes[0].Text = "Did You hear me !!";
+        //    _context.SaveChanges();
+        //}
 
         // One To Many RelationShip 
         private static void ProjectionSmauraiwithQuotes()
@@ -138,7 +254,7 @@ namespace SamuraiApp.UI
                 .Where(s => s.Name.Contains("mahmoud")).Include(s => s.Quotes).FirstOrDefault();
 
             var filterPrimaryEntityWith2Include = _context.Samurais
-                .Where(s => s.Name.Contains("Aly")).Include(s => s.Quotes).Include(s => s.Battles).ToList();
+                .Where(s => s.Name.Contains("Aly")).Include(s => s.Quotes).Include(s => s.BattleSamurai).ToList();
         }
         private static void AddQuoteToExistingSamuraiWhileTracking()
         {
