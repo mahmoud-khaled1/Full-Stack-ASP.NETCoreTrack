@@ -1,0 +1,16 @@
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ and CSharp\bin\Debug\net5.0\2-LINQ and CSharp.exe
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ and CSharp\bin\Debug\net5.0\2-LINQ and CSharp.deps.json
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ and CSharp\bin\Debug\net5.0\2-LINQ and CSharp.runtimeconfig.json
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ and CSharp\bin\Debug\net5.0\2-LINQ and CSharp.runtimeconfig.dev.json
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ and CSharp\bin\Debug\net5.0\2-LINQ and CSharp.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ and CSharp\bin\Debug\net5.0\ref\2-LINQ and CSharp.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ and CSharp\bin\Debug\net5.0\2-LINQ and CSharp.pdb
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ and CSharp\obj\Debug\net5.0\2-LINQ and CSharp.csprojAssemblyReference.cache
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ and CSharp\obj\Debug\net5.0\2-LINQ and CSharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ and CSharp\obj\Debug\net5.0\2-LINQ and CSharp.AssemblyInfoInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ and CSharp\obj\Debug\net5.0\2-LINQ and CSharp.AssemblyInfo.cs
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ and CSharp\obj\Debug\net5.0\2-LINQ and CSharp.csproj.CoreCompileInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ and CSharp\obj\Debug\net5.0\2-LINQ and CSharp.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ and CSharp\obj\Debug\net5.0\ref\2-LINQ and CSharp.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ and CSharp\obj\Debug\net5.0\2-LINQ and CSharp.pdb
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ and CSharp\obj\Debug\net5.0\2-LINQ and CSharp.genruntimeconfig.cache

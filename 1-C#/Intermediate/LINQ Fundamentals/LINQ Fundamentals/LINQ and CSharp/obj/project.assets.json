@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\1-C#\\Intermediate\\LINQ Fundamentals\\LINQ Fundamentals\\LINQ Fundamentals\\1-LINQ Fundamentals.csproj",
-      "projectName": "1-LINQ Fundamentals",
-      "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\1-C#\\Intermediate\\LINQ Fundamentals\\LINQ Fundamentals\\LINQ Fundamentals\\1-LINQ Fundamentals.csproj",
+      "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\1-C#\\Intermediate\\LINQ Fundamentals\\LINQ Fundamentals\\LINQ and CSharp\\2-LINQ and CSharp.csproj",
+      "projectName": "2-LINQ and CSharp",
+      "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\1-C#\\Intermediate\\LINQ Fundamentals\\LINQ Fundamentals\\LINQ and CSharp\\2-LINQ and CSharp.csproj",
       "packagesPath": "C:\\Users\\20102\\.nuget\\packages\\",
-      "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\1-C#\\Intermediate\\LINQ Fundamentals\\LINQ Fundamentals\\LINQ Fundamentals\\obj\\",
+      "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\1-C#\\Intermediate\\LINQ Fundamentals\\LINQ Fundamentals\\LINQ and CSharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\20102\\AppData\\Roaming\\NuGet\\NuGet.Config",
