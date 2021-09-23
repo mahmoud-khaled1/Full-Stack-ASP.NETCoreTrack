@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2-LINQ and CSharp", "LINQ a
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-LINQ Queries", "3-LINQ Queries\3-LINQ Queries.csproj", "{967C3E6C-54DE-4D3E-8FFE-773D47D808AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Filtering,Ordering,Projecting", "Filtering,Ordering,Projecting\Filtering,Ordering,Projecting.csproj", "{2DB7E063-DEC7-4CF7-A24C-4D671C8DC90C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-Filtering,Ordering,Projecting", "Filtering,Ordering,Projecting\4-Filtering,Ordering,Projecting.csproj", "{2DB7E063-DEC7-4CF7-A24C-4D671C8DC90C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -6,4 +6,13 @@
     <RootNamespace>Filtering_Ordering_Projecting</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Update="fuel.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="manufacturers.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
