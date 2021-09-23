@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-LINQ Fundamentals", "LINQ Fundamentals\1-LINQ Fundamentals.csproj", "{72A48E93-2923-4560-B322-387A05361C35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1-LINQ Fundamentals", "LINQ Fundamentals\1-LINQ Fundamentals.csproj", "{72A48E93-2923-4560-B322-387A05361C35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-LINQ and CSharp", "LINQ and CSharp\2-LINQ and CSharp.csproj", "{D49246EC-6ADF-4387-9A11-663F4B4054EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2-LINQ and CSharp", "LINQ and CSharp\2-LINQ and CSharp.csproj", "{D49246EC-6ADF-4387-9A11-663F4B4054EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-LINQ Queries", "3-LINQ Queries\3-LINQ Queries.csproj", "{967C3E6C-54DE-4D3E-8FFE-773D47D808AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D49246EC-6ADF-4387-9A11-663F4B4054EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D49246EC-6ADF-4387-9A11-663F4B4054EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D49246EC-6ADF-4387-9A11-663F4B4054EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{967C3E6C-54DE-4D3E-8FFE-773D47D808AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{967C3E6C-54DE-4D3E-8FFE-773D47D808AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{967C3E6C-54DE-4D3E-8FFE-773D47D808AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{967C3E6C-54DE-4D3E-8FFE-773D47D808AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

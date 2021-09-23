@@ -1,0 +1,16 @@
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\3-LINQ Queries\bin\Debug\net5.0\3-LINQ Queries.exe
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\3-LINQ Queries\bin\Debug\net5.0\3-LINQ Queries.deps.json
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\3-LINQ Queries\bin\Debug\net5.0\3-LINQ Queries.runtimeconfig.json
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\3-LINQ Queries\bin\Debug\net5.0\3-LINQ Queries.runtimeconfig.dev.json
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\3-LINQ Queries\bin\Debug\net5.0\3-LINQ Queries.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\3-LINQ Queries\bin\Debug\net5.0\ref\3-LINQ Queries.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\3-LINQ Queries\bin\Debug\net5.0\3-LINQ Queries.pdb
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\3-LINQ Queries\obj\Debug\net5.0\3-LINQ Queries.csprojAssemblyReference.cache
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\3-LINQ Queries\obj\Debug\net5.0\3-LINQ Queries.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\3-LINQ Queries\obj\Debug\net5.0\3-LINQ Queries.AssemblyInfoInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\3-LINQ Queries\obj\Debug\net5.0\3-LINQ Queries.AssemblyInfo.cs
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\3-LINQ Queries\obj\Debug\net5.0\3-LINQ Queries.csproj.CoreCompileInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\3-LINQ Queries\obj\Debug\net5.0\3-LINQ Queries.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\3-LINQ Queries\obj\Debug\net5.0\ref\3-LINQ Queries.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\3-LINQ Queries\obj\Debug\net5.0\3-LINQ Queries.pdb
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\3-LINQ Queries\obj\Debug\net5.0\3-LINQ Queries.genruntimeconfig.cache
