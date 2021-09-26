@@ -1,0 +1,18 @@
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\Joining,Grouping and Aggregating\bin\Debug\net5.0\fuel.csv
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\Joining,Grouping and Aggregating\bin\Debug\net5.0\manufacturers.csv
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\Joining,Grouping and Aggregating\bin\Debug\net5.0\Joining,Grouping and Aggregating.exe
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\Joining,Grouping and Aggregating\bin\Debug\net5.0\Joining,Grouping and Aggregating.deps.json
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\Joining,Grouping and Aggregating\bin\Debug\net5.0\Joining,Grouping and Aggregating.runtimeconfig.json
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\Joining,Grouping and Aggregating\bin\Debug\net5.0\Joining,Grouping and Aggregating.runtimeconfig.dev.json
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\Joining,Grouping and Aggregating\bin\Debug\net5.0\Joining,Grouping and Aggregating.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\Joining,Grouping and Aggregating\bin\Debug\net5.0\ref\Joining,Grouping and Aggregating.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\Joining,Grouping and Aggregating\bin\Debug\net5.0\Joining,Grouping and Aggregating.pdb
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\Joining,Grouping and Aggregating\obj\Debug\net5.0\Joining,Grouping and Aggregating.csprojAssemblyReference.cache
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\Joining,Grouping and Aggregating\obj\Debug\net5.0\Joining,Grouping and Aggregating.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\Joining,Grouping and Aggregating\obj\Debug\net5.0\Joining,Grouping and Aggregating.AssemblyInfoInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\Joining,Grouping and Aggregating\obj\Debug\net5.0\Joining,Grouping and Aggregating.AssemblyInfo.cs
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\Joining,Grouping and Aggregating\obj\Debug\net5.0\Joining,Grouping and Aggregating.csproj.CoreCompileInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\Joining,Grouping and Aggregating\obj\Debug\net5.0\Joining,Grouping and Aggregating.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\Joining,Grouping and Aggregating\obj\Debug\net5.0\ref\Joining,Grouping and Aggregating.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\Joining,Grouping and Aggregating\obj\Debug\net5.0\Joining,Grouping and Aggregating.pdb
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\Joining,Grouping and Aggregating\obj\Debug\net5.0\Joining,Grouping and Aggregating.genruntimeconfig.cache

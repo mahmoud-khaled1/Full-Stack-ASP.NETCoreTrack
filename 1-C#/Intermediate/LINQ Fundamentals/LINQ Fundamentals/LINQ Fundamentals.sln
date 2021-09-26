@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1-LINQ Fundamentals", "LINQ
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2-LINQ and CSharp", "LINQ and CSharp\2-LINQ and CSharp.csproj", "{D49246EC-6ADF-4387-9A11-663F4B4054EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-LINQ Queries", "3-LINQ Queries\3-LINQ Queries.csproj", "{967C3E6C-54DE-4D3E-8FFE-773D47D808AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3-LINQ Queries", "3-LINQ Queries\3-LINQ Queries.csproj", "{967C3E6C-54DE-4D3E-8FFE-773D47D808AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-Filtering,Ordering,Projecting", "Filtering,Ordering,Projecting\4-Filtering,Ordering,Projecting.csproj", "{2DB7E063-DEC7-4CF7-A24C-4D671C8DC90C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4-Filtering,Ordering,Projecting", "Filtering,Ordering,Projecting\4-Filtering,Ordering,Projecting.csproj", "{2DB7E063-DEC7-4CF7-A24C-4D671C8DC90C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joining,Grouping and Aggregating", "Joining,Grouping and Aggregating\Joining,Grouping and Aggregating.csproj", "{B3C2D673-1301-4B66-AF28-6FC1C2A128EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{2DB7E063-DEC7-4CF7-A24C-4D671C8DC90C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DB7E063-DEC7-4CF7-A24C-4D671C8DC90C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DB7E063-DEC7-4CF7-A24C-4D671C8DC90C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3C2D673-1301-4B66-AF28-6FC1C2A128EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C2D673-1301-4B66-AF28-6FC1C2A128EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C2D673-1301-4B66-AF28-6FC1C2A128EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C2D673-1301-4B66-AF28-6FC1C2A128EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

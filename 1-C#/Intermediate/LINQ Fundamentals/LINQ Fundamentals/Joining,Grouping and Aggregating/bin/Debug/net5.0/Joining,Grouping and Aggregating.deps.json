@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Joining,Grouping and Aggregating/1.0.0": {
+        "runtime": {
+          "Joining,Grouping and Aggregating.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Joining,Grouping and Aggregating/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
