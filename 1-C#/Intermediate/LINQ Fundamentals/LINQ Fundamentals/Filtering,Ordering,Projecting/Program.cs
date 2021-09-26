@@ -44,6 +44,45 @@ namespace Filtering_Ordering_Projecting
             {
                 Console.WriteLine(car.Name + " : " + car.Manufacturer);
             }
+
+            //Q3-Get First car that manufactuer is BMW and has the best fuel efficiency
+            // and year is 2016
+
+            // Operator syntax
+            var query5 = cars.OrderByDescending(c => c.Combined)
+                .ThenBy(c => c.Name)
+                .Select(c => c)
+                .FirstOrDefault(c => c.Manufacturer == "BMW" && c.Year == 2016);
+            Console.WriteLine(query5.Name);
+            // Query syntax
+            var query6 = (from car in cars
+                          where car.Manufacturer == "BMW" && car.Year == 2016
+                          orderby car.Combined descending, car.Name ascending
+                          select car).FirstOrDefault();
+            Console.WriteLine(query6.Name);
+
+            //Q4- Check if there is any car of manufactor Ford or not 
+            var query7 = cars.Any(c => c.Manufacturer == "Ford");
+            Console.WriteLine(query7);
+
+            //Q5- Check if all cars is Ford manufactor
+            var query8 = cars.All(c => c.Manufacturer == "Ford");
+            Console.WriteLine(query8);
+
+            //Q6-Get Name Of all Cars that  Manufactor is BMW
+
+            // Operator syntax
+            var query9 = cars.Select(c => new { c.Name, c.Manufacturer }).ToList();
+
+            // Query syntax
+            var query10 = from car in cars
+                         where car.Manufacturer == "BMW"
+                         select new { name = car.Name };
+            foreach (var item in query10)
+            {
+                Console.WriteLine(item.name);
+            }
+
         }
 
         private static List<Car> ProcessFile(string path)
