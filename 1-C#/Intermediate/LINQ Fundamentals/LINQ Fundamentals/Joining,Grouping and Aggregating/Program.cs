@@ -24,12 +24,12 @@ namespace Joining_Grouping_and_Aggregating
                (c,m)=> new {Car=c,Manufacturer=m })
                 .OrderByDescending(c=>c.Car.Combined).ToList();
 
-            //foreach (var item in query1)
-            //{
-            //    Console.WriteLine(item.Car.Name + " : " + item.Car.Combined + " => " + item.Manufacturer.Headquarters);
+            foreach (var item in query1)
+            {
+                Console.WriteLine(item.Car.Name + " : " + item.Car.Combined + " => " + item.Manufacturer.Headquarters);
 
-            //    Console.WriteLine("-----------");
-            //}
+                Console.WriteLine("-----------");
+            }
             //Query syntax
             var query2 = (from car in cars
                          join manufacturer in manufactures
@@ -37,12 +37,12 @@ namespace Joining_Grouping_and_Aggregating
                          orderby car.Combined descending
                          select new { car.Name ,car.Combined, manufacturer.Headquarters}).ToList();
 
-            //foreach (var car in query2.Take(10))
-            //{
-            //    Console.WriteLine(car.Name+" : "+car.Combined+" => "+ car.Headquarters);
-                
-            //    Console.WriteLine("-----------");
-            //}
+            foreach (var car in query2.Take(10))
+            {
+                Console.WriteLine(car.Name + " : " + car.Combined + " => " + car.Headquarters);
+
+                Console.WriteLine("-----------");
+            }
 
             //Join with more than one comPosite key 
 
@@ -77,15 +77,15 @@ namespace Joining_Grouping_and_Aggregating
                          group car by car.Manufacturer into m
                          orderby m.Key select m;
 
-            //foreach (var car in query6)
-            //{
-            //    Console.WriteLine($"{car.Key} has {car.Count()} cars");
-            //    foreach (var item in car/*.OrderByDescending(c=>c.Combined)*/)
-            //    {
-            //        Console.WriteLine(item.Name);
-            //    }
-            //    Console.WriteLine("----------");
-            //}
+            foreach (var car in query6)
+            {
+                Console.WriteLine($"{car.Key} has {car.Count()} cars");
+                foreach (var item in car/*.OrderByDescending(c=>c.Combined)*/)
+                {
+                    Console.WriteLine(item.Name);
+                }
+                Console.WriteLine("----------");
+            }
 
             //GroupJoin 
 
@@ -109,7 +109,26 @@ namespace Joining_Grouping_and_Aggregating
                 }
                 Console.WriteLine("----------");
             }
+            //---------------------------------------------------
 
+            //Aggragating
+
+
+
+            var query8 = from car in cars
+                         group car by car.Manufacturer into CarGroup
+                         select new
+                         {
+                             Name = CarGroup.Key,
+                             Max = CarGroup.Max(c => c.Combined),
+                             Min = CarGroup.Min(c => c.Combined),
+                             Ave = CarGroup.Average(c => c.Combined)
+                         };
+            foreach (var car in query8)
+            {
+                Console.WriteLine(car.Name); 
+                Console.WriteLine(car.Max+" "+car.Min+" "+car.Ave);
+            }
 
 
         }
