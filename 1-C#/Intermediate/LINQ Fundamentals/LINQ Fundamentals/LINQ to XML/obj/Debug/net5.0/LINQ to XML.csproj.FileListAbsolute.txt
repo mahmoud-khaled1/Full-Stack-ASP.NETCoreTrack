@@ -1,0 +1,18 @@
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ to XML\bin\Debug\net5.0\LINQ to XML.exe
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ to XML\bin\Debug\net5.0\LINQ to XML.deps.json
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ to XML\bin\Debug\net5.0\LINQ to XML.runtimeconfig.json
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ to XML\bin\Debug\net5.0\LINQ to XML.runtimeconfig.dev.json
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ to XML\bin\Debug\net5.0\LINQ to XML.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ to XML\bin\Debug\net5.0\ref\LINQ to XML.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ to XML\bin\Debug\net5.0\LINQ to XML.pdb
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ to XML\obj\Debug\net5.0\LINQ to XML.csprojAssemblyReference.cache
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ to XML\obj\Debug\net5.0\LINQ to XML.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ to XML\obj\Debug\net5.0\LINQ to XML.AssemblyInfoInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ to XML\obj\Debug\net5.0\LINQ to XML.AssemblyInfo.cs
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ to XML\obj\Debug\net5.0\LINQ to XML.csproj.CoreCompileInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ to XML\obj\Debug\net5.0\LINQ to XML.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ to XML\obj\Debug\net5.0\ref\LINQ to XML.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ to XML\obj\Debug\net5.0\LINQ to XML.pdb
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ to XML\obj\Debug\net5.0\LINQ to XML.genruntimeconfig.cache
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ to XML\bin\Debug\net5.0\fuel.csv
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\LINQ Fundamentals\LINQ Fundamentals\LINQ to XML\bin\Debug\net5.0\manufacturers.csv

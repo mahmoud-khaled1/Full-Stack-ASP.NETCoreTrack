@@ -114,7 +114,6 @@ namespace Joining_Grouping_and_Aggregating
             //Aggragating
 
 
-
             var query8 = from car in cars
                          group car by car.Manufacturer into CarGroup
                          select new
