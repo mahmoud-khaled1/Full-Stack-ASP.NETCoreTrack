@@ -1,0 +1,17 @@
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\Dates and Times in .NET\DateAndTime\DateAndTime\bin\Debug\net5.0\StockData.csv
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\Dates and Times in .NET\DateAndTime\DateAndTime\bin\Debug\net5.0\DateAndTime.exe
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\Dates and Times in .NET\DateAndTime\DateAndTime\bin\Debug\net5.0\DateAndTime.deps.json
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\Dates and Times in .NET\DateAndTime\DateAndTime\bin\Debug\net5.0\DateAndTime.runtimeconfig.json
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\Dates and Times in .NET\DateAndTime\DateAndTime\bin\Debug\net5.0\DateAndTime.runtimeconfig.dev.json
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\Dates and Times in .NET\DateAndTime\DateAndTime\bin\Debug\net5.0\DateAndTime.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\Dates and Times in .NET\DateAndTime\DateAndTime\bin\Debug\net5.0\ref\DateAndTime.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\Dates and Times in .NET\DateAndTime\DateAndTime\bin\Debug\net5.0\DateAndTime.pdb
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\Dates and Times in .NET\DateAndTime\DateAndTime\obj\Debug\net5.0\DateAndTime.csprojAssemblyReference.cache
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\Dates and Times in .NET\DateAndTime\DateAndTime\obj\Debug\net5.0\DateAndTime.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\Dates and Times in .NET\DateAndTime\DateAndTime\obj\Debug\net5.0\DateAndTime.AssemblyInfoInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\Dates and Times in .NET\DateAndTime\DateAndTime\obj\Debug\net5.0\DateAndTime.AssemblyInfo.cs
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\Dates and Times in .NET\DateAndTime\DateAndTime\obj\Debug\net5.0\DateAndTime.csproj.CoreCompileInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\Dates and Times in .NET\DateAndTime\DateAndTime\obj\Debug\net5.0\DateAndTime.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\Dates and Times in .NET\DateAndTime\DateAndTime\obj\Debug\net5.0\ref\DateAndTime.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\Dates and Times in .NET\DateAndTime\DateAndTime\obj\Debug\net5.0\DateAndTime.pdb
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\1-C#\Intermediate\Dates and Times in .NET\DateAndTime\DateAndTime\obj\Debug\net5.0\DateAndTime.genruntimeconfig.cache

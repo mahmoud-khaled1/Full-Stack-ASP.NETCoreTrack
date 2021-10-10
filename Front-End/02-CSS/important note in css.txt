@@ -1,0 +1,53 @@
+﻿-There are three ways of inserting a style sheet:-
+
+	 1- inline (in line of element  we  can write syntax )
+                    2- internal(in the same page of html page in head ->style )
+                    3- external(in different page and link it in the html page )
+
+-------------------------------------------------------------------------------------------------------------------
+- we have the following selector that make us access the element in Css page  .
+
+ 1-sample selector(id,class,name)
+		    p{ color:blue;} every paragraph in website make font color blue 
+                             	    .p1{color:blue;} every element that has class="p1" make font blue
+                          	     #p2{color:blue;} every element that has id="p2" make font blue
+                          	     p.p1{color:blue;} every element in paragraph that has class="p1" make font blue
+		    .p1 p{color:blue;} every element that has class="p1" make every paragraph font in it blue.
+	   	    *{text-align=center ;} make all text in body in tee center of page 
+		     p,h1{color:blue;} make all paragraph and h1 font blue .
+  
+2-Combinator selector(select element(s) based on a relationship with other elements ) 
+		    1-space   ( decendant  selectors) للوصول لكل الابناء  والاحفاد 
+			  div p {color:blue;}  every paragraph in div make font blue.
+			   
+	                        2- >  (child selectors) للوصول للابناء فقط
+			div>p{color:blue;} every paragraphs(childs not child and decendant ) in the div make font blue   
+
+		    3- + ( adjacent sibling selectors)للوصول لاول عنصر بعد عنصر معين 
+			div+p{color:blue;} first paragraph after the div  make  font blue and the paragraph not inside any element
+
+		   4-  ~  ( general sibling selectors)للوصول لكل العناصر بعد عنصر معين 
+			div~p{color:blue} All paragraph after the div  make  font blue and the paragraph not inside any element 
+
+3-Pesudo-class selectors(select element based on specific state )هنا بعمل استايل معين بناءا علي حاله العنصر , لاحظ الترتيب مهم هنا  
+		    a:link{color:red;}  any link that not visited  make color red .
+		    a:visited{color:green} any visited link  make color green .
+	                       a:hover{color: blue;} any link that hover on it make color blue .
+	                       a:active{color:black;} any link that selected make color black.
+	                       div:hover p{display:block;} when i hover the div ,then the paragraph will show (note paragraph is display:none in the previous )
+		    div:hover p:first-child{display:block;}when i hover the div ,then the first paragraph will show (note paragraph is display:none in the previous )
+		    input:focus{background-color:red;} any input that focus on it make background-color red .
+
+4-Pesudo-elements selectors(select and style part of element) وهو اني بطبق استايل علي جزء معين من العنصر 
+		  p::first-letter{font-size:50px;} first letter of all paragraphs make font-size=50px .
+	                     P::after{content:'this text from css'} after all paragraph append this text in the same line .
+
+5-Attribute selectors(select elements based on attribute or value of attribute ) عنصر بناءا علي الاتربيوت فاليوselect وهو اني ا 
+		a[target]{background-color:red;} all links that have attribute target make background-color = red 
+		a[target="_blank"]{background-color:red;} all links that have attribute target="_blank" make background-color = red 
+		[title~=css]{background-color:red;} any element that has title separate with space  and contain css make background-color = red  (EX: title=mah css)
+		[class|=general]{background-color:red} any element that has class contain word general only or general after - mark make background-color = red  (EX:class="general",class="mah-general")
+		[class^=general]{background-color:red} any element that has class contain word general in the start make  background-color = red  (EX::class="general",class="general-asd")
+		[class$=general]{background-color:red} any element that has class contain word general in the end make background-color = red  
+		[class*=general]{background-color:red} any element that has class contain word general in any format make background-color = red  
+-------------------------------------------------------------------------------------------------------------------
