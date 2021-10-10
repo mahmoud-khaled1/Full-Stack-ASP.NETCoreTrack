@@ -1,6 +1,6 @@
 ﻿-There are three ways of inserting a style sheet:-
 
-	 1- inline (in line of element  we  can write syntax )
+	            1- inline (in line of element  we  can write syntax )
                     2- internal(in the same page of html page in head ->style )
                     3- external(in different page and link it in the html page )
 
