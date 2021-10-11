@@ -1,0 +1,13 @@
+D:\Git_Projects\C-9.0-in-a-Nutshell-Book\Chapter 4\Delegates\Delegates\Delegates\bin\Debug\netcoreapp3.1\Delegates.exe
+D:\Git_Projects\C-9.0-in-a-Nutshell-Book\Chapter 4\Delegates\Delegates\Delegates\bin\Debug\netcoreapp3.1\Delegates.deps.json
+D:\Git_Projects\C-9.0-in-a-Nutshell-Book\Chapter 4\Delegates\Delegates\Delegates\bin\Debug\netcoreapp3.1\Delegates.runtimeconfig.json
+D:\Git_Projects\C-9.0-in-a-Nutshell-Book\Chapter 4\Delegates\Delegates\Delegates\bin\Debug\netcoreapp3.1\Delegates.runtimeconfig.dev.json
+D:\Git_Projects\C-9.0-in-a-Nutshell-Book\Chapter 4\Delegates\Delegates\Delegates\bin\Debug\netcoreapp3.1\Delegates.dll
+D:\Git_Projects\C-9.0-in-a-Nutshell-Book\Chapter 4\Delegates\Delegates\Delegates\bin\Debug\netcoreapp3.1\Delegates.pdb
+D:\Git_Projects\C-9.0-in-a-Nutshell-Book\Chapter 4\Delegates\Delegates\Delegates\obj\Debug\netcoreapp3.1\Delegates.csprojAssemblyReference.cache
+D:\Git_Projects\C-9.0-in-a-Nutshell-Book\Chapter 4\Delegates\Delegates\Delegates\obj\Debug\netcoreapp3.1\Delegates.AssemblyInfoInputs.cache
+D:\Git_Projects\C-9.0-in-a-Nutshell-Book\Chapter 4\Delegates\Delegates\Delegates\obj\Debug\netcoreapp3.1\Delegates.AssemblyInfo.cs
+D:\Git_Projects\C-9.0-in-a-Nutshell-Book\Chapter 4\Delegates\Delegates\Delegates\obj\Debug\netcoreapp3.1\Delegates.csproj.CoreCompileInputs.cache
+D:\Git_Projects\C-9.0-in-a-Nutshell-Book\Chapter 4\Delegates\Delegates\Delegates\obj\Debug\netcoreapp3.1\Delegates.dll
+D:\Git_Projects\C-9.0-in-a-Nutshell-Book\Chapter 4\Delegates\Delegates\Delegates\obj\Debug\netcoreapp3.1\Delegates.pdb
+D:\Git_Projects\C-9.0-in-a-Nutshell-Book\Chapter 4\Delegates\Delegates\Delegates\obj\Debug\netcoreapp3.1\Delegates.genruntimeconfig.cache

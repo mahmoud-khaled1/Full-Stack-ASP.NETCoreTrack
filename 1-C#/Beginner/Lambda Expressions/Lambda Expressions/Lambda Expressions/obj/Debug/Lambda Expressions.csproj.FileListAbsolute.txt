@@ -1,0 +1,7 @@
+D:\Git_Projects\C-9.0-in-a-Nutshell-Book\Chapter 4\Lambda Expressions\Lambda Expressions\Lambda Expressions\bin\Debug\Lambda Expressions.exe.config
+D:\Git_Projects\C-9.0-in-a-Nutshell-Book\Chapter 4\Lambda Expressions\Lambda Expressions\Lambda Expressions\bin\Debug\Lambda Expressions.exe
+D:\Git_Projects\C-9.0-in-a-Nutshell-Book\Chapter 4\Lambda Expressions\Lambda Expressions\Lambda Expressions\bin\Debug\Lambda Expressions.pdb
+D:\Git_Projects\C-9.0-in-a-Nutshell-Book\Chapter 4\Lambda Expressions\Lambda Expressions\Lambda Expressions\obj\Debug\Lambda Expressions.csprojAssemblyReference.cache
+D:\Git_Projects\C-9.0-in-a-Nutshell-Book\Chapter 4\Lambda Expressions\Lambda Expressions\Lambda Expressions\obj\Debug\Lambda Expressions.csproj.CoreCompileInputs.cache
+D:\Git_Projects\C-9.0-in-a-Nutshell-Book\Chapter 4\Lambda Expressions\Lambda Expressions\Lambda Expressions\obj\Debug\Lambda Expressions.exe
+D:\Git_Projects\C-9.0-in-a-Nutshell-Book\Chapter 4\Lambda Expressions\Lambda Expressions\Lambda Expressions\obj\Debug\Lambda Expressions.pdb
