@@ -51,21 +51,4 @@
 		[class$=general]{background-color:red} any element that has class contain word general in the end make background-color = red  
 		[class*=general]{background-color:red} any element that has class contain word general in any format make background-color = red  
 -------------------------------------------------------------------------------------------------------------------
--Order of selectors in CSS :-
-----------
-" First Sum=0; "
-id ---> 100
-attribute , class , pesudo-class ---->10
-element name  , pesudo element --->1
-note : * ---> has low specifity 
-note : id ----> is high specifity 
------------
-Ex) what is the style will be execute for h1 ?
 
-#firstDiv h1 {color:red;}  -------> Here sum=100+1=101
-
-h1{color:blue};   ------> here sum=1 
-
-101>1 then first one will execute color:red;
-
---------------------------------------------------------------------------------------------------------------------
