@@ -51,4 +51,5 @@
 		[class$=general]{background-color:red} any element that has class contain word general in the end make background-color = red  
 		[class*=general]{background-color:red} any element that has class contain word general in any format make background-color = red  
 -------------------------------------------------------------------------------------------------------------------
+for more information visit : https://www.w3schools.com/css/default.asp
 
