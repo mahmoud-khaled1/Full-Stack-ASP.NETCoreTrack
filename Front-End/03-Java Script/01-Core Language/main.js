@@ -115,3 +115,54 @@
 // document.write(markUp.repeat(4)); // repeat it 4 time
 
 //------------------------------------------------------------------------------
+
+/* Unary Plus And Negation Operators */
+
+// console.log(100);
+// console.log("100");
+// console.log(typeof "100"); // string
+// console.log(typeof "-100"); //string
+// console.log(typeof +"100"); //number 
+// console.log(typeof +"0xff"); //number 
+// console.log(+"0xff"); //255
+// console.log(+true); // 1
+// console.log(+false);//0
+// console.log(true); //true
+// console.log(typeof -"100"); //number 
+// console.log(-"-100"); //100
+// console.log(Number("88")); //88  , convert string to number  
+// console.log(false-true);//0-1=-1
+// console.log(20+true);//21
+//------------------------------------------------------------------------------
+
+/* Number */
+
+// console.log(1000000);//1000000
+// console.log(1_000_000)//1000000
+// console.log(1e6);//1000000
+// console.log(10**6); //1000000
+// console.log(2**2);//4
+// console.log(Math.pow(2,3));//8
+// console.log(Number.MAX_SAFE_INTEGER); // max safe number you can use .
+
+// console.log(typeof (100).toString()); //string  
+// console.log(typeof 100..toString()); //string  
+
+// console.log(100.555.toFixed(1)); //100.6 (as string) 
+
+// console.log(typeof parseInt("120")); // number 
+// console.log( parseInt("120 mahmoud ")); // 120
+
+// console.log(Number.isInteger(100));// true 
+//------------------------------------------------------------------------------
+
+/* Math  */
+
+console.log(Math.round(99.2)); //99
+console.log(Math.ceil(99.2)); //100
+console.log(Math.floor(99.2));//99
+console.log(Math.max(1,25,88,9,9,9,6,66244545,-58));//66244545
+console.log(Math.min(1,25,88,9,9,9,6,66244545,-58));//-58
+console.log(Math.pow(2,4));//16
+console.log(Math.random());// get random number 
+console.log(Math.trunc(99.2));//99 get number without ant floating points
