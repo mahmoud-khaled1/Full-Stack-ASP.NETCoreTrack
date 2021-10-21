@@ -25,8 +25,8 @@ console.log( typeof true);//boolean
 console.log( typeof null); //object
 //------------------------------------------------------------------------------
 
-/*  Variables  
-    note : Java Script is Loosely typed language so we don't need to specifiy type of variable 
+/*  Variables
+    note : Java Script is Loosely typed language so we don't need to specifiy type of variable
 */
 /*
   Var
@@ -204,15 +204,15 @@ console.log(str.endsWith("mah"));//false
 
 /*
   ==  Equal
-  !=  Not Equal 
+  !=  Not Equal
 
-  === Identical 
-  !== Not Identical 
+  === Identical
+  !== Not Identical
 
   > Lagrer than
-  >= Larger than or equal 
+  >= Larger than or equal
 
-  < Smaller than 
+  < Smaller than
   <= Smaller than or equal
 */
 
@@ -229,8 +229,8 @@ console.log(typeof"mahmoud"  == typeof"khaled");//True
 /* Comparison Operators  */
 
 /*
-  ! Not 
-  && And 
+  ! Not
+  && And
   || Or
 */
 
@@ -309,3 +309,83 @@ console.log(price || 200); //200 ==> if price is null or undefined or 0 or false
 console.log(price??200);//200 ==> if price is null or undefined then print 200.
 //------------------------------------------------------------------------------
 
+/* Array */
+
+let myFriends = [
+  "aly",
+  "ahmed",
+  "mahmoud",
+  "asd",
+  ["marawan", "Khaled", "Abdo"],
+];
+
+console.log(myFriends[1]); //ahmed
+console.log(myFriends[0][2]); //y
+console.log(myFriends[4]); //(3) ['marawan', 'Khaled', 'Abdo']
+console.log(myFriends[4][1]); //khaled
+console.log(myFriends[4][1][2]); //a
+
+console.log(myFriends); //(5) ['aly', 'ahmed', 'mahmoud', 'asd', Array(3)]
+myFriends[0] = "temp"; //change aly to temp
+console.log(myFriends); //(5) ['temp', 'ahmed', 'mahmoud', 'asd', Array(3)]
+myFriends[4] = "sameh";
+console.log(myFriends); //(5) ['temp', 'ahmed', 'mahmoud', 'asd', 'sameh']
+console.log(Array.isArray(myFriends)); //true
+
+console.log(myFriends.length); //4
+console.log(myFriends[587]); //undefined
+myFriends[5] = "fff";
+console.log(myFriends); //(6)[("temp", "ahmed", "mahmoud", "asd", "sameh", "fff")];
+myFriends[myFriends.length] = "uuu";
+console.log(myFriends); //(7)[("temp", "ahmed", "mahmoud", "asd", "sameh", "fff","uu")];
+myFriends.length = 3; //make the array length =3
+console.log(myFriends); //(3) ['temp', 'ahmed', 'mahmoud']
+
+let myArray = ["one", "Two", "Three", "Four"];
+
+myArray.unshift("Zero"); //insert new elements in the start of the Array .
+console.log(myArray); //(5) ['Zero', 'one', 'Two', 'Three', 'Four']
+
+myArray.push("Five", "Six"); //Add new elements in the end of array
+console.log(myArray); //(7) ['Zero', 'one', 'Two', 'Three', 'Four', 'Five', 'Six']
+
+let first = myArray.shift(); //Removes the first element from an array and returns it.
+console.log(myArray); //(6) ['one', 'Two', 'Three', 'Four', 'Five', 'Six']
+
+let last = myArray.pop(); //Removes the last element from an array and returns it.
+console.log(myArray); //(5) ['one', 'Two', 'Three', 'Four', 'Five']
+
+let myArray2 = [1, 2, 9, 8, 7, 4];
+
+console.log(myArray2.indexOf(9)); //2
+console.log(myArray2.indexOf(9, 3)); //-1 ==> start from index 3 to search about number 9 in array
+
+console.log(myArray2.lastIndexOf(9)); //2 ==> search from end to beginning
+
+console.log(myArray2.includes(9)); //true ===>search if number 9 is in array or not
+
+let myArray3 = [1, 5, 4, 87, 10000, 748];
+myArray3.sort(); //Sort Array
+console.log(myArray3); //(6) [1, 10000, 4, 5, 748, 87]
+console.log(myArray3.reverse()); //(6) [87, 748, 5, 4, 10000, 1]
+
+let myArray4 = ["Ahemd", "Mohamed", "Aly", "Mahmoud"];
+console.log(myArray4.slice(1, 3)); //(2) ['Mohamed', 'Aly']
+console.log(myArray4); //(4) ['Ahemd', 'Mohamed', 'Aly', 'Mahmoud']
+console.log(myArray4.slice(-2)); //(2) ['Aly', 'Mahmoud']
+
+myArray4.splice(0, 0, "samer", "samara"); // add the elements from 0 index
+console.log(myArray4); //(6) ['samer', 'samara', 'Ahemd', 'Mohamed', 'Aly', 'Mahmoud']
+
+myArray4.splice(0, 2); // start from index 0 and delete two elemet fron it
+console.log(myArray4); //(4) ['Ahemd', 'Mohamed', 'Aly', 'Mahmoud']
+
+let arr1 = ["aly", "ahemd", "mohamed"];
+let arr2 = ["mahmoud", "khaled", "Moahemd"];
+
+let concatArray = arr1.concat(arr2);
+console.log(concatArray); //(6) ['aly', 'ahemd', 'mohamed', 'mahmoud', 'khaled', 'Moahemd']
+
+console.log(concatArray.join("|")); //aly|ahemd|mohamed|mahmoud|khaled|Moahemd
+
+// //------------------------------------------------------------------------------
