@@ -578,3 +578,229 @@ console.log(sayMessage("Osama", "Mohamed")); //Hello Osama Mohamed
 //Arrow Function : We used it if the block of code in function is one line
 let print = () => "Hello From Arrow fun";
 console.log(print()); //Hello From Arrow fun
+
+// //------------------------------------------------------------------------------
+
+// /* Higher Order Functions */
+
+/*
+  Higher Order Functions
+  ---> is a function that accepts functions as parameters and/or returns a function.
+*/
+
+/*
+- Map
+  --- method creates a new array
+  --- populated with the results of calling a provided function on every element
+  --- in the calling array.
+
+  Syntax map(callBackFunction(Element, Index, Array) { }, thisArg)
+  - Element => The current element being processed in the array.
+  - Index => The index of the current element being processed in the array.
+  - Array => The Current Array
+
+  Notes
+  - Map Return A New Array
+
+  Examples
+  - Anonymous Function
+  - Named Function
+
+*/
+let myNums = [1, 2, 3, 4, 5, 6];
+let newArray = [];
+
+for (let i = 0; i < myNums.length; i++) {
+  newArray.push(myNums[i] + myNums[i]);
+}
+
+console.log(newArray);
+
+// Same Idea With Map
+
+let addSelf = myNums.map(function (element, index, arr) {
+  return element + element;
+}, 10);
+console.log(addSelf);
+
+// Same Idea
+let addSelf2 = myNums.map((a) => a + a);
+
+console.log(addSelf2);
+
+//Same idea that pass function as parms
+function addition(ele) {
+  return ele + ele;
+}
+let add = myNums.map(addition);
+console.log(add);
+
+// examples
+// ex)Swap Case
+let swappingCase = "maHmOuD";
+
+let ans = swappingCase
+  .split("")
+  .map(function (element) {
+    return element === element.toUpperCase()
+      ? element.toLocaleLowerCase()
+      : element.toLocaleUpperCase();
+  })
+  .join("");
+console.log(ans); //MAhMoUd
+
+//ex) if num if positive make negative and if negative make it positive
+let invertedNumber = [1, -7, 878, -12, -9, 66];
+
+let ans2 = invertedNumber.map(function (e) {
+  return e * -1;
+});
+console.log(ans2); //(6) [-1, 7, -878, 12, 9, -66]
+
+//ex)ignore Numbers from string
+let ignoreNumber = "ma7moud87";
+
+let ans3 = ignoreNumber
+  .split("")
+  .map(function (e) {
+    return isNaN(parseInt(e)) ? e : "";
+  })
+  .join("");
+
+console.log(ans3); //mamoud
+
+// same answer with arrow function
+let ans4 = ignoreNumber
+  .split("")
+  .map((e) => (isNaN(parseInt(e)) == true ? e : ""))
+  .join("");
+console.log(ans4); //mamoud
+
+/*
+  - Filter
+  --- method creates a new array
+  --- with all elements that pass the test implemented by the provided function.
+
+  Syntax filter(callBackFunction(Element, Index, Array) { }, thisArg)
+  - Element => The current element being processed in the array.
+  - Index => The index of the current element being processed in the array.
+  - Array => The Current Array
+*/
+
+// Get Friends With Name Starts With A
+let friends = ["Ahmed", "Sameh", "Sayed", "Asmaa", "Amgad", "Israa"];
+
+let filterAns1 = friends.filter(function (f) {
+  return f.startsWith("A") ? true : false;
+});
+console.log(filterAns1); //(3) ['Ahmed', 'Asmaa', 'Amgad']
+
+// Get Even Numbers Only
+let numbers = [11, 20, 2, 5, 17, 10];
+
+let evenNumbers = numbers.filter(function (el) {
+  return el % 2 === 0;
+});
+
+console.log(evenNumbers); //(3) [20, 2, 10]
+
+// Filter Words More Than 4 Characters
+let sentence = "I Love Foood Code Too Playing Much";
+
+let filterAns2 = sentence
+  .split(" ")
+  .filter(function (w) {
+    return w.length <= 4;
+  })
+  .join(" ");
+console.log(filterAns2); //I Love Code Too Much
+
+// Ignore Numbers
+let ignoreNumbers = "Elz123er4o";
+
+let ign = ignoreNumbers
+  .split("")
+  .filter(function (ele) {
+    return isNaN(parseInt(ele));
+  })
+  .join("");
+
+console.log(ign); //Elzero
+
+// Filter Strings + Multiply
+let mix = "A13BS2ZX";
+
+let mixedContent = mix
+  .split("")
+  .filter(function (ele) {
+    return !isNaN(parseInt(ele));
+  })
+  .map(function (ele) {
+    return ele * ele;
+  })
+  .join("");
+
+console.log(mixedContent); //194
+/*
+  - Reduce
+  --- method executes a reducer function on each element of the array,
+  --- resulting in a single output value.
+
+  Syntax
+  reduce(callBackFunc(Accumulator, Current Val, Current Index, Source Array) { }, initialValue)
+  - Accumulator => the accumulated value previously returned in the last invocation
+  - Current Val => The current element being processed in the array
+  - Index => The index of the current element being processed in the array.
+  ---------- Starts from index 0 if an initialValue is provided.
+  ---------- Otherwise, it starts from index 1.
+  - Array => The Current Array
+*/
+let nums = [10, 20, 15, 30];
+
+let add1 = nums.reduce(function (acc, current, index, arr) {
+  return acc + current;
+});
+console.log(add1); //75
+
+// find Longest Word from array
+
+let theBiggest = [
+  "Bla",
+  "Propaganda",
+  "Other",
+  "AAA",
+  "Battery",
+  "Test",
+  "Propaganda_Two",
+];
+
+let reduceAns1 = theBiggest.reduce(function (acc, curr, index, arr) {
+  return acc.length > curr.length ? acc : curr;
+});
+console.log(reduceAns1); //Propaganda_Two
+
+//remove Chars @
+let removeChars = ["E", "@", "@", "L", "Z", "@", "@", "E", "R", "@", "O"];
+
+let reduceAns2 = removeChars.reduce(function (acc, cur, index, arr) {
+  return cur != "@" ? acc + cur : acc;
+});
+console.log(reduceAns2); //ELZERO
+
+/*
+  - forEach
+  --- method executes a provided function once for each array element.
+
+  Syntax forEach(callBackFunction(Elsement, Index, Array) { }, thisArg)
+  - Element => The current element being processed in the array.
+  - Index => The index of the current element being processed in the array.
+  - Array - The Current Array
+
+  Note
+  - Doesnt Return Anything [Undefined]
+  - Break Will Not Break The Loop
+*/
+
+reduceAns2.split("").forEach((element) => {
+  console.log(element);
+}); // E L Z E R O
