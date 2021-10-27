@@ -804,3 +804,178 @@ console.log(reduceAns2); //ELZERO
 reduceAns2.split("").forEach((element) => {
   console.log(element);
 }); // E L Z E R O
+//------------------------------------------------------------------------------
+
+/* oibjects */
+/*
+  Object
+  - Intro and What Is Object
+  - Testing Window Object
+  - Accessing Object
+*/
+
+let myVar = "country";
+let user1 = {
+  // Properties
+  theName: "Osama",
+  theAge: 38,
+  "country of": "Egypt",
+  country: "Egypt",
+  // Methods
+  sayHello: function () {
+    return `Hello`;
+  },
+};
+console.log(user1.theName); //Osama
+console.log(user1.theAge); //38
+console.log(user1.sayHello()); //Hello  (Dot Notation )
+console.log(user1["country of"]); //Egypt   (Bracket Notation)
+console.log(user1.myVar); // undefined
+console.log(user1[myVar]); // Egypt  (Dynamic Property Name)
+
+// Nested Object
+let available = true;
+let user = {
+  name: "Osama",
+  age: 38,
+  skills: ["HTML", "CSS", "JS"],
+  available: false,
+  addresses: {
+    ksa: "Riyadh",
+    egypt: {
+      one: "Cairo",
+      two: "Giza",
+    },
+  },
+  checkAv: function () {
+    if (user.available === true) {
+      return `Free For Work`;
+    } else {
+      return `Not Free`;
+    }
+  },
+};
+console.log(user.name); //Osama
+console.log(user.age); //38
+console.log(user.skills); //(3) ['HTML', 'CSS', 'JS']
+console.log(user.skills.join(" | ")); //HTML | CSS | JS
+console.log(user.skills[2]); //JS   Access With Index
+console.log(user.addresses.ksa); //Riyadh
+console.log(user.addresses.egypt.one); //Cairo
+console.log(user["addresses"].egypt.one); //Cairo
+console.log(user["addresses"]["egypt"]); //{one: 'Cairo', two: 'Giza'}
+console.log(user["addresses"]["egypt"]["one"]); //Cairo
+console.log(user.checkAv()); // Not Free
+
+// Create With New Keyword new Object()
+let user2 = new Object({
+  address: "qena",
+});
+
+console.log(user2); //{}
+
+user2.age = 28; //add property to object
+user2["country"] = "Egypt"; //add property to object
+user2.sayHello = function () {
+  return `hello !`;
+}; // add method to object user2
+
+console.log(user2); //{age: 28, country: 'Egypt'}
+console.log(user2.age); //28
+console.log(user2.country); //Egypt
+console.log(user2.sayHello()); //hello !
+
+/*
+  Function this Keyword
+  - this Introduction
+  - this Inside Object Method
+  --- When a function is called as a method of an object,
+  --- its this is set to the object the method is called on.
+  - Global Object
+  - Test Variables With Window And This
+  - Global Context
+  - Function Context
+
+  Search
+  - Strict Mode
+*/
+console.log(this); //Window
+console.log(this === window); //true
+
+myVar = 100;
+console.log(window.myVar); //100
+console.log(this.myVar); //100
+
+document.getElementById("show").onclick = function () {
+  console.log(this);
+}; // this refer to button show
+
+let user4 = {
+  age: 38,
+  ageInDays: function () {
+    console.log(this);
+    return this.age * 365;
+  },
+};
+
+console.log(user4.age); //38
+console.log(user4.ageInDays()); //{age: 38, ageInDays: ƒ} 13870
+
+let user5 = {
+  age: 20,
+  doubleAge: function () {
+    return this.age * 2;
+  },
+};
+
+console.log(user5);
+console.log(user5.age);
+console.log(user5.doubleAge());
+
+let obj = Object.create({});
+obj.a = 100;
+
+console.log(obj);
+
+let copyObj = Object.create(user5);
+
+copyObj.age = 50;
+
+console.log(copyObj); //{age: 50}
+console.log(copyObj.age); //50
+console.log(copyObj.doubleAge()); //100
+
+/*
+  Object
+  - Create Object With assign Method
+*/
+
+let obj1 = {
+  prop1: 1,
+  meth1: function () {
+    return this.prop1;
+  },
+};
+
+let obj2 = {
+  prop2: 2,
+  meth2: function () {
+    return this.prop2;
+  },
+};
+
+let targetObject = {
+  prop1: 100,
+  prop3: 3,
+};
+
+let finalObject = Object.assign(targetObject, obj1, obj2);
+
+finalObject.prop1 = 200;
+finalObject.prop4 = 4;
+
+console.log(finalObject);
+
+let newObject = Object.assign({}, obj1, { prop5: 5, prop6: 6 });
+
+console.log(newObject);
