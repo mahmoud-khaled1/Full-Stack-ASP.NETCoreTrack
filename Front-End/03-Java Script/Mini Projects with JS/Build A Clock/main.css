@@ -41,6 +41,7 @@ body {
 }
 .clock .number3 {
   --rotation: 90deg;
+  color: red;
 }
 .clock .number4 {
   --rotation: 120deg;
@@ -50,6 +51,7 @@ body {
 }
 .clock .number6 {
   --rotation: 180deg;
+  color: red;
 }
 .clock .number7 {
   --rotation: 210deg;
@@ -59,12 +61,16 @@ body {
 }
 .clock .number9 {
   --rotation: 270deg;
+  color: red;
 }
 .clock .number10 {
   --rotation: 300deg;
 }
 .clock .number11 {
   --rotation: 330deg;
+}
+.clock .number12 {
+  color: red;
 }
 .clock .hand {
   --rotation: 0;
@@ -108,4 +114,15 @@ body {
   width: 10px;
   height: 35%;
   background-color: black;
+}
+
+.Line {
+  color: seagreen;
+  width: 10px;
+  height: 500px;
+  position: relative;
+  background-color: sienna;
+  bottom: 50%;
+  left: 10%;
+  top: 80%;
 }
