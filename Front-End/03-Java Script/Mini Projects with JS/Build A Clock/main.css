@@ -116,13 +116,3 @@ body {
   background-color: black;
 }
 
-.Line {
-  color: seagreen;
-  width: 10px;
-  height: 500px;
-  position: relative;
-  background-color: sienna;
-  bottom: 50%;
-  left: 10%;
-  top: 80%;
-}
