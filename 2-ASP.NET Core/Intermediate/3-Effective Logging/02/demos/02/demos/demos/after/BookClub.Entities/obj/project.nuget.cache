@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "dy1Pa3f/va6CJdifc8fKHWawpGwshY/nNTUS+O4Q9vxGMs+q3cCYR9ObiI/yxVdhVZ5jU3IZJi3L4Y/7sCp59A==",
+  "success": true,
+  "projectFilePath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\2-ASP.NET Core\\Intermediate\\3-Effective Logging\\02\\demos\\02\\demos\\demos\\after\\BookClub.Entities\\BookClub.Entities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\20102\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\20102\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,9 @@
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\2-ASP.NET Core\Intermediate\3-Effective Logging\02\demos\02\demos\demos\after\BookClub.Entities\bin\Debug\netstandard2.0\BookClub.Entities.deps.json
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\2-ASP.NET Core\Intermediate\3-Effective Logging\02\demos\02\demos\demos\after\BookClub.Entities\bin\Debug\netstandard2.0\BookClub.Entities.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\2-ASP.NET Core\Intermediate\3-Effective Logging\02\demos\02\demos\demos\after\BookClub.Entities\bin\Debug\netstandard2.0\BookClub.Entities.pdb
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\2-ASP.NET Core\Intermediate\3-Effective Logging\02\demos\02\demos\demos\after\BookClub.Entities\obj\Debug\netstandard2.0\BookClub.Entities.csprojAssemblyReference.cache
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\2-ASP.NET Core\Intermediate\3-Effective Logging\02\demos\02\demos\demos\after\BookClub.Entities\obj\Debug\netstandard2.0\BookClub.Entities.AssemblyInfoInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\2-ASP.NET Core\Intermediate\3-Effective Logging\02\demos\02\demos\demos\after\BookClub.Entities\obj\Debug\netstandard2.0\BookClub.Entities.AssemblyInfo.cs
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\2-ASP.NET Core\Intermediate\3-Effective Logging\02\demos\02\demos\demos\after\BookClub.Entities\obj\Debug\netstandard2.0\BookClub.Entities.csproj.CoreCompileInputs.cache
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\2-ASP.NET Core\Intermediate\3-Effective Logging\02\demos\02\demos\demos\after\BookClub.Entities\obj\Debug\netstandard2.0\BookClub.Entities.dll
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\2-ASP.NET Core\Intermediate\3-Effective Logging\02\demos\02\demos\demos\after\BookClub.Entities\obj\Debug\netstandard2.0\BookClub.Entities.pdb
