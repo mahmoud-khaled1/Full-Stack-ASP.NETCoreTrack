@@ -77,7 +77,7 @@ reset.addEventListener("click", () => {
   });
   turn = "X";
   isgameover = false;
-  document.getElementsByClassName("Info")[0].innerText = "Turn for " + turn;
+  document.getElementsByClassName("Info")[0].innerText = "Turn For " + turn;
   document.getElementsByClassName("Info")[0].style.color = "black";
   document.querySelector(".imgbox").getElementsByTagName("img")[0].style.width =
     "0px";
