@@ -1,4 +1,2 @@
-**I made this repository for anyone want to become ASP.NetCore developer ,focus on making you Expert on Microsoft .NET Technologies such as (Asp.netCore - sql server - C# -Entity framework) as back-end 
-and some tutorial on front-end such as (HTML - CSS - JavaScript ) Keep Learning and Have Fun .**
-
-![microsoft-wall-logo](https://user-images.githubusercontent.com/43557035/139654619-1a7c7991-80cf-410b-98af-91a801a2642d.jpg)
+**Photo Of Game**
+![Capture](https://user-images.githubusercontent.com/43557035/140644936-0093a5a3-38f0-4f6a-9c61-fb9b425ef3ad.PNG)
