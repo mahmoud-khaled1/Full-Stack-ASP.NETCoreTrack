@@ -1,0 +1,14 @@
+{
+    "username":"Mahmoud",
+    "country":"Egypt",
+    "skills":[["HTML","Pugjs","Hamal"],["CSS","Sass","Less"],["JS","Babel"],["ASP.NET Core",".NetFrameWork"]],
+    "skillsProgress":[{"Html":"60%","Pugjs":"50%"},{"CSS":"80%","Saas":"60%"}],
+    "addresses":{
+        "Egypt":"Qena",
+        "USA":"California",
+        "Germany":["Munich","Asd","Tawala"]
+    },
+    "age":23,
+    "working":true,
+    "identity":null
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Training</title>
+</head>
+
+<body>
+    <script>
+        let myJsonObject = '{"username":"mahmoud","Age":23}';
+        //Convert from JSON format to javaScript object
+        let myJsObject = JSON.parse(myJsonObject);
+        console.log(typeof myJsonObject);//string
+        console.log(typeof myJsObject);//object
+
+        //Convert from javaScript object to JSON format
+        let myJsObject1 = { username: "mahmoud", Age: 23 };
+        let myJsonObject1 = JSON.stringify(myJsObject1)
+        console.log(typeof myJsObject1);//object
+        console.log(typeof myJsonObject1);//string
+
+
+    </script>
+</body>
+
+</html>
