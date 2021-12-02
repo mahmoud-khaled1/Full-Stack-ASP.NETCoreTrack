@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Training</title>
+</head>
+
+<body>
+    <!-- XMLHttpRequest (XHR) objects are used to interact with servers.
+    You can retrieve data from a URL without having to do a full page refresh. 
+    This enables a Web page to update just part of a page 
+    without disrupting what the user is doing. 
+    Despite its name, XMLHttpRequest can be used to retrieve any type of data, not just XML.-->
+
+    <button onclick="GetRepos()">Show All Repos</button>
+    <button onclick="Test()">Test Json File</button>
+    <button onclick="SendData()">Send Data </button>
+
+    <div id="show"></div>
+
+
+    <script>
+        //Make Function to Do the Request
+        function GetRepos() {
+            //Assign the request object to variable
+            var request = new XMLHttpRequest();
+            //onreadystatechange =>Function called when  readyState change 
+            request.onreadystatechange = function () {
+                /*
+                    readyState: the status of the request
+                    [0]=> request is not  initialized
+                    [1]=> server connection established
+                    [2]=> Request received
+                    [3]=> processing Request 
+                    [4]=> Request is finished and response is ready 
+                    status : Response status code 
+                    [200] => Ok
+                */
+                //if Request is finished and response is ready and status code is 200 [Ok] Get response text
+                if (this.readyState === 4 && this.status === 200) {
+                    //Returns a DOMString that contains the response to the request as text,
+                    // or null if the request was unsuccessful or has not yet been sent.
+                    console.log(this.responseText);
+                }
+            };
+            //Initializes a request.
+            //XMLHttpRequest.open(method, URL, IAsync, user(option),password(option))
+            request.open('GET', 'https://api.github.com/users/mahmoud-khaled1/repos', true);
+            //Sends the request. If the request is asynchronous (which is the default), 
+            //this method returns as soon as the request is sent.
+            request.send();
+        }
+        //----------------------------------------------------------------------------------------------
+        function Test() {
+            var request = new XMLHttpRequest();
+            request.onreadystatechange = function () {
+                if (this.readyState === 4 && this.status === 200) {
+                    // console.log(this.responseText); // As Text
+                    // console.log(JSON.parse(this.responseText)); // AS JavaScript Objects
+                    //How to loop through JSON Format objects :
+                    //First convert response text to JS object 
+                    var myJsObject = JSON.parse(this.responseText);
+                    var myText = "";
+                    //second Loo
+                    for (let index = 0; index < myJsObject.length; index++) {
+                        // console.log(myJsObject[index]);
+                        console.log(myJsObject[index].username);
+                        myText += myJsObject[index].username + "<br>";
+                    }
+                    document.getElementById('show').innerHTML = myText;
+                }
+            };
+            request.open('GET', 'Object.json', true);
+            request.send();
+        }
+        //----------------------------------------------------------------------------------------------
+        function SendData() {
+            var request = new XMLHttpRequest();
+            request.onreadystatechange = function () {
+                if (this.readyState === 4 && this.status === 200) {
+                    console.log(this.responseText); // As Text
+                }
+            };
+            request.open('POST', 'test.php', true);
+            request.setRequestHeader(
+                "Content-Type",
+                "application/x-www-form-urlencoded"
+            );
+            request.send("name=mahmoud&lastlogin=Today");
+        }
+    </script>
+</body>
+
+</html>
