@@ -9,9 +9,18 @@
 </head>
 
 <body>
+    <div id="data">
+        <div id="username"></div>
+        <div id="age"></div>
+    </div>
+
+    <hr>
+    <div id="show"></div>
+
+    <script src="jquery-3.6.0.min.js"></script>
     <script>
-        let myJsonObject = '{"username":"mahmoud","Age":23}';
         //Convert from JSON format to javaScript object
+        let myJsonObject = '{"username":"mahmoud","Age":23}';
         let myJsObject = JSON.parse(myJsonObject);
         console.log(typeof myJsonObject);//string
         console.log(typeof myJsObject);//object
@@ -22,6 +31,50 @@
         console.log(typeof myJsObject1);//object
         console.log(typeof myJsonObject1);//string
 
+        //Example :
+        let myJsonObject2 = '{"username":"mahmoud","Age":23}';
+        let myJsObject2 = JSON.parse(myJsonObject2);
+
+        document.getElementById("username").innerHTML = 'My Name : ' + myJsObject2.username;
+        document.getElementById("age").innerHTML = 'My Age : ' + myJsObject2.Age;
+
+        //Load JSON data with JQuery with getJson and show them
+        $(function () {
+            $.getJSON('index.json', function (data) {
+                //console.log(data);
+                var content = "";
+                content += data.username;
+
+                console.log(content);
+            })
+        });
+
+        //Load JSON data with JQuery with $.ajax and show them
+        $.ajax({
+            dataType: "json",
+            url: "https://api.github.com/users/mahmoud-khaled1/repos",
+            data: data,
+            caches: false,
+            processData: false,
+            contentType: false,
+            success: function (data, status) {
+                // console.log(data);
+                // console.log(status);
+                // var content = "";
+                // content += "<div>" + data.username + "</div>";
+                // $("#show").html(content);
+                // console.log(content);
+                $.each(data, function (index) {
+                    $("#show").append("<div>" + data[index].full_name + "</div>");
+                });
+
+            },
+            error: function (xhr, textStatus, err) {
+                console.log(xhr);
+                console.log(textStatus);
+                console.log(err);
+            }
+        });
 
     </script>
 </body>
