@@ -1,0 +1,79 @@
+﻿
+@model IEnumerable<OnlineShop.ViewModels.userViewModel>
+<br />
+<div>
+    <table class="table table-striped table-dark table-striped table-bordered" id="myTable">
+        <thead>
+            <tr class="table-info">
+                <th>
+                    <div class="text-info text-center">
+                        @Html.DisplayNameFor(model => model.Email)
+                    </div>
+                </th>
+                <th>
+                    <div class="text-info text-center">
+                        @Html.DisplayNameFor(model => model.Phone)
+                    </div>
+                </th>
+                <th>
+                    <div class="text-info text-center">
+                         Status
+                    </div>
+                </th>
+
+
+                <th class="text-info text-center">Operations</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="font-weight-bold text-center">@item.Email</td>
+                    <td class="font-weight-bold text-center">@item.Phone</td>
+                    <td class="font-weight-bold text-center">
+                        @if (item.lockoutDate > (DateTimeOffset)DateTime.Now && item.lockoutDate != null)
+                        {
+
+                            <span class="text-danger">Inactive</span>
+                        }
+                        else
+                        {
+                            <span class="text-info">Active</span>
+                        }
+                    </td>
+                    @*<td>Edit | Details | Delete</td>*@
+                    <td class="text-center"><partial name="_manageUserButton" model="@item.id" /></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+@section Scripts{
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script type="text/javascript">
+
+        //-------------------------
+        $(function () {
+            var save = `@TempData["save"]`;
+            var del = `@TempData["del"]`;
+            var edit = `@TempData["ediit"]`;
+            var productExist = `@TempData["productIsExist"]`;
+            if (save != null && save!="") {
+                alertify.success(save);
+            }
+            if (del != null && del != "") {
+                alertify.error(del);
+            }
+            if (edit != null && edit != "") {
+                alertify.success(edit);
+            }
+            if (productExist != null && productExist != "") {
+                alertify.error(productExist);
+            }
+        })
+
+    </script>
+}

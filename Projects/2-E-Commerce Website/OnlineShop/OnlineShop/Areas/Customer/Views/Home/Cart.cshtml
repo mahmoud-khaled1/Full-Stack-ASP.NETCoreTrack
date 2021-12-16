@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Products>
+
+<h1>Your Cart</h1>
+<br />
+
+<div class="row">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Product Type</th>
+                <th>Color</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <img width="150px" height="100px" src="~/@item.Image"/>
+                    </td>
+                    <td>@item.Name</td>
+                    <td>@item.Price</td>
+                    <td>@item.productTypes.ProductType</td>
+                    <td>@item.productColor</td>
+                    <td>
+                        <a asp-area="Customer" asp-controller="Home" asp-action="Remove" asp-route-id="@item.Id" class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div class="row">
+    <div class="col-6">
+        <a asp-action="Index" asp-controller="Home" class="btn btn-outline-info">Back Home</a>
+    </div>
+    <div class="col-6 text-right">
+        <h3>total Amount</h3>
+        <h3>Grand Total:<span class="text-danger">@Model.Sum(p=>p.Price)</span></h3>
+        <a asp-area="Customer" asp-action="Checkout" asp-controller="Order"class="btn btn-outline-success">Process to Checkout</a>
+    </div>
+</div>

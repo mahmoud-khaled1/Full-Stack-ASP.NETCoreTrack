@@ -1,0 +1,9 @@
+﻿@model string
+<div class="btn-group">
+    <a asp-action="Lockout" class="btn btn-danger" asp-route-id="@Model">
+        <i class="fas fa-user-lock"></i>
+    </a>
+    <a  asp-action="Active" class="btn btn-danger ml-4" asp-route-id="@Model">
+        <i class="fas fa-unlock-alt"></i>
+    </a>
+</div>

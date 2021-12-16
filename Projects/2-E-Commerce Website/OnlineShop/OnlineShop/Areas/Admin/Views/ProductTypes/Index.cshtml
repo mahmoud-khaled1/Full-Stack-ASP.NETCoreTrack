@@ -1,0 +1,57 @@
+﻿@model IEnumerable<ProductTypes>
+
+<div class="row">
+    <div class="col-6">
+        <h2 class="text-info">Product Type List</h2>
+    </div>
+    <div class="col-6 text-right">
+        <a asp-action="Create" class="btn btn-info"><i class="fas fa-plus"></i>&nbsp;New Product Type</a>
+    </div>
+</div>
+<br />
+<div>
+    <table class="table table-striped border">
+        <thead>
+            <tr class="table-info">
+                <th>
+                    <div class="text-info">
+                        @Html.DisplayNameFor(model => model.ProductType)
+                    </div>
+
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="font-weight-bold">@item.ProductType</td>
+                    @*<td>Edit | Details | Delete</td>*@
+                    <partial name="ButtonPartial" model="@item.Id" />
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+ @*this Script for alertifyjs*@
+@section Scripts{
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var save = `@TempData["save"]`;
+            var del = `@TempData["del"]`;
+            var edit = `@TempData["ediit"]`;
+            if (save != null && save!="") {
+                alertify.success(save);
+            }
+            if (del != null && del != "") {
+                alertify.error(del);
+            }
+            if (edit != null && edit != "") {
+                alertify.success(edit);
+            }
+        })
+    </script>
+}

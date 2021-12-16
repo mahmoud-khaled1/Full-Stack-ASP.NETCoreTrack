@@ -1,0 +1,28 @@
+﻿
+
+@section Scripts{
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            var save = `@TempData["save"]`;
+            var del = `@TempData["del"]`;
+            var edit = `@TempData["ediit"]`;
+            var productExist = `@TempData["productIsExist"]`;
+
+            if (save != null && save!="") {
+                alertify.success(save);
+            }
+            if (del != null && del != "") {
+                alertify.error(del);
+            }
+            if (edit != null && edit != "") {
+                alertify.success(edit);
+            }
+            if (productExist != null && productExist != "") {
+                alertify.error(productExist);
+            }
+        })
+
+    </script>
+}

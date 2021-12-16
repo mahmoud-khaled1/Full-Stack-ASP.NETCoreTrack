@@ -1,0 +1,94 @@
+﻿@model Products
+<h2 class="text-info">Add New Product </h2>
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+    <div class="p-4 rounded border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group row">
+            <div class="col-2 font-weight-bold">
+                <label asp-for="Name"></label>
+            </div>
+            <div class="col-5">
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-2 font-weight-bold">
+                <label asp-for="Price"></label>
+            </div>
+            <div class="col-5">
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+        </div>
+        
+
+        <div class="form-group row">
+            <div class="col-2 font-weight-bold">
+                <label asp-for="Image"></label>
+            </div>
+            <div class="col-5">
+                <input asp-for="Image" class="form-control" type="file" />
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-2 font-weight-bold">
+                <label asp-for="productColor"></label>
+            </div>
+            <div class="col-5">
+                @*<input asp-for="productColor" class="form-control" />*@
+                @Html.DropDownList("productColor", new List<SelectListItem>
+                    {
+                       new SelectListItem{ Text="Red", Value = "Red" },
+                       new SelectListItem{ Text="black", Value = "black" },
+                       new SelectListItem{ Text="silver", Value = "silver" },
+                       new SelectListItem{ Text="white", Value = "white" },
+                       new SelectListItem{ Text="green", Value = "green" },
+                       new SelectListItem{ Text="yellow", Value = "yellow" },
+                       new SelectListItem{ Text="blue", Value = "v" },
+                       new SelectListItem{ Text="Other", Value = "Other" },
+                    }, new { @class = "form-control" })
+                <span asp-validation-for="productColor" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-2 font-weight-bold">
+                <label asp-for="SpecialTag.Name"></label>
+            </div>
+            <div class="col-5">
+                @*<input asp-for="SpecialTag.Name" class="form-control" />*@
+                <select class="form-control" asp-for="SpecialTagId" asp-items="ViewBag.tagId"></select>
+                <span asp-validation-for="SpecialTag.Name" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-2 font-weight-bold">
+                <label asp-for="productTypes.ProductType"></label>
+            </div>
+            <div class="col-5">
+                @*<input asp-for="productTypes.ProductType" class="form-control" />*@
+                <select class="form-control" asp-for="productTypeId" asp-items="ViewBag.productTypeId"></select>
+                <span asp-validation-for="productTypes.ProductType" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-2 font-weight-bold">
+                <label asp-for="isAvaliable"></label>
+            </div>
+            <div class="col-1">
+                <input asp-for="isAvaliable" class="form-control" type="checkbox" />
+                <span asp-validation-for="isAvaliable" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Save" />
+            <a asp-action="Index" class="btn btn-success"><i class="fas fa-backward"></i> Back To List</a>
+        </div>
+    </div>
+</form>
+
+@section Scripts{
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+}
