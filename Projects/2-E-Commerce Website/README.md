@@ -1,4 +1,4 @@
-**I made this repository for anyone want to become ASP.NetCore developer ,focus on making you Expert on Microsoft .NET Technologies such as (Asp.netCore - sql server - C# -Entity framework) as back-end 
-and some tutorial on front-end such as (HTML - CSS - JavaScript ) Keep Learning and Have Fun .**
+**E-Commerce Websit**
 
-![microsoft-wall-logo](https://user-images.githubusercontent.com/43557035/139654619-1a7c7991-80cf-410b-98af-91a801a2642d.jpg)
+
+E-commerce is online shopping store for selling/buying products. We'll use asp.net core mvc framework to build a complete E-commerce website and also use Entity Framework and Identity Framework , c# & mssql  ,Linq , HTML ,CSS ,Jquery ,Java Script ,Bootstrap .
