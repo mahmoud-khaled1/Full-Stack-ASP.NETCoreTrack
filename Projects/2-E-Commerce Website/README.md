@@ -1,4 +1,4 @@
 **E-Commerce Websit**
 
 
-E-commerce is online shopping store for selling/buying products. We'll use asp.net core mvc framework to build a complete E-commerce website and also use Entity Framework and Identity Framework , c# & mssql  ,Linq , HTML ,CSS ,Jquery ,Java Script ,Bootstrap .
+A Full E-commerce website that allows people to buy physical goods, services, and digital products over the internet rather than at a brick-and-mortar location. Tools: ASP.Net Core MVC, C#, SQL Server, Entity Framework, Microsoft Identity, LINQ, JavaScript, Jquery , HTML , CSS, Bootstrap
