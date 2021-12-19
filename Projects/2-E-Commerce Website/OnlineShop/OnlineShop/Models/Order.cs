@@ -34,6 +34,7 @@ namespace OnlineShop.Models
         public DateTime OrderDate { get; set; }
 
         public virtual List<OrderDetails> OrderDetails { get; set; }
-
+        public ApplicationUser user { get; set; }
+        
     }
 }

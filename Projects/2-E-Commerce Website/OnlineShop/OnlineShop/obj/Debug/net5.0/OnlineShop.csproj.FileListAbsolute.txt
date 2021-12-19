@@ -509,3 +509,4 @@ D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\Projects\2-E-Commerce We
 D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\Projects\2-E-Commerce Website\OnlineShop\OnlineShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Role\Edit.cshtml.g.cs
 D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\Projects\2-E-Commerce Website\OnlineShop\OnlineShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Role\Assign.cshtml.g.cs
 D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\Projects\2-E-Commerce Website\OnlineShop\OnlineShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Role\AssignUserRole.cshtml.g.cs
+D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\Projects\2-E-Commerce Website\OnlineShop\OnlineShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\User\ProductsByTypes.cshtml.g.cs

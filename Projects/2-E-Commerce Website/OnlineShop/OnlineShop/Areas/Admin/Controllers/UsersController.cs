@@ -26,7 +26,7 @@ namespace OnlineShop.Areas.Admin.Controllers
         {
             //var dd = _userManager.GetUserId(HttpContext.User);
             var users = _userManager.Users.ToList();
-
+            
             List<userViewModel> userVM = new List<userViewModel>();
             foreach (var item in users)
             {
@@ -34,7 +34,9 @@ namespace OnlineShop.Areas.Admin.Controllers
                 u.Email = item.Email;
                 u.id = item.Id;
                 u.Phone = item.PhoneNumber;
-                u.lockoutDate =(DateTimeOffset) item.LockoutEnd;
+                if (item.LockoutEnd != null)
+                      u.lockoutDate =(DateTimeOffset) item.LockoutEnd;
+                
                 userVM.Add(u);
             }
             

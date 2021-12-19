@@ -1,47 +1,47 @@
-﻿<div class="row">
-    <div class="col-6">
-        <h2 class="text-info">Roles</h2>
-    </div>
+﻿<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h2 class="text-info">Roles</h2>
+        </div>
 
-    <div class="col-6 text-left text-right">
-        <a asp-action="Create" class="btn btn-info"><i class="fas fa-plus"></i>&nbsp; Add New Role</a>
-    
-        <a asp-action="AssignUserRole" class="btn btn-info"><i class="fas fa-plus"></i>&nbsp;Users's Role</a>
-    </div>
-</div>
-<br />
-<div>
-    <table class="table table-striped border">
-        <tr class="table-info">
-            <th>
-                Name
-            </th>
+        <div class="col-6 text-left text-right">
+            <a asp-action="Create" class="btn btn-info"><i class="fas fa-plus"></i>&nbsp; Add New Role</a>
 
-            <th></th>
-        </tr>
-        @foreach (var item in ViewBag.Roles)
-        {
-             <tr>
-                <td>@item.Name</td>
-                <td style="width: 150px">
-                    <div class="btn-group">
-                        <a asp-action="Edit" class="btn btn-primary" asp-route-id="@item.Id">
-                            <i class="far fa-edit"></i>
-                        </a>
-                      
-                        <a asp-action="Delete" class="btn btn-danger ml-4" asp-route-id="@item.Id">
-                            <i class="fas fa-trash-alt"></i>
-                        </a>
-                    </div>
-                </td>
+            <a asp-action="AssignUserRole" class="btn btn-info"><i class="fas fa-plus"></i>&nbsp;Users's Role</a>
+        </div>
+    </div>
+    <br />
+    <div>
+        <table class="table table-striped border">
+            <tr class="table-info">
+                <th>
+                    Name
+                </th>
+
+                <th></th>
             </tr>
-         }
-    </table>
-</div>
+            @foreach (var item in ViewBag.Roles)
+            {
+<tr>
+    <td>@item.Name</td>
+    <td style="width: 150px">
+        <div class="btn-group">
+            <a asp-action="Edit" class="btn btn-primary" asp-route-id="@item.Id">
+                <i class="far fa-edit"></i>
+            </a>
 
-@section scripts{
-    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/alertify.min.js"></script>
-    <script type="text/javascript">
+            <a asp-action="Delete" class="btn btn-danger ml-4" asp-route-id="@item.Id">
+                <i class="fas fa-trash-alt"></i>
+            </a>
+        </div>
+    </td>
+</tr>}
+        </table>
+    </div>
+</div>
+    @section scripts{
+        <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/alertify.min.js"></script>
+        <script type="text/javascript">
         $(function(){
             var save = '@TempData["save"]'
             if(save!='') {
@@ -56,5 +56,5 @@
                 alertify.error(del);
             }
         })
-    </script>
-}
+        </script>
+    }

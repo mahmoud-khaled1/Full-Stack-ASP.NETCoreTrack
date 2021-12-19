@@ -38,9 +38,9 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="  navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand float-left" asp-area="" asp-controller="Home" asp-action="Index"><img width="50px" height="50px" src="~/images/online-shop Logo.png"/><span class="text-info">Shop Me</span></a>
+                <a class="navbar-brand float-left" asp-area="" asp-controller="Home" asp-action="Index"><img width="50px" height="50px" src="~/images/online-shop Logo.png" /><span class="text-info text-dark font-weight-bold">Shop Me</span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -50,44 +50,151 @@
                         @if (userRole == "Admin")
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="ProductTypes" asp-action="Index">Product Types</a>
+                                <a class="nav-link text-dark font-weight-bold" asp-area="Admin" asp-controller="ProductTypes" asp-action="Index">Product Types</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="SpecialTag" asp-action="index">Tag Name</a>
+                                <a class="nav-link text-dark font-weight-bold" asp-area="Admin" asp-controller="SpecialTag" asp-action="index">Tag Name</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="Products" asp-action="index">Products</a>
+                                <a class="nav-link text-dark font-weight-bold" asp-area="Admin" asp-controller="Products" asp-action="index">Products</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="Users" asp-action="Index">Users</a>
+                                <a class="nav-link text-dark font-weight-bold" asp-area="Admin" asp-controller="Users" asp-action="Index">Users</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="Role" asp-action="Index">Roles</a>
+                                <a class="nav-link text-dark font-weight-bold" asp-area="Admin" asp-controller="Role" asp-action="Index">Roles</a>
                             </li>
                         }
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Customer" asp-controller="Home" asp-action="Cart">
-                                <i class="fas fa-cart-arrow-down"></i>(@count)
+                        else
+                        {
+                            @*<li class="nav-item mr-5">
+                                <a class="nav-link text-dark font-weight-bold " asp-area="Customer" asp-controller="User" asp-action="Index">Products</a>
+                            </li>*@
+                            <li class="nav-item ml-5">
+                                <form method="post">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <input type="text" class="form-control h-100 " placeholder="What are you looking for?" name="search" />
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="submit" asp-area="Customer" asp-controller="User" asp-action="index" class="btn btn-outline-info text-center bg-danger"  value="Search" />
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        }
 
-                            </a>
-                        </li>
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container border-bottom rounded border-info mb-1">
+        <div class="row">
+            <div class="btn-group">
+
+                @Html.ActionLink("All Categories", "Index", "User", new { type = "" },new { @class = "btn btn-light font-weight-bold text-danger" })
+                @Html.ActionLink("Electronics", "ProductsByTypes", "User", new { type = "Electronics" }, new { @class = "btn btn-light font-weight-bold" })
+                @Html.ActionLink("Mobiles", "ProductsByTypes", "User", new { type = "Mobiles" }, new { @class = "btn btn-light font-weight-bold " })
+                @Html.ActionLink("Men", "ProductsByTypes", "User", new { type = "Men's fashion" }, new { @class = "btn btn-light font-weight-bold " })
+                @Html.ActionLink("Women", "ProductsByTypes", "User", new { type = "Women's fashion" }, new { @class = "btn btn-light font-weight-bold" })
+                @Html.ActionLink("Home", "ProductsByTypes", "User", new { type = "Home & Kitchen" }, new { @class = "btn btn-light font-weight-bold" })
+                @Html.ActionLink("SuperMarket", "ProductsByTypes", "User", new { type = "Super Market" }, new { @class = "btn btn-light font-weight-bold" })
+                @Html.ActionLink("Beauty & Health", "ProductsByTypes", "User", new { type = "Beauty & Health" }, new { @class = "btn btn-light font-weight-bold" })
+                @Html.ActionLink("Baby & Toys", "ProductsByTypes", "User", new { type = "Baby" }, new { @class = "btn btn-light font-weight-bold" })
+              
+            </div>
+        </div>
+       
+    </div>
+    
+
+    <div @*class="container"*@>
         <main role="main" class="pb-3">
+
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer>
         <div class="container">
-            &copy; 2021 - OnlineShop - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="full">
+                        <div class="logo_footer">
+                            <a href="#"><img width="100" src="~/images/online-shop Logo.png"alt="#" /></a>
+                        </div>
+                        <div class="information_f">
+                            <p><strong>ADDRESS:</strong> Road 123 , Maddi , Egypt</p>
+                            <p><strong>TELEPHONE:</strong> 01020795015</p>
+                            <p><strong>EMAIL:</strong> mahmoudkhaled01020@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="widget_menu">
+                                        <h3>Menu</h3>
+                                        <ul>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">About</a></li>
+                                            <li><a href="#">Services</a></li>
+                                            <li><a href="#">Testimonial</a></li>
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="widget_menu">
+                                        <h3>Account</h3>
+                                        <ul>
+                                            <li><a asp-area="identity" asp-controller="Account" asp-action="Manage">Account</a></li>
+                                            <li><a asp-area="identity" asp-controller="Account" asp-action="Login">Login</a></li>
+                                            <li><a asp-area="identity" asp-controller="Account" asp-action="Register">Register</a></li>
+                                            <li><a asp-area="Customer" asp-controller="User" asp-action="index" >Shopping</a></li>
+                                            <li><a href="#">Widget</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="widget_menu">
+                                <h3>Contact Us</h3>
+                                
+                                <div>
+                                    <a href="https://www.facebook.com/engma7moud0/" class="  me-4">
+                                        <h2 style="display: inline" ><i class="fab fa-facebook-f"></i></h2>
+                                    </a>
+                                                     
+                                    <a href="" class=" me-4 ml-4">
+                                        <h2 style="display: inline"> <i class="fab fa-instagram"></i></h2>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/mahmoud-khaled138/" class=" me-4 ml-4">
+                                        <h2 style="display: inline"> <i class="fab fa-linkedin"></i></h2>
+                                    </a>
+                                    <a href="https://github.com/mahmoud-khaled1" class=" me-4 ml-4">
+                                        <h2 style="display: inline"> <i class="fab fa-github"></i></h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+    <!-- footer end -->
+    @*<div class="cpy_">
+        <p class="mx-auto">
+            © 2021 All Rights Reserved By <a href="https://www.linkedin.com/in/mahmoud-khaled138/">Mahmoud Khaled</a><br>
+        </p>
+    </div>*@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -99,7 +206,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
     <script src="https://cdn.datatables.net/buttons/2.1.0/js/buttons.html5.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/2.1.0/js/buttons.print.min.js"></script>
-    
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

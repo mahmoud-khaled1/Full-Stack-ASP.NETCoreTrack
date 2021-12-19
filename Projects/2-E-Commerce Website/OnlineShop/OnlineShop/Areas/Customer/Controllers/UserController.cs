@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.EntityFrameworkCore;
 using OnlineShop.Data;
 using OnlineShop.Models;
 using System;
@@ -22,53 +24,45 @@ namespace OnlineShop.Areas.Customer.Controllers
             _db = db;
            
         }
-
+        [HttpGet]
         public IActionResult Index()
         {
-            return View();
+          
+                return View(_db.Products.Include(c => c.productTypes).Include(f => f.SpecialTag).ToList());
+
         }
-        
-        //[HttpGet]
-        //public async Task<IActionResult> Create()
-        //{
-        //    return View();
-        //}
-        //[HttpPost]
-        //public async Task<IActionResult> Create(UserManager user)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        var result = await _userManager.CreateAsync(user, user.PasswordHash);
+        [HttpPost]
+        public IActionResult Index(string search)
+        {
+            var products = _db.Products.Include(c => c.productTypes).Include(c => c.SpecialTag)
+                           .Where(p => p.Name.Contains(search)).ToList();
+            if (search==null)
+            {
+                products = _db.Products.Include(c => c.productTypes).Include(f => f.SpecialTag).ToList();
+            }
 
+            return View(products);
+        }
+        [HttpGet]
+        public IActionResult ProductsByTypes(string type)
+        {
+            List<Products> productsss = _db.Products.Include(p => p.productTypes).Include(p => p.SpecialTag).
+                Where(p => p.productTypes.ProductType == type).ToList();
+            return View(productsss);
+        }
+        [HttpPost]
+        [ActionName("ProductsByTypes")]
+        public IActionResult ProductsByTypess(string search)
+        {
+            var products = _db.Products.Include(c => c.productTypes).Include(c => c.SpecialTag)
+                           .Where(p => p.Name.Contains(search)).ToList();
+            if (search == null)
+            {
+                products = _db.Products.Include(c => c.productTypes).Include(f => f.SpecialTag).ToList();
+            }
 
-        //        //create roles  and assign them to database for users .
-        //        string[] roleNames = { "Admin", "User" };
-        //        IdentityResult roleResult;
-
-        //        foreach (var roleName in roleNames)
-        //        {
-        //            var roleExist = await _roleManager.RoleExistsAsync(roleName);
-        //            if (!roleExist)
-        //            {
-        //                //create the roles and seed them to the database: 
-        //                roleResult = await _roleManager.CreateAsync(new IdentityRole(roleName));
-        //            }
-        //        }
-        //        if (result.Succeeded)
-        //        {
-        //            //var isSaveRole = await _userManager.AddToRoleAsync(user, "User");
-        //            var isSaveRole = await _userManager.AddToRoleAsync(user, "User");
-        //            TempData["save"] = "User has been created successfully";
-        //            return RedirectToAction(nameof(Index));
-        //        }
-        //        foreach (var error in result.Errors)
-        //        {
-        //            ModelState. AddModelError(string.Empty, error.Description);
-        //        }
-        //    }
-        //    return View();
-        //}
-
+            return View(products);
+        }
 
 
     }

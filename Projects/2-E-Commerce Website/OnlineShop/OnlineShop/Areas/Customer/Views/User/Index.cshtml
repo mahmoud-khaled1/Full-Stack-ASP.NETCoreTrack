@@ -1,15 +1,72 @@
-﻿
+﻿@model IEnumerable<Products>
+    <section class="product_section layout_padding">
+        <div class="container">
+            <div class="heading_container heading_center mb-4">
+                <form method="post">
+                    <div class="row">
+                        <div class="col-9">
+                            <input type="text" class="form-control h-100" placeholder="What are you looking for?" name="search" />
+                        </div>
+                        <div class="col-3">
+                            <input type="submit" class="btn btn-outline-info " value="Search" />
+                        </div>
+                    </div>
+                </form>
+                <br />
+                <br />
+                <h2 class="text-center">
+                    Our <span>products</span>
+                </h2>
 
-@section Scripts{
-    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <script type="text/javascript">
 
+
+            </div>
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="box">
+                            <div class="option_container">
+                                <div class="options">
+                                    <a href="" class="option1">
+                                        Add To Cart
+                                    </a>
+                                    <a asp-area="Customer" asp-controller="Home" asp-action="Details" asp-route-id="@item.Id" class="option2">
+                                        Details
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="~/@item.Image" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    @item.Name
+                                </h5>
+                                <h6>
+                                    @item.Price
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+
+
+            </div>
+        </div>
+    </section>
+
+        @section Scripts{
+            <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+            <script type="text/javascript">
+
+        //-------------------------
         $(function () {
             var save = `@TempData["save"]`;
             var del = `@TempData["del"]`;
             var edit = `@TempData["ediit"]`;
             var productExist = `@TempData["productIsExist"]`;
-
             if (save != null && save!="") {
                 alertify.success(save);
             }
@@ -24,5 +81,7 @@
             }
         })
 
-    </script>
-}
+            </script>
+        }
+
+
