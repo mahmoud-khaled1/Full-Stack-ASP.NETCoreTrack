@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Tic Tac Toe Game</title>
+    <link rel="icon" href="~/Images/tic-tac-toe.png">
+    <link rel="stylesheet" href="~/css/main.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>TicTacToe</li>
+        </ul>
+    </nav>
+
+    @RenderBody()
+
+    <script src="~/js/main.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

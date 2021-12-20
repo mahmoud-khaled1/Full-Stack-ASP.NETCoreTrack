@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net5.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.PublishSingleFile = 
+build_property.IncludeAllContentForSelfExtract = 
+build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
+build_property.RootNamespace = Tic_Tac_Toe__Game
+build_property.ProjectDir = D:\Git_Projects\ASP.Net-MentorShip1\ASP.Net-MentorShip-\Projects\3-Tic Tac Toe Web App Game\Tic Tac Toe  Game\Tic Tac Toe  Game\
