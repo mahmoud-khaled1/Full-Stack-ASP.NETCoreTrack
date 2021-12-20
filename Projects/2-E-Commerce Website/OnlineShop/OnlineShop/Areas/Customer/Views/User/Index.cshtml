@@ -36,6 +36,16 @@
                                     </a>
                                 </div>
                             </div>
+                            <h6 class="text-dark">
+                                @{
+                                    var ans = (@item.Price / 5) + item.Price;
+                                }
+                                <span style="text-decoration:line-through">EGP @ans</span>  <span class="text-success">5% OFF</span>
+                            </h6>
+
+                            <h6 class="text-danger ">
+                                <span>EGP @item.Price</span>
+                            </h6>
                             <div class="img-box">
                                 <img src="~/@item.Image" alt="">
                             </div>
@@ -43,9 +53,7 @@
                                 <h5>
                                     @item.Name
                                 </h5>
-                                <h6>
-                                    @item.Price
-                                </h6>
+                                
                             </div>
                         </div>
                     </div>
