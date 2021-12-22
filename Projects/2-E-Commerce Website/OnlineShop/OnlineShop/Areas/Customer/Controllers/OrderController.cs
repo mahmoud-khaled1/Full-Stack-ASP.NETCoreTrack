@@ -40,15 +40,17 @@ namespace OnlineShop.Areas.Customer.Controllers
             List<Products> products = HttpContext.Session.Get<List<Products>>("products");
             if(products!=null)
             {
+                order.OrderDetails = new List<OrderDetails>();
                 foreach (var item in products)
                 {
                     OrderDetails orderdetails = new OrderDetails();
                     orderdetails.PorductId = item.Id;
-                    order.OrderDetails = new List<OrderDetails>();
                     order.OrderDetails.Add(orderdetails);
                 }
             }
+           
             order.OrderNo = GetOrderNo();
+            order.OrderDate = DateTime.Now;
             _db.Orders.Add(order);
             await _db.SaveChangesAsync();
             HttpContext.Session.Set("products", new List<Products>());

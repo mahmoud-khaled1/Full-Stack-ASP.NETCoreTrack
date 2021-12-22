@@ -47,7 +47,7 @@ namespace OnlineShop
             services.AddSession(options =>
             {
                 //options.Cookie.Name = ".AdventureWorks.Session";
-                options.IdleTimeout = TimeSpan.FromMinutes(30);
+                options.IdleTimeout = TimeSpan.FromMinutes(300);
                 options.Cookie.IsEssential = true;
             });
         }
