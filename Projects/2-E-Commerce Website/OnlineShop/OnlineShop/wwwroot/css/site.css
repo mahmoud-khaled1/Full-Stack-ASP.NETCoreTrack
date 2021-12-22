@@ -86,36 +86,36 @@ body {
     padding: 90px 0 75px 0;
 }
 
-    .slider_section .row {
+.slider_section .row {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-    }
+} 
 
-    .slider_section #customCarousel1 {
+.slider_section #customCarousel1 {
         width: 100%;
         position: unset;
-    }
+}
 
-    .slider_section .detail-box h1 {
+.slider_section .detail-box h1 {
         font-size: 4.5rem;
         font-weight: bold;
         margin-bottom: 15px;
         color: #002c3e;
         line-height: 70px;
-    }
+}
 
-        .slider_section .detail-box h1 span {
+.slider_section .detail-box h1 span {
             color: #f7444e;
-        }
+}
 
-    .slider_section .detail-box p {
+.slider_section .detail-box p {
         font-size: 16px;
         margin-top: 20px;
         margin-bottom: 1.5rem;
-    }
+}
 
-    .slider_section .detail-box a {
+.slider_section .detail-box a {
         display: inline-block;
         padding: 12px 45px;
         background-color: #f7444e;
@@ -126,18 +126,18 @@ body {
         transition: all 0.3s;
         margin-top: 10px;
         font-weight: 700;
-    }
+}
 
-        .slider_section .detail-box a:hover {
+.slider_section .detail-box a:hover {
             background-color: transparent;
             color: #f7444e;
-        }
+}
 
-    .slider_section .img-box img {
+.slider_section .img-box img {
         width: 100%;
-    }
+}
 
-    .slider_section .carousel-indicators {
+.slider_section .carousel-indicators {
         position: unset;
         margin: 0;
         margin-top: 45px;
@@ -147,21 +147,21 @@ body {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-    }
+}
 
-        .slider_section .carousel-indicators li {
+.slider_section .carousel-indicators li {
             background-color: #ffffff;
             width: 12px;
             height: 12px;
             border-radius: 100%;
             opacity: 1;
-        }
+ }
 
-            .slider_section .carousel-indicators li.active {
+ .slider_section .carousel-indicators li.active {
                 width: 20px;
                 height: 20px;
                 background-color: #f7444e;
-            }
+ }
 
 .slider_bg_box {
     position: absolute;
@@ -172,14 +172,15 @@ body {
     z-index: -1;
 }
 
-    .slider_bg_box img {
+.slider_bg_box img {
         width: 100%;
         height: 100%;
         -o-object-fit: cover;
         object-fit: cover;
         -o-object-position: top right;
         object-position: top right;
-    }
+}
+/* Why section */
 .why_section .box {
     text-align: center;
     margin-top: 45px;
@@ -189,15 +190,15 @@ body {
     color: #ffffff;
 }
 
-    .why_section .box .img-box {
+.why_section .box .img-box {
         margin-bottom: 15px;
-    }
+ }
 
-        .why_section .box .img-box svg {
+.why_section .box .img-box svg {
             width: 55px;
             height: auto;
             fill: #ffffff;
-        }
+}
 .heading_container h2::after {
     content: "";
     display: block;
@@ -207,7 +208,7 @@ body {
     margin: 10px auto 10px;
 }
 
-/** footer **/
+/** footer section **/
 
 footer {
     background: #f8f8f8;
@@ -238,19 +239,19 @@ footer {
     margin: 0;
 }
 
-    .widget_menu ul li {
+.widget_menu ul li {
         float: left;
         width: 100%;
-    }
+ }
 
-        .widget_menu ul li a {
+ .widget_menu ul li a {
             font-size: 15px;
             color: #000;
             margin-bottom: 0;
             float: left;
             width: 100%;
             margin-top: 5px;
-        }
+ }
 
 .field {
     display: flex;
@@ -261,34 +262,13 @@ footer {
     width: 100%;
 }
 
-div.form_sub .field input[type="email"], div.form_sub .field input[type="email"]:hover, div.form_sub .field input[type="email"]:focus {
-    padding: 10px 110px 10px 15px;
-    border-radius: 0;
-    border: solid #ccc 1px;
-    font-size: 14px;
-    position: relative;
-    box-shadow: none;
-    width: 100%;
-    height: 48px;
-}
+
 
 .form_sub {
     position: relative;
 }
 
-    .form_sub input[type="email"] + input[type="submit"] {
-        position: absolute;
-        right: 0;
-        background: #f7444e;
-        color: #fff;
-        border: none;
-        top: 0px;
-        font-size: 14px;
-        height: 48px;
-        font-weight: 600;
-        padding: 0 15px;
-    }
-
+  
 form input {
     background: #fff;
     border: solid #ccc 1px;
@@ -333,28 +313,7 @@ form input[type="submit"] {
         color: #fff;
     }
 
-/** cpy **/
-
-.cpy_ {
-    background: #222;
-    text-align: center;
-    padding: 20px 0;
-}
-
-    .cpy_ p {
-        margin: 0;
-        color: #fff;
-        font-size: 15px;
-        font-weight: 400;
-    }
-
-        .cpy_ p a {
-            margin: 0;
-            color: #f7444e;
-            font-size: 15px;
-            font-weight: 400;
-        }
-
+ /*Products Section*/
 .product_section .box {
     position: relative;
     margin-top: 25px;
@@ -367,7 +326,7 @@ form input[type="submit"] {
     border: solid #fff 10px;
 }
 
-    .product_section .box .img-box {
+.product_section .box .img-box {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -378,16 +337,16 @@ form input[type="submit"] {
         -ms-flex-align: center;
         align-items: center;
         height: 215px;
-    }
+}
 
-        .product_section .box .img-box img {
+.product_section .box .img-box img {
             max-width: 100%;
             max-height: 160px;
             -webkit-transition: all .3s;
             transition: all .3s;
-        }
+ }
 
-    .product_section .box .detail-box {
+.product_section .box .detail-box {
         text-align: center;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -395,34 +354,32 @@ form input[type="submit"] {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
-    }
+}
 
-        .product_section .box .detail-box h5 {
+.product_section .box .detail-box h5 {
             font-size: 18px;
             margin-top: 10px;
-        }
+}
 
-        .product_section .box .detail-box h6 {
+.product_section .box .detail-box h6 {
             margin-top: 10px;
             color: #002c3e;
             font-weight: 600;
-        }
+}
 
-    .product_section .box:hover img {
+.product_section .box:hover img {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
-    }
+}
 
-    .product_section .box:hover .option_container {
+.product_section .box:hover .option_container {
         opacity: 1;
         visibility: visible;
         -webkit-transform: translateY(0);
         transform: translateY(0);
-    }
-
-.arrival_section {
-    background-color: #d4ced0;
 }
+
+
 
 .product_section .option_container {
     position: absolute;
@@ -462,7 +419,7 @@ form input[type="submit"] {
     align-items: center;
 }
 
-    .product_section .options a {
+.product_section .options a {
         display: inline-block;
         padding: 8px 15px;
         border-radius: 30px;
@@ -471,29 +428,29 @@ form input[type="submit"] {
         -webkit-transition: all .3s;
         transition: all .3s;
         margin: 5px 0;
-    }
+}
 
-    .product_section .options .option1 {
+.product_section .options .option1 {
         background-color: #f7444e;
         border: 1px solid #f7444e;
         color: #ffffff;
-    }
+}
 
-        .product_section .options .option1:hover {
+ .product_section .options .option1:hover {
             background-color: transparent;
             color: #f7444e;
-        }
+}
 
-    .product_section .options .option2 {
+.product_section .options .option2 {
         background-color: #000000;
         border: 1px solid #000000;
         color: #ffffff;
-    }
+}
 
-        .product_section .options .option2:hover {
+.product_section .options .option2:hover {
             background-color: transparent;
             color: #000000;
-        }
+}
 
 .product_section .btn-box {
     display: -webkit-box;
@@ -505,7 +462,7 @@ form input[type="submit"] {
     margin-top: 45px;
 }
 
-    .product_section .btn-box a {
+.product_section .btn-box a {
         display: inline-block;
         padding: 10px 40px;
         background-color: #f7444e;
@@ -514,9 +471,9 @@ form input[type="submit"] {
         border-radius: 0;
         -webkit-transition: all 0.3s;
         transition: all 0.3s;
-    }
+}
 
-        .product_section .btn-box a:hover {
+.product_section .btn-box a:hover {
             background-color: transparent;
             color: #f7444e;
-        }
+}
