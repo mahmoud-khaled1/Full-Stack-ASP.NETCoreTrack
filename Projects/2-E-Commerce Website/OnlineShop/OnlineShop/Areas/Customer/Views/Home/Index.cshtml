@@ -103,6 +103,7 @@
 </section>
 <!-- end slider section -->
 <!-- why section -->
+<!--This section we used SVG  to define graphics for the Web-->
 <section class="why_section layout_padding mb-5">
     <div class="container">
         <div class="heading_container heading_center text-center">
@@ -358,7 +359,7 @@
     <div class="container">
         <div class="heading_container heading_center text-center mb-5">
             <h2>
-                 <span> best selling products</span>
+                <span> best selling products</span>
             </h2>
         </div>
         <div class="row">
@@ -366,52 +367,52 @@
             {
                 if (cnt < 8)
                 {
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="box">
-                        <div class="option_container">
-                            <div class="options">
-                                <a href="" class="option1">
-                                    Add To Cart
-                                </a>
-                                <a asp-area="Customer" asp-controller="Home" asp-action="Details" asp-route-id="@item.Id" class="option2">
-                                    Details
-                                </a>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="box">
+                            <div class="option_container">
+                                <div class="options">
+                                    <a href="" class="option1">
+                                        Add To Cart
+                                    </a>
+                                    <a asp-area="Customer" asp-controller="Home" asp-action="Details" asp-route-id="@item.Id" class="option2">
+                                        Details
+                                    </a>
+                                </div>
+                            </div>
+                            <h6 class="text-dark">
+                                @{
+                                    var ans = (@item.Price / 5) + item.Price;
+                                }
+                                <span style="text-decoration:line-through">EGP @ans</span>  <span class="text-success">5% OFF</span>
+                            </h6>
+
+                            <h6 class="text-danger ">
+                                <span>EGP @item.Price</span>
+                            </h6>
+
+                            <div class="img-box">
+                                <img src="~/@item.Image" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    @item.Name
+                                </h5>
+
+
                             </div>
                         </div>
-                        <h6 class="text-dark">
-                            @{
-                                var ans =  (@item.Price / 5)+item.Price;
-                            }
-                            <span style="text-decoration:line-through">EGP @ans</span>  <span class="text-success">5% OFF</span>
-                        </h6>
-
-                        <h6 class="text-danger ">
-                            <span >EGP @item.Price</span> 
-                        </h6>
-
-                        <div class="img-box">
-                            <img src="~/@item.Image" alt="">
-                        </div>
-                        <div class="detail-box">
-                            <h5>
-                                @item.Name
-                            </h5>
-
-
-                        </div>
                     </div>
-                </div>
                     cnt++;
                 }
 
             }
         </div>
         <br />
-        <div class="col-16 text-center" >
+        <div class="col-16 text-center">
             <a class="btn btn-outline-info" asp-area="Customer" asp-controller="User" asp-action="index">
                 more Products
             </a>
         </div>
-        
+
     </div>
 </section>

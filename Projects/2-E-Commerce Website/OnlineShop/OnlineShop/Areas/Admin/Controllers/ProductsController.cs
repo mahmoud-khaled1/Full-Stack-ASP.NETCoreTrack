@@ -19,7 +19,7 @@ namespace OnlineShop.Areas.Admin.Controllers
     public class ProductsController : Controller
     {
         private ApplicationDbContext _db;
-        //For Attach img to and from wwwroot (FileReader)
+        //For Attach imgs to and from wwwroot (FileReader)
         private IHostingEnvironment _he;
 
         public ProductsController(ApplicationDbContext db, IHostingEnvironment he)
