@@ -1,0 +1,32 @@
+/* p {
+  display: none;
+} */
+/* div {
+  opacity: 1;
+  display: none;
+} */
+
+/* .open {
+  background-color: darkgrey;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.box {
+  background-color: darkred;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  display: none;
+} */
+
+div {
+  width: 500px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: relative;
+}
+/* span {
+  display: none;
+} */

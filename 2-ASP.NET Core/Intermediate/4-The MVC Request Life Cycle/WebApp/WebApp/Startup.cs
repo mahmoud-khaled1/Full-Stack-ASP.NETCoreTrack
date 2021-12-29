@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApp.middleWare;
 
 namespace WebApp
 {
@@ -41,20 +42,26 @@ namespace WebApp
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-            app.Use(async (context, next) =>
-            {
-                context.Items.Add("greeting", "Hello World");
-                Debug.WriteLine("Before !");
 
-                await next.Invoke(); // to invoke next middleware 
+            //-------------------------------------
+            //app.Use(async (context, next) =>
+            //{
+            //    context.Items.Add("greeting", "Hello World");
+            //    Debug.WriteLine("Before !");
 
-                Debug.WriteLine("After !"); // execute after execute the next middleware
-            });
-            app.Run(async context =>
-            {
-                await context.Response.WriteAsync("the page say " + context.Items["greeting"]);
-            });
+            //    await next.Invoke(); // to invoke next middleware 
 
+            //    Debug.WriteLine("After !"); // execute after execute the next middleware
+            //});
+            //app.Run(async context =>
+            //{
+            //    await context.Response.WriteAsync("the page say " + context.Items["greeting"]);
+            //});
+            //----------------------------------
+            //Create Custom MiddleWare
+            app.UseMiddleware<FeatureSwitchMiddleWare>();
+
+            //----------------------------------
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
