@@ -72,6 +72,10 @@ Run the application:
 cd [PROJECT NAME]
 ng serve
 ```
+add  node_modeules folder open terminal of project from VS code and run 
+```
+npm install 
+```
 
 Angular is cross-platform, fast, scalable, has incredible tooling, and is loved by millions.
 
