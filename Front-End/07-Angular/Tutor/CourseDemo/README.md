@@ -12,7 +12,9 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.</br>
+after download this project you should add node_modules folder to your ptoject to add it follow steps :
+open teriminal in visual studio code and run `npm install` to get all dependencies in node_modeules  folder
 
 ## Running unit tests
 
