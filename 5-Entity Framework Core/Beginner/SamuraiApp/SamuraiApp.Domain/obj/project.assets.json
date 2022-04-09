@@ -5797,7 +5797,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\20102\\.nuget\\packages\\": {}
+    "C:\\Users\\mahmo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -5805,11 +5805,11 @@
       "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj",
       "projectName": "SamuraiApp.Domain",
       "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj",
-      "packagesPath": "C:\\Users\\20102\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\mahmo\\.nuget\\packages\\",
       "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\5-Entity Framework Core\\Beginner\\SamuraiApp\\SamuraiApp.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\20102\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mahmo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5865,7 +5865,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
       }
     }
   }

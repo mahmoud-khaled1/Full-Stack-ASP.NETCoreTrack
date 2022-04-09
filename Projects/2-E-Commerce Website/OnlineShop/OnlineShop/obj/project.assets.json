@@ -7593,7 +7593,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\20102\\.nuget\\packages\\": {}
+    "C:\\Users\\mahmo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -7601,11 +7601,11 @@
       "projectUniqueName": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\Projects\\2-E-Commerce Website\\OnlineShop\\OnlineShop\\OnlineShop.csproj",
       "projectName": "OnlineShop",
       "projectPath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\Projects\\2-E-Commerce Website\\OnlineShop\\OnlineShop\\OnlineShop.csproj",
-      "packagesPath": "C:\\Users\\20102\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\mahmo\\.nuget\\packages\\",
       "outputPath": "D:\\Git_Projects\\ASP.Net-MentorShip1\\ASP.Net-MentorShip-\\Projects\\2-E-Commerce Website\\OnlineShop\\OnlineShop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\20102\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mahmo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7678,7 +7678,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
       }
     }
   }

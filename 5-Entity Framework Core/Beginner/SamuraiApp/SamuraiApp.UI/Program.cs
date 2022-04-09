@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
-using Microsoft.EntityFrameworkCore;
 using SamuraiApp.Domain;
 using SamurailApp.Data;
-using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+
 namespace SamuraiApp.UI
 {
     class Program
