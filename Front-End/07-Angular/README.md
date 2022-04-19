@@ -72,9 +72,10 @@ Run the application:
 cd [PROJECT NAME]
 ng serve
 ```
-add  node_modeules folder open terminal of project from VS code and run 
+add  node_modeules folder such as (Bootstrap library etc...) open terminal of project from VS code and run 
 ```
-npm install 
+npm install bootstrap
+then include them in index.html file
 ```
 
 Angular is cross-platform, fast, scalable, has incredible tooling, and is loved by millions.
