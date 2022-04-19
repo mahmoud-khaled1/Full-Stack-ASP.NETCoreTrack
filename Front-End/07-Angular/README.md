@@ -75,7 +75,8 @@ ng serve
 add  node_modeules folder such as (Bootstrap library etc...) open terminal of project from VS code and run 
 ```
 npm install bootstrap
-then include them in index.html file
+then include them in index.html file 
+Or copy the link and add to angular.json file to style array if we have link of css bootstrap  and this is the best way
 ```
 
 Angular is cross-platform, fast, scalable, has incredible tooling, and is loved by millions.
@@ -84,7 +85,10 @@ Angular is cross-platform, fast, scalable, has incredible tooling, and is loved 
 
 [Get started in 5 minutes][quickstart].
 
-
+to add component to the project such as (footer ,Header ,Sidebar ,Home) 
+```
+make folder in app path named components and create them after create them go to app.modules.ts and add this components in declaration array 
+```
 
 [contributing]: CONTRIBUTING.md
 [quickstart]: https://angular.io/start
