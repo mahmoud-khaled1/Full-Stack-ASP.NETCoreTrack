@@ -1,0 +1,78 @@
+<!DOCType html>
+<html>
+    <head>
+			<script src="https://unpkg.com/@reactivex/rxjs@latest/dist/global/Rx.min.js"></script>
+		<script>
+			/*
+			 RxJS, or ReactiveX, or reactive programming:
+			 These are terms that are becoming more and more prominent when 
+			 talking about the latest-and-greatest front-end technologies.
+
+			 ReactiveX is a library for composing asynchronous and event-based 
+			 programs by using observable sequences.
+			 RxJS is the JavaScript version of ReactiveX library.
+			*/
+
+			/*Example:
+			 The following is an Observable that pushes the values 1, 2, 3 
+			 immediately (synchronously) when subscribed, and the 
+			 value 4 after one second has passed since the subscribe call, 
+			 then completes.
+
+			 -- Subscribing to an Observable is analogous to calling a Function.
+			 -- Observables can "return" multiple values over time, something which functions cannot.
+			 -- Observables are able to deliver values either synchronously or asynchronously.
+			 */
+			//Create observable:
+			//Observables can be created with create, but usually we use the so-called creation operators, like of, from, interval, etc.
+			var myObservable = Rx.Observable.create(function (observer) {
+				//Executing Observables
+				//The code inside Observable.create(function subscribe(observer) {...}) 
+				//represents an "Observable execution", 
+				//a lazy computation that only happens for each Observer that subscribes. 
+				//The execution produces multiple values over time, either synchronously or asynchronously.
+				
+				/*There are three types of values an Observable Execution can deliver:
+				 - "Next" notification: sends a value such as a Number, a String, an Object, etc.
+				 - "Error" notification: sends a JavaScript Error or exception.
+				 - "Complete" notification: does not send a value.
+
+				 In an Observable Execution, zero to infinite Next 
+				 notifications may be delivered. 
+				 If either an Error or Complete notification is delivered, 
+				 then nothing else can be delivered afterwards.
+				*/
+
+				observer.next(1);
+				observer.next(2);
+				observer.next(3);
+				setTimeout(() => {
+					observer.next(4);
+					observer.complete();
+				}, 1000);
+			});
+
+			//Subscribe to observable:
+			//Subscribing to an Observable is like calling a function, 
+			//providing callbacks where the data will be delivered to.
+			console.log('just before subscribe');
+			myObservable.subscribe((x)=>console.log(x));
+			console.log('just after subscribe');
+			
+			
+			//More: 
+				//http://reactivex.io/
+				//http://reactivex.io/rxjs/manual/overview.html
+				//http://reactivex.io/rxjs/manual/tutorial.html
+				//https://css-tricks.com/animated-intro-rxjs/
+				//https://www.sitepoint.com/functional-reactive-programming-rxjs/
+				//https://www.learnrxjs.io/
+
+		</script>
+    <head>
+    <body>
+			Observable - RxJS
+
+    </body>
+
+</html>

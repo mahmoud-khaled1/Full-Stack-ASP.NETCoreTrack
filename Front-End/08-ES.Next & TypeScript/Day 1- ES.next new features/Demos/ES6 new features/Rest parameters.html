@@ -1,0 +1,36 @@
+<!DOCType html>
+<html>
+    <head>
+		<script>
+
+			//instead of 
+			function sum3() {
+				let sum=0;
+				for(x of arguments)
+					sum+=x;
+				
+					console.log(sum);
+			}
+			sum3(1,2,3);
+			sum3(1,2,3,10);
+			sum3(1,2,3,10,20);
+			
+			//you can use
+			function sum4(...args) {
+			  let sum=0;
+				for(x of args)
+					sum+=x;
+				
+					console.log(sum);
+			}
+			sum4(1,2);
+			sum4(1,2,3);
+			
+		</script>
+        
+    <head>
+    <body>
+		Rest parameters test!
+    </body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCType html>
+<html>
+
+<head>
+    <script>
+        //The Map object is a simple key/value map. Any value (both objects and primitive values) may be used as either a key or a value.
+        //Using the Map object
+        var myMap = new Map();
+
+        // setting the values
+        myMap.set("key1", "new value");
+        myMap.set("keyObj", 'value associated with keyObj');
+        myMap.set("keyFunc", 'value associated with keyFunc');
+        myMap.set("key1", 'new value');
+
+        myMap.size; // 3
+
+        // getting the values
+        console.log(myMap.get("key1")); // "new value"
+        console.log(myMap.get("keyObj")); // "value associated with keyObj"
+        console.log(myMap.get("keyFunc")); // "value associated with keyFunc"
+        /////////////////////////
+        //Example:
+        let stdGrades = new Map();
+        stdGrades.set("aa", {
+            js: "Excellent",
+            angular: "Very Good",
+            reactjs: "Good"
+        });
+        stdGrades.set("bb", {
+            js: "fair",
+            angular: "fair",
+            reactjs: "fair"
+        });
+        stdGrades.set("dd", {
+            js: "Excellent",
+            angular: " Good",
+            reactjs: "Very Good"
+        });
+        console.log(stdGrades.get("bb"));
+
+        ///////// Initialize using Array:
+        let stdGradesArr = [
+            ['aa', {
+                js: "Excellent",
+                angular: " Good",
+                reactjs: "Good"
+            }],
+            ['bb', {
+                js: "Fair",
+                angular: "Very Good",
+                reactjs: "Good"
+            }],
+            ['dd', {
+                js: "Excellent",
+                angular: "Very Good",
+                reactjs: "Fair"
+            }]
+        ];
+
+        var stdGradesMap = new Map(stdGradesArr);
+        console.log(...stdGradesMap);
+        console.log(...stdGradesMap.keys());
+        console.log(...stdGradesMap.values());
+
+        for (let item of stdGradesMap.values()) {
+            console.log(item);
+        }
+
+        for (let [key, val] of stdGradesMap) {
+            console.log(`Key: ${key}, and its value: ${val}`);
+        }
+
+
+
+        // //Using NaN as Map keys
+        // var myMap = new Map();
+        // myMap.set(NaN, 'not a number');
+
+        // console.log(myMap.get(NaN)); // "not a number"
+
+        // var otherNaN = Number('foo');
+        // console.log(myMap.get(otherNaN)); // "not a number"
+
+        ////////////////////////////
+        //Relation with Array objects
+        // var kvArray = [
+        //     ['key1', 'value1'],
+        //     ['key2', 'value2'],
+        //     ['key3', 'value3']
+        // ];
+
+        // // Use the regular Map constructor to transform a 2D key-value Array into a map
+        // var myMap = new Map(kvArray);
+
+        // myMap.get('key1'); // returns "value1"
+
+        // // Use the spread operator to transform a map into a 2D key-value Array.
+        // console.log([...myMap]); // Will show you exactly the same Array as kvArray
+
+        // // Or use the spread operator on the keys or values iterator to get 
+        // // an array of only the keys or values
+        // console.log([...myMap.keys()]); // Will show ["key1", "key2"]
+        // console.log([...myMap.values()]); // Will show values
+
+        // //For of
+        // console.log("Using for ... of");
+        // for (let item of myMap.values())
+        //     console.log(item);
+
+        // for (let item of myMap.keys())
+        //     console.log(item);
+
+        // for (let [k, v] of myMap)
+        //     console.log(`Key:${k}, and value: ${v}`);
+    </script>
+
+    <head>
+
+        <body>
+            Map test!
+        </body>
+
+</html>

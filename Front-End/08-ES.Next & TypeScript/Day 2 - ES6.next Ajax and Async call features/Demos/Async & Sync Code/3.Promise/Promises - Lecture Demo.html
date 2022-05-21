@@ -1,0 +1,118 @@
+<!DOCType html>
+<html>
+
+<head>
+    <script>
+        //Simple promise
+        // var scheduledMsgPromise = new Promise((resolve, reject) => {
+        //     let usrName = prompt("Enter your Name...");
+        //     console.log("Validating user name on the server...");
+        //     setTimeout(() => {
+        //         if (usrName.length > 3) {
+        //             resolve("Registeration completed, and user ID: 50");
+        //         } else {
+        //             reject("Not valid user name");
+        //         }
+        //     }, 3000);
+        // });
+        /////////////////////////////
+        //Wrapping in function
+        // function sendRegRequest() {
+        //     return new Promise((resolve, reject) => {
+        //         let usrName = prompt("Enter your Name...");
+        //         console.log("Validating user name on the server...");
+        //         setTimeout(() => {
+        //             if (usrName.length > 3) {
+        //                 resolve("Registeration completed, and user ID: 50");
+        //             } else {
+        //                 reject("Not valid user name");
+        //             }
+        //         }, 3000);
+        //     });
+        //}
+
+        // scheduledMsgPromise.then((msg)=>{}).catch((err)=>{});
+        // scheduledMsgPromise.then((msg)=>{}, (err)=>{});
+
+        // sendRegRequest().then((msg) => {
+        //         console.log(msg);
+        //     },
+        //     (err) => {
+        //         console.error(err);
+        //         alert("plz try again");
+        //     });
+
+        // console.log("test..");
+        //////////////////////////////
+        //Cahining (implicit)
+        // chainingPromises()
+        // .then((msg) => {
+        //     console.log(msg);
+        //     return "Good morning"; //Implicit promise (resolve)
+        // })
+        // .then((msg) => {
+        //     console.log(msg);
+        //     return "Good afternoon";
+        // })
+        // .then((msg) => {
+        //     console.log(msg);
+        //     return "Good evening";
+        // })
+        // .then((msg) => {
+        //     console.log(msg);
+        //     console.log("Task Finished");
+        // });
+        /////////////////////////
+        //Chaining (Explicit)
+        // function chainingPromises() {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             //console.log("Chaining tasks started!");
+        //             resolve("Chaining tasks started!");
+        //             if (false) {
+        //                 reject();
+        //             }
+        //         }, 3000)
+        //     });
+        // };
+
+        // chainingPromises()
+        //     .then((msg) => {
+        //         console.log(msg);
+        //         return new Promise((resolve, reject) => { //Explicit
+        //             setTimeout(() => {
+        //                 resolve("Good morning");
+        //             }, 2000);
+        //         });
+        //     }, () => {
+        //         console.log("error"); //will stop chaining
+        //     })
+        //     .then((msg) => {
+        //         console.log(msg);
+        //         return new Promise((resolve, reject) => {
+        //             setTimeout(() => {
+        //                 resolve("Good afternoon");
+        //             }, 2000);
+        //         });
+        //     })
+        //     .then((msg) => {
+        //         console.log(msg);
+        //         return new Promise((resolve, reject) => {
+        //             setTimeout(() => {
+        //                 resolve("Good evenning");
+        //             }, 2000);
+        //         });
+        //     })
+        //     .then((msg) => {
+        //         console.log(msg);
+        //         console.log("Task Finished");
+        //     });
+    </script>
+
+    <head>
+
+        <body>
+            asynchronous call - promise
+        </body>
+
+</html>

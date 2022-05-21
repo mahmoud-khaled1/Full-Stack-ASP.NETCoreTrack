@@ -1,0 +1,20 @@
+install:
+First you need to install node.js
+then:
+> npm install -g typescript
+
+In case of error in installation:
+> npm cache clear --force
+
+
+For compile:
+ tsc main.ts 
+
+Watch:
+ tsc main.ts --watch
+ ----------------------------
+ tsconfig:
+ https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#using-tsconfigjson-or-jsconfigjson
+ https://www.tutorialsteacher.com/typescript/typescript-compiling-project-and-tsconfig
+
+

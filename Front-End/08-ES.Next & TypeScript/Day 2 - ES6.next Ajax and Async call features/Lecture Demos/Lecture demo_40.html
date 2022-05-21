@@ -1,0 +1,50 @@
+<!DOCType html>
+<html>
+    <head>
+		<script>	
+			//Definition
+			function doDelayedAction()
+			{
+				return new Promise((resolve, reject)=>{
+					setTimeout(()=>{
+						console.log("Action will be done after 3 sec.");
+						if (true)
+							resolve(2);
+						else
+							reject("Error occured");
+					},3000);
+				});
+			};
+			
+			//Promise chaning
+			doDelayedAction().then(
+					(data)=>{console.log(data);return Number(data) * 2}
+				).then(
+					(data)=>{console.log(data);return Number(data) * 2}
+				).then(
+					(data)=>{
+						return new Promise((resolve, reject)=>{
+							setTimeout(()=>{
+								console.log(data);
+								if(true)
+									resolve(Number(data) * 2);
+								else
+									reject("err");
+							},2000);
+						});
+					}
+				).then(
+					(data)=>{console.log(data);}
+				);
+
+			//code
+			console.log("Statements after promise");
+		
+		</script>
+        
+    <head>
+    <body>
+		asynchronous  call - promise
+    </body>
+
+</html>

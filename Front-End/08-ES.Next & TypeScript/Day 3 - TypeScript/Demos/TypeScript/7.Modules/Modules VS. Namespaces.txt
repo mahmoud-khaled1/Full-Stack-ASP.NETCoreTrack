@@ -1,0 +1,13 @@
+Modules and namespaces are two means of encapsulation - breaking your code into parts that make sense. 
+New code should be written with modules, rather than namespaces.
+
+Namespaces are used to organize/encapsulate your code. External modules are used to organize/encapsulate your code AND to locate your code at runtime. In practice, you have two choices at runtime: 
+1) combine all transpiled code into one file
+2) use external modules and have multiple files and require some other mechanism to get at those files.
+
+----------------------------------
+More:
+https://stackoverflow.com/questions/38582352/module-vs-namespace-import-vs-require-typescript
+https://stackoverflow.com/questions/44493381/namespaces-vs-modules-vs-typings-in-typescript
+https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html
+http://fizzylogic.nl/2016/02/07/typescript-internal-vs-external-modules/

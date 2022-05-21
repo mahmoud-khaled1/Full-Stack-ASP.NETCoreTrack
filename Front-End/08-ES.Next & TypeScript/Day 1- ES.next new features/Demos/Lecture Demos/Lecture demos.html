@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        //var x; //Global variable //window.x
+        //x = 10;
+    </script>
+</head>
+
+<body>
+    <script>
+        
+ 	//'use strict' // The purpose of "use strict" is to indicate that the code should be executed in "strict mode". 
+        //With strict mode, you can not, for example, use undeclared variables.
+        //Link for more information : https://www.w3schools.com/js/js_strict.asp
+        // console.log(x);
+        // Scope
+        //function test() {
+        // var x = 20; //local variable
+        // console.log(x);
+        // console.log(window.x);
+
+        //z = 30; //Global variable// window.z=30;
+
+        //     var personName;
+        //     //personname = "";
+        // }
+        // test();
+
+        // for (let i = 0; i < 5; i++) { //Block scope
+        //     //console.log(i);
+        // }
+
+        // //console.log(i);
+        // x = 10;
+        // var x; //hoisting
+
+
+        // let a; //JS prevent access before its declaration
+        // a = 3;
+
+        // const pi = 3.14;
+        // // pi = 44;
+
+	// Diferent detween let , var ,const 
+        // 1- Let 
+            // The let keyword was introduced in ES6 (2015).
+
+            // Variables defined with let cannot be Redeclared.
+
+            // Variables defined with let must be Declared before use.
+
+            // Variables defined with let have Block Scope.
+        // 2- const 
+            
+            // The const keyword was introduced in ES6 (2015).
+
+            // Variables defined with const cannot be Redeclared.
+
+            // Variables defined with const cannot be Reassigned.
+
+            // Variables defined with const have Block Scope.
+
+        // 3-var 
+            //The var keyword is used in all JavaScript code from 1995 to 2015.
+
+
+        // Function Default parameter
+        // function sum(n1 = 0, n2 = 0) {
+        //     // n1=n1||0;
+        //     return n1 + n2;
+        // }
+
+        // sum(5); //5
+
+
+        //For of
+        // var arr = [20, 10, 2, 1, 50];
+        // for (let i in arr) {
+        //     //console.log(i); //index
+        //     //console.log(arr[i]);
+        // }
+
+        // for (let i of arr) {
+        //     console.log(i); //value;
+        // }
+
+        //String literals
+        // let person = {
+        //     name: "AA",
+        //     age: 30,
+        //     jobTitle: "Developer"
+        // };
+
+        // console.log("Person Name: " + person.name + ",  his age: " + person.age + " and he's working as: " + person.jobTitle);
+
+        // console.log(`Person Name: ${person.name}, 
+        //     his age: ${person.age}
+        //     and he's working as: ${person.jobTitle}`);
+
+        //OOP
+        // class Person {
+        //     constructor(name = "", age = 18) {
+        //         this.name = name;
+        //         this.age = age;
+        //     }
+
+        //     print() {
+        //         console.log(`Person Name: ${this.name}, 
+        //             and his age: ${this.age}`)
+        //     }
+        // }
+
+        // let p1 = new Person('AA', 30);
+        // p1.print();
+
+        // class Employee extends Person {
+        //     //#salary = 1000;
+        //     constructor(name, age, jobTitle) {
+        //         super(name, age);
+        //         this.jobTitle = jobTitle;
+        //     }
+
+        //     print() {
+        //         super.print();
+        //         console.log(`Job title: ${this.jobTitle}`);
+        //     }
+
+        //     static whoAmI() {
+        //         console.log("I am an Enployee");
+        //     }
+
+        //     get salaryBonus() {
+        //         return this.#salary * 1.1;
+        //     }
+        // }
+
+        // let e1 = new Employee("BB", 44, "Developer");
+        // e1.print();
+
+        // //console.log(e1.salary);
+        // console.log(e1.salaryBonus);
+
+        // Employee.whoAmI();
+
+        //Arrow Function
+        // function sum(n1, n2) {
+        //     return n1 + n2;
+        // }
+
+        // let sum2 = (n1, n2) => n1 + n2;
+        // //console.log(sum2(10, 20))
+
+        // let sayHello = name => {
+        //     let helloMsg = `Hello ${name}`;
+        //     console.log(helloMsg);
+        // };
+
+        // //Higher order functions
+
+        // // setTimout(() => {
+        // //     console.log("Hi");
+        // // }, 1000);
+
+        // let numArr = [10, 2, 1, 20, 30, 33, 22];
+        // let sortedArr = numArr.sort((a, b) => a - b);
+        // //console.log(sortedArr);
+
+        // let foundElem = numArr.find(elem => elem > 20);
+        // console.log(numArr);
+        // console.log(foundElem);
+
+        // let foundElems = numArr.filter(elem => elem > 20);
+        // console.log(foundElems);
+
+        // class person {
+        //     name = "";
+        //     age = 0;
+        //     constructor(name) {
+        //         this.name = name;
+        //         this.age = 0;
+
+        //         // setInterval(function() {
+        //         //     this.age++
+        //         // }, 1000);
+
+        //         setInterval(() => {
+        //             this.age++
+        //         }, 1000);
+        //     }
+        // }
+
+        // let p1 = new person("AA");
+
+        // setTimeout(function() {
+        //     console.log(p1.age);
+        // }, 4500);
+
+        // var arr = [10, 20, 30, 40];
+        // console.log(...arr);
+
+        // var arr2 = [...arr, 50, 60, 70];
+        // console.log(...arr2);
+
+        // function sum() {
+        //     let result = 0;
+        //     for (let arg of arguments) {
+        //         result += arg;
+        //     }
+        //     return result;
+        // }
+
+        // console.log(sum(1, 2, 3, 4, 5));
+
+        // function sum2(arrOfNumbers) {
+        //     let result = 0;
+        //     for (let arg of arrOfNumbers) {
+        //         result += arg;
+        //     }
+        //     return result;
+        // }
+
+        // let arr = [1, 2, 3, 4, 5];
+        // console.log(sum2(arr));
+
+        // function sum3(...arrOfNumbers) {
+        //     let result = 0;
+        //     for (let arg of arrOfNumbers) {
+        //         result += arg;
+        //     }
+        //     return result;
+        // }
+
+        // console.log(sum3(1, 2, 3, 4, 5));
+
+        // //let x, y, z;
+        // let arr = [1, 2, 3, 4, 5, 6];
+        // // x=arr[0];
+        // // y=arr[1];
+        // // z=arr[2];
+        // let [x, y, z, ...r] = arr; //Array destructring
+
+        // console.log(x, y, z);
+        // console.log(r);
+
+        // let x = 1;
+        // let y = 2;
+
+        // // let temp=x;
+        // // x=y;
+        // // y=temp;
+
+        // [x, y] = [y, x];//swapping
+        // console.log(x, y);
+
+        // let stdGrades={
+        //     "Ahmed": 60,
+        //     "Ali":70,
+        //     "Mona":100
+        // };
+        // console.log(std.Ahmed);
+
+        // let stdGrades=new Map();
+        // stdGrades.set("Ahmed", 60);
+        // stdGrades.set("Ali", 70);
+        // stdGrades.set("Mona", 100);
+
+        // console.log(stdGrades.get("Ahmed"));
+
+        // let stdArr = [
+        //     ["Ahmed", 60],
+        //     ["Ali", 70, ],
+        //     ["Mona", 100]
+        // ];
+
+        // let stdGrades = new Map(stdArr);
+        // console.log(stdGrades.get("Ahmed"))
+
+        let stdGradesArr = [
+            ['aa', {
+                js: "Excellent",
+                angular: " Good",
+                reactjs: "Good"
+            }],
+            ['bb', {
+                js: "Fair",
+                angular: "Very Good",
+                reactjs: "Good"
+            }],
+            ['dd', {
+                js: "Excellent",
+                angular: "Very Good",
+                reactjs: "Fair"
+            }]
+        ];
+
+        var stdGradesMap = new Map(stdGradesArr);
+
+        //console.log(stdGradesMap.get("aa"));
+        //console.log(...stdGradesMap);
+        // console.log(...stdGradesMap.keys());
+        //console.log(...stdGradesMap.values());
+
+        // for (let item of stdGradesMap.values()) {
+        //     console.log(item);
+        // }
+
+        for (let [key, val] of stdGradesMap) {
+            console.log(`Key: ${key}, and its value: ${val.angular}`);
+        }
+    </script>
+
+</body>
+
+</html>

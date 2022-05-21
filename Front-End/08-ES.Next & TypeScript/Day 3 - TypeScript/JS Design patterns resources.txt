@@ -1,0 +1,33 @@
+Javascript Design and Architectural patterns (Self-study)
+Required design and architectural patterns: Singleton, Factory, Module, Decorator, Observer,Mixin, Mediator, Command, Dependency Injection, MVC, MVVM
+
+----------------------------------------
+Design Patterns Vs. Architectural Patterns:
+https://www.fullstacktutorials.com/architectural-patterns-vs-design-patterns-57.html
+https://herbertograca.com/2017/07/28/architectural-styles-vs-architectural-patterns-vs-design-patterns
+
+-----------------------------------------
+Good Tutorials:
+https://www.dofactory.com/javascript/design-patterns
+https://addyosmani.com/resources/essentialjsdesignpatterns/book/
+https://www.digitalocean.com/community/tutorial_series/javascript-design-patterns#prototype-design-pattern-in-javascript
+https://dev.to/shijiezhou/top-10-javascript-patterns-every-developers-like-168p
+https://morioh.com/p/738f2be15243
+https://www.joezimjs.com/javascript/javascript-design-patterns-command/
+
+Implementation source code:
+https://github.com/fbeline/design-patterns-JS
+-------------------------------------------
+ SOLID tutorial: 
+https://youtube.com/playlist?list=PLnqAlQ9hFYdflFSS4NigVB7aSoYPNwHTL
+
+-------------------------------------------
+JS Design patterns using ES6:
+https://loredanacirstea.github.io/es6-design-patterns/
+https://www.velotio.com/engineering-blog/design-patterns-in-es6
+----------------------------------------------------------------
+JS Design patterns online course:
+https://www.udacity.com/course/javascript-design-patterns--ud989
+
+Design patterns online course (In general, not in JS):
+https://www.coursera.org/learn/design-patterns

@@ -1,0 +1,30 @@
+<!DOCType html>
+<html>
+
+<head>
+   
+    <script>
+       function scheduledMsg(msg, timeInSec, callback)
+       {
+           setTimeout(()=>{
+            console.log(msg);
+            callback();
+           },timeInSec*1000)
+       }
+
+       scheduledMsg("User Msg", 2,()=>{
+           console.log("User msg printed");
+       });
+       
+    //    console.log("User msg printed");
+    </script>
+
+    <head>
+
+        <body>
+            Callback Functions
+            <br>
+           
+        </body>
+
+</html>

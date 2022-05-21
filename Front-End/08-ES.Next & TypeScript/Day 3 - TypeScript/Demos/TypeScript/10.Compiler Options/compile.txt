@@ -1,0 +1,5 @@
+tsc  
+// default tsconfig.json in the same folder
+
+
+tsc -p "config file name"

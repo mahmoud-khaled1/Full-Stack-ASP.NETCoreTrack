@@ -1,0 +1,61 @@
+<!DOCType html>
+<html>
+
+<head>
+
+    <script>
+        function scheduledMsg()
+        {
+            return new Promise(function (resolve, reject) {
+                setTimeout(() => {
+                    let x = 10;
+                    console.log("Delayed actions...");
+                    if (x != 0) {
+                        resolve(x);
+                    }
+                    else {
+                        reject("X can't be 0");
+                    }
+                }, 2000);
+            });
+        }
+        
+        // var myPromise = new Promise(function (resolve, reject) {
+        //     setTimeout(() => {
+        //         let x = 10;
+        //         console.log("Delayed actions...");
+        //         if (x != 0) {
+        //             resolve(x);
+        //         }
+        //         else {
+        //             reject("X can't be 0");
+        //         }
+        //     }, 2000);
+        // });
+
+        // myPromise.then((result) => {
+        //     console.log("Exucted successfully");
+        //     console.log(result);
+        // }, (err)=>{
+        //     console.log(err);
+        // });
+
+        scheduledMsg().then((result) => {
+            console.log("Exucted successfully");
+            console.log(result);
+        }, (err)=>{
+            console.log(err);
+        });
+        //console.log("Executed")
+
+    </script>
+
+    <head>
+
+    <body>
+        Callback Functions
+        <br>
+
+    </body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCType html>
+<html>
+    <head>
+		<script>
+			//in Es5
+			function sum(a , b) {
+			  return a + b;
+			}
+			 
+			console.log( sum() );//NaN
+			
+			//In ES5, we can solve it like that
+			function sum2(a , b) {
+				var a=a||0;
+				var b=b||0;
+				return a + b;
+			}
+			 
+			console.log( sum2() );//0
+			
+			//-------------------------------------//
+			//in ES6
+			function sum3(a = 0, b = 0) {
+			  return a + b;
+			}
+			 
+			console.log( sum3() );
+			// 0
+			 
+			console.log( sum3(3, 6) );
+			// 9
+		</script>
+        
+    <head>
+    <body>
+		Default values for parameters test!
+    </body>
+
+</html>

@@ -1,0 +1,25 @@
+﻿<html>
+
+<head>
+
+    <title>JSON With AJAX from Web API</title>
+
+    <script>
+        let url='https://reqres.in/api/products';
+        fetch(url, {method:'GET'})
+            .then((res)=>{
+                return res.json();
+            })
+            .then((resJson)=>{
+                console.log(resJson.data[0]);
+            })
+    </script>
+</head>
+
+<body>
+    <!-- <input type="text" id="pID"> -->
+   
+
+</body>
+
+</html>

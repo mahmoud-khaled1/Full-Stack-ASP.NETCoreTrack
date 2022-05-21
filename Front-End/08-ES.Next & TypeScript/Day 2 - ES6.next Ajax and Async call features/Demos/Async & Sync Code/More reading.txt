@@ -1,0 +1,8 @@
+https://dev.to/bipinrajbhar/how-javascript-works-web-apis-callback-queue-and-event-loop-2p3e
+
+https://dev.to/ahmedtahir/what-is-the-execution-context-execution-stack-scope-chain-in-js-26nc
+
+https://developer.mozilla.org/en-US/docs/Glossary/Call_stack
+
+https://www.mitrais.com/news-updates/asynchronous-in-javascript/
+

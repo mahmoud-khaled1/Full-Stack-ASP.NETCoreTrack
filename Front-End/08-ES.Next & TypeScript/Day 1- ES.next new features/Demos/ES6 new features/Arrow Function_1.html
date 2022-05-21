@@ -1,0 +1,68 @@
+<!DOCType html>
+<html>
+    <head>
+		<script>
+			 /// in ES5
+			 function sum_4(a,b)
+			 {
+				 return a+b;
+			 }
+			 ///////////////////
+			  var sum_5 = function(a, b) {
+					return a + b; 
+			  };
+
+
+			  
+			// 1. One parameter in ES6
+			let sum_6 = (a, b) => a + b; 
+			
+			//calling
+			let res=sum_6(2,3);
+			alert(res);
+			
+			 //-----------------------------------//
+			 // in ES5
+			  var randomNum_5 = function() {
+				return Math.random(); 
+			  };
+			  
+			 
+			// 2. Without parameters in ES6
+			let randomNum_6 = () => Math.random();
+			
+			//Calling
+			alert(randomNum_6());
+			
+			//---------------------------------------------//
+			// in ES5
+			  var message_5 = function(yourName) {
+				alert("Hi " + yourName + "!");  
+			  };  
+			 
+			// 3. Without return in ES6
+			//let message_6 = (name) => alert("Hi " + name + "!"); 
+			let message_6 = name => alert("Hi " + name + "!"); 
+			
+			//calling
+			message_6("ES6");
+
+			//4.multi-statement
+			let message_7 = name => {alert("Hi " + name + "!");
+									 return name;}; 
+			 
+			  
+		</script>
+		
+		
+		/* let sumFun= (a,b) => a+b;
+			  let fun1= () => 10;
+			  let fun2= () =>{console.log ("test");}
+			  let fun3= x => x*10;
+			  let fun4= x=>{x++; alert(x)} */
+    <head>
+    <body>
+		Arrow functions test!
+    </body>
+
+</html>

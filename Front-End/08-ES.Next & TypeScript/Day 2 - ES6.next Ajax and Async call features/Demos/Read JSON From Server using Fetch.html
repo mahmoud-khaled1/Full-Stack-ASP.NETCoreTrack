@@ -1,0 +1,77 @@
+﻿<html>
+
+<head>
+
+    <title>JSON With AJAX from Web API</title>
+
+    <script>
+        // Docs for Fetch: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
+
+        function getProducts(URL) {
+            //fetch(URL, {method:'POST', body:{}, headers:{}})
+
+            fetch(URL) //return Promise
+                .then(function(response) {
+                    console.log(response);
+                    if (response.status == 200)
+                        return (response.json())
+                })
+                .then(function(resJSON) {
+                    console.log(resJSON);
+                    for (let prod of resJSON.data)
+                        document.getElementById("prod").innerHTML += prod.name + ",<br>";
+                });
+            alert("Request sent...");
+        }
+        /////////
+
+        function getProductsUsingArrowFunc(URL) {
+            fetch(URL)
+                .then((response) => (response.json()))
+                //.then((response) => {return (response.json())})
+                .then((resJSON) => {
+                    for (let prod of resJSON.data)
+                        document.getElementById("prod").innerHTML += prod.name + ",<br>";
+                });
+            alert("Request sent...");
+        }
+
+        function insertEmp() {
+            let empObj = {
+                JobID: 1,
+                Name: "Test22",
+                Mobile: "11111111112",
+                Email: "dsds2@test.com",
+                NationalID: "11111111111112",
+                Gender: 1,
+                IsActive: true
+            };
+            let url = 'https://api.mohamed-sadek.com/Employee/POST';
+            fetch(url, {
+                method: 'POST',
+                body: JSON.stringify(empObj),
+                headers: {
+                    'content-type': 'application/json'
+                }
+            }).then((response) => {
+                console.log(response.statusText);
+                if (response.status == 200)
+                    return response.json()
+            }).then((resJSON) => {
+                console.log(resJSON);
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <input type="text" id="pID"> -->
+    <input type="button" id="button2" onclick="getProducts('https://reqres.in/api/products')" value="show product" />
+    <input type="button" id="button2" onclick="insertEmp()" value="Insert product" />
+
+    <div id="prod"></div>
+
+</body>
+
+</html>

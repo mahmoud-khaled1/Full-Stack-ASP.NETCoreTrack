@@ -1,0 +1,37 @@
+<!DOCType html>
+<html>
+
+<head>
+    <script>
+        /*
+                        			Synchronous code:
+                        			In synchronous programs, if you have two lines of code 
+                        			(L1 followed by L2), then L2 cannot begin running until L1 has finished 
+                        			executing.
+                        			*/
+        function getProduct() {
+            var xhr = new XMLHttpRequest();
+
+            var url = "https://reqres.in/api/products/1";
+            xhr.open("get", url, false); //false makes the call to be sync.
+            xhr.send(); //will block the rest of code until it executes.
+            if (xhr.status == 200)
+                console.log(xhr.responseText);
+            console.log("this is alert after ajax call");
+        }
+
+
+        //More: 
+        //https://www.pluralsight.com/guides/front-end-javascript/introduction-to-asynchronous-javascript
+        //https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests
+    </script>
+
+    <head>
+
+        <body>
+            difference between synchronous and asynchronous code
+            <br>
+            <button onclick="getProduct()">Get product</button>
+        </body>
+
+</html>

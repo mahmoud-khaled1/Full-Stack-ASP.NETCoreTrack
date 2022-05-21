@@ -1,0 +1,140 @@
+<!DOCType html>
+<html>
+
+<head>
+    <script>
+        /* call to promise.then returns a promise, 
+                                                                                                                                                                			so that we can call the next .then on it.
+
+                                                                                                                                                                			When a handler returns a value, it becomes the result of 
+                                                                                                                                                                			that promise, so the next .then is called with it.*/
+
+        // console.log("testing promise chaining...");
+        // new Promise(function(resolve, reject) {
+        //     setTimeout(() => resolve(1), 1000); // (*)
+        // }).then(function(result) { // (**)
+        //     console.log(result); // 1
+        //     return result * 2;// will return implicit promise
+        // }).then(function(result) { // (***)
+        //     console.log(result); // 2
+        //     return result * 2; // will return implicit promise
+        // }).then(function(result) {
+        //     console.log(result); // 4
+        //     return result * 2; // will return implicit promise
+        // });
+
+        //Promise chaining
+        //Returning promises allows us to build chains of asynchronous actions.
+
+        new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("Good morning");
+                resolve(1);
+            }, 3000);
+        }).then((count) => {
+            console.log("Msg No.:" + count);
+            // return 2;
+            return new Promise((resolve, reject) => { //Explicit promise
+                setTimeout(() => {
+                    console.log("Good Afternoon...");
+                    resolve(2);
+                }, 3000);
+            });
+        }).then((count) => {
+            console.log("Msg No.:" + count);
+            // return 2;
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log("Good Evening...");
+                    resolve(3);
+                }, 3000);
+            });
+        }).then((count) => {
+            console.log("Msg No.:" + count);
+            console.log("THE END....");
+        });
+
+
+        //-------------------------------------------------//
+
+        /*
+        Unlike the chaining,  we can  add many .then to a single promise,
+        …But that’s a totally different thing,
+        All .then on the same promise get the same result 
+        (the result of that promise). 
+        So in the code below all alert show the same: 1. 
+        There is no result-passing between them.
+        */
+
+        // let promise = new Promise(function(resolve, reject) {
+        //     setTimeout(() => resolve(1), 1000);
+        // });
+
+        // promise.then(function(result) {
+        //     console.log("Testing multiple then calls");
+        //     //console.log(result); // 1
+        //     console.log(result * 2); //2
+        // });
+
+        // promise.then(function(result) {
+        //     //console.log(result); // 1
+        //     console.log(result * 2); //2
+        // });
+
+        // promise.then(function(result) {
+        //     //console.log(result); // 1
+        //     console.log(result * 2); //2
+        // });
+
+        //-------------------------------------------------//
+        /*
+        Returning promises:
+        Normally, a value returned by a .then handler is immediately 
+        passed to the next handler. But there’s an exception.
+        If the returned value is a promise, then the further execution 
+        is suspended until it settles. 
+        After that, the result of that promise is given to the next .then handler.
+
+        Here the first .then shows 1 returns new Promise(…) in the line (*). 
+        After one second it resolves, and the result 
+        (the argument of resolve, here it’s result*2) is passed on to handler 
+        of the second .then in the line (**). 
+        It shows 2 and does the same thing.
+
+        So the output is again 1 → 2 > 4, but now with 1 second delay 
+        between alert calls.
+
+        Returning promises allows us to build chains of asynchronous actions.
+        */
+        // new Promise(function(resolve, reject) {
+        //     setTimeout(() => resolve(1), 1000);
+        // }).then(function(result) {
+        //     console.log("Testing multiple then calls");
+        //     console.log(result); // 1
+        //     return new Promise((resolve, reject) => { // (*)
+        //         setTimeout(() => resolve(result * 2), 1000);
+        //     });
+
+        // }).then(function(result) { // (**)
+        //     console.log(result); // 2
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => resolve(result * 2), 1000);
+        //     });
+
+        // }).then(function(result) {
+        //     console.log(result); // 4
+        // });
+
+        //More details: https://javascript.info/promise-chaining
+        //Extra reading//
+        //promise.all : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
+        //promise.race: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race
+    </script>
+
+    <head>
+
+        <body>
+            asynchronous call - promise chaining
+        </body>
+
+</html>

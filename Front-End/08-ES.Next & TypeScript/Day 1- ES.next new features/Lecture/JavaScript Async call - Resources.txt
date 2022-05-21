@@ -1,0 +1,6 @@
+Online Resources:
+https://javascript.info/async  
+Books:
+Understanding ECMAScript 6 by Nicolas Zakas book
+ES6 Cheatsheet (FREE PDF)
+Exploring ES6 by Dr. Axel Rauschmayer

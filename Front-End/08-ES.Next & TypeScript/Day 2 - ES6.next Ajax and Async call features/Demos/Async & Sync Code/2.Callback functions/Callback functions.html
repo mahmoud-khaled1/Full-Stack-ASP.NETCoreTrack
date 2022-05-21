@@ -1,0 +1,73 @@
+<!DOCType html>
+<html>
+
+<head>
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+    <script>
+        /*
+                Many actions in Javascript are asynchronous.
+                One of the solution if you want some code to be executed 
+                only after an async. func. is callback functions.
+
+                A callback function is a function passed into another function 
+                as an argument, which is then invoked inside the outer function 
+                to complete some kind of routine or action.
+                */
+        //Example:
+        setTimout(() => {
+            console.log("Message after 3 seconds!");
+        }, 3000);
+        console.log("After setTomeout");
+
+        //Example for callback function in JQuery.
+        function getProduct() {
+            var url = "https://reqres.in/api/products/1";
+            //$.getJSON(url,callback_function);
+            $.get(url, function(result) {
+                console.log(result);
+            });
+
+            console.log("after ajax call");
+        }
+
+        //Examples in JQuery
+        $(document).ready(function() {
+            $("p").hide(5000, function() {
+                console.log("Hide Completed...")
+            });
+            //console.log("Hide completed after hide function");
+        });
+
+
+
+        /*
+			“Callback Hell” Problem And Solution:
+			In asynchronous code execution, which is simply execution of 
+			code in any order, sometimes it is common to have numerous levels 
+			of callback functions to the extent that you have code that looks like 
+			the following. The messy code below is called callback hell because of
+			the difficulty of following the code due to the many callbacks. 
+			
+			Here are two solutions to this problem:
+    		1-Name your functions and declare them and pass just the name of 
+			the function as the callback, instead of defining an anonymous 
+			function in the parameter of the main function.
+    		2-Modularity: Separate your code into modules, so you can export 
+			a section of code that does a particular job. 
+			Then you can import that module into your larger application.
+			*/
+        //More: 
+        //https://developer.mozilla.org/en-US/docs/Glossary/Callback_function
+        //http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/
+    </script>
+
+    <head>
+
+        <body>
+            Callback Functions
+            <br>
+            <p> this is a test p</p>
+            <button onclick="getProduct()">Get Product</button>
+        </body>
+
+</html>

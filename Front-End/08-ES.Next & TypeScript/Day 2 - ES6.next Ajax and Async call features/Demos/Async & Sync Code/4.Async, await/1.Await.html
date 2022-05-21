@@ -1,0 +1,104 @@
+<!DOCType html>
+<html>
+
+<head>
+    <script>
+        /*
+                                            Await:
+                                            The keyword await makes JavaScript wait until that promise 
+                                            settles and returns its result.
+
+                                            keyword await that works ONLY inside async functions
+
+                                            In the below example:
+                                            The function execution “pauses” at the line (*) and resumes 
+                                            when the promise settles, with result becoming its result. 
+                                            So the code above shows “done!” in one second.
+                                            */
+
+        // function _f() {
+        //     let testPromise = new Promise((resolve, reject) => {
+        //         setTimeout(() => resolve("done!"), 3000)
+        //     });
+        //     /////
+        //     return testPromise;
+        // }
+
+        //Without await
+        async function _f() {
+            let testPromise = new Promise((resolve, reject) => {
+                setTimeout(() => resolve("done!"), 3000)
+            });
+            ///// Without Await (Will not wait for promise)
+            // testPromise.then((result) => {
+            //     console.log("In Async. function, result of promise:" + result); // "done!"
+            //     return result;
+            // });
+
+            ///// With await (waiting for the promise to resolve)
+            let result = await testPromise;
+            return result;
+        }
+
+        // _f().then((res) => {
+        //     console.log("Finished");
+        //     console.log(res);
+        // });
+
+        //without return
+        async function _f2() {
+            let testPromise = new Promise((resolve, reject) => {
+                setTimeout(() => resolve("done!"), 3000)
+            });
+            ///// Without Await (Will not wait for promise)
+            // testPromise.then((result) => {
+            //     console.log("In Async. function, result of promise:" + result); // "done!"
+            //     return result;
+            // });
+
+            ///// With await (waiting for the promise to resolve)
+            let result = await testPromise;
+            console.log(result);
+        }
+
+        // _f2();
+
+        // //With await
+        // async function f() {
+        //     let testPromise = new Promise((resolve, reject) => {
+        //         setTimeout(() => resolve("done!"), 3000)
+        //     });
+        //     //wait till the promise resolves (*)
+        //     //Execure promise, and return its returned resolve value in the assigned variable
+        //     let result = await testPromise; //works ONLY inside async functions
+
+        //     console.log("In Async. function..."); // "done!"
+        //     return result;
+        //     //The prev. 2 lines (await) can be replaced by the following code:
+        //     /*promise.then((res)=>{
+        //     	console.log("In Async. function, result of promise:" +res);	
+        //     });*/
+        // }
+        // console.log("Testing await...");
+        // console.log("Before calling function...");
+        // //f();
+        // //console.log("After calling function...");
+
+        // f().then((res) => {
+        //     console.log("In Async. function, result of promise:" + res);
+
+        // });
+
+        // //More: 
+        //https://javascript.info/async-await
+        //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
+    </script>
+
+    <head>
+
+        <body>
+            Async, await
+
+        </body>
+
+</html>

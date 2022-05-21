@@ -1,0 +1,69 @@
+<!DOCType html>
+<html>
+
+<head>
+    <script>
+        //Definition
+        // function timedMsg(msg, timeInSec, callbackfun) {
+        //     setTimeout(function() {
+        //         console.log(msg);
+        //         callbackfun();
+        //     }, timeInSec * 1000);
+        // }
+
+
+        function doAjaxCall(url) {
+            return new Promise(function(resolve, reject) {
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState == 4) {
+                        if (xhr.status == 200) {
+                            var res = xhr.responseText;
+                            resolve(res);
+                        } else {
+                            reject(xhr.status);
+                        }
+                    }
+
+                };
+
+                xhr.open("GET", url, true);
+                xhr.send();
+            });
+        }
+    </script>
+
+    <head>
+
+        <body>
+            asynchronous call - promise
+            <button id="b1">Test</button>
+            <script>
+                document.querySelector("#b1").onclick = function() {
+                    // timedMsg("Hello", 3, function() {
+                    //     console.log("User function finished");
+                    // });
+                    // //console.log("user function finished");
+                    // };
+                    // myPromise.then((msg) => {
+                    //     console.log(msg);
+                    // }, (err) => {
+                    //     console.log(err);
+                    // });
+
+                    doAjaxCall("https://reqres.in/api/products/1")
+                        .then((data) => {
+                                console.log("Success");
+                                console.log(data);
+                            },
+                            (err) => {
+                                console.log("Error code: " + err);
+                            });
+
+
+
+                };
+            </script>
+        </body>
+
+</html>

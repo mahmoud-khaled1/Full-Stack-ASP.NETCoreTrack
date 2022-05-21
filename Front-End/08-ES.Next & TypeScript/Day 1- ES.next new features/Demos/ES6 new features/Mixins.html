@@ -1,0 +1,66 @@
+<!DOCType html>
+<html>
+
+<head>
+    <script>
+        //Mixins
+        // A mixin could is a class that has methods which we can use in our class without inheriting from the mixin class. 
+        // It is a way of adding properties to object without using inheritance.
+        // https://javascript.info/mixins
+        // https://dev.to/bhagatparwinder/what-are-mixins-2a3p
+        let sayHiMixin = {
+            sayHi() {
+                alert(`Hello ${this.name}`);
+            },
+            sayBye() {
+                alert(`Bye ${this.name}`);
+            }
+        };
+
+        //sayHiMixin.sayHi();//undefined
+
+        //console.log(sayHiMixin.sayHi());
+
+        // usage:
+        class Person {
+            constructor(name) {
+                this.name = name;
+            }
+        }
+
+        class Employee extends Person {
+            constructor(name, jobTitle) {
+                super(name);
+                this.jobTitle = jobTitle;
+            }
+        }
+
+        class Student extends Person {
+            constructor(name, grade) {
+                super(name);
+                this.grade = grade;
+            }
+        }
+
+        // copy the methods
+        Object.assign(Employee.prototype, sayHiMixin);
+        Object.assign(Student.prototype, sayHiMixin);
+
+        var e1 = new Employee("AA", "Developer");
+
+        e1.sayHi();
+        e1.sayBye();
+
+
+        var s1 = new Student("BB", 100);
+
+        s1.sayHi();
+        s1.sayBye();
+    </script>
+</head>
+
+<body>
+    Mixins
+</body>
+
+</html>

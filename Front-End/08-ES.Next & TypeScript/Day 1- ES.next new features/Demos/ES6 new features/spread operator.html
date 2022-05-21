@@ -1,0 +1,72 @@
+<!DOCType html>
+<html>
+
+<head>
+    <script>
+        let myArray = [0, 1, 2, 3];
+
+        //ES5
+        //let newArray=[myArray[0],myArray[1],myArray[2],myArray[3],4,5,6];
+
+        let newArray = [...myArray, 4, 5, 6];
+
+        console.log(newArray);
+        // 0,1, 2, 3, 4, 5, 6
+
+        //-------------------------------------------------//
+
+        let myArray2 = [1, 2, 3];
+
+        function sum2(a, b, c) {
+            return a + b + c;
+        }
+
+        //console.log(sum2(10,20,30));
+        //console.log(sum2(myArray2[0], myArray2[1], myArray2[2]));// 6
+        console.log(sum2(...myArray2)); // 6
+
+        //----------------------------------------------//
+
+
+        //In ES5
+        function fun() {
+            var sum = 0;
+            for (i in arguments)
+                sum += arguments[i];
+            console.log(sum);
+        }
+        //calling
+        fun(1, 3, 4);
+        fun(1, 3, 4, 6, 8);
+
+        //Another Solution
+        function fun(numArr) {
+            var sum = 0;
+            for (i in numArr)
+                sum += numArr[i];
+            console.log(sum);
+        }
+        //calling
+        var arr = [1, 2, 3];
+        fun(arr);
+
+
+        //In ES6
+        function fun(...args) {
+            var sum = 0;
+            for (i in args)
+                sum += args[i];
+            console.log(sum);
+        }
+        //calling
+        fun(1, 3, 4);
+        fun(1, 3, 4, 5, 7);
+    </script>
+
+    <head>
+
+        <body>
+            spread operator test!
+        </body>
+
+</html>

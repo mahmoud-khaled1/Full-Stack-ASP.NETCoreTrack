@@ -1,0 +1,13 @@
+//https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+//https://www.typescriptlang.org/tsconfig
+{
+    "compilerOptions": {
+        "module": "es2020",
+        "removeComments": true,
+        "target": "ES2020",
+        "lib": ["ES5", "ES2020", "DOM" ]
+      },
+      
+      "files": ["Firstts.ts"]
+    
+}

@@ -1,0 +1,91 @@
+<!DOCType html>
+<html>
+
+<head>
+    <script>
+        //Callback Functions:
+        // In JavaScript, a callback function is a function that is passed into another function as an argument. This function can then be invoked during the execution of that higher order function (that it is an argument of).
+        // Since, in JavaScript, functions are objects, functions can be passed as arguments.
+
+        //Higher-Order Functions:
+        //In Javascript, functions can be assigned to variables in the same way that strings or arrays can. They can be passed into other functions as parameters or returned from them as well.
+        //A “higher-order function” is a function that accepts functions as parameters and/or returns a function.
+        //https://www.codecademy.com/learn/game-dev-learn-javascript-higher-order-functions-and-iterators/modules/game-dev-learn-javascript-iterators/cheatsheet
+
+
+        ///////////////////
+        //arr.sort()
+        //arr.sort(compareFunction)
+        //If compareFunction is not supplied, 
+        //elements are sorted by converting them to strings and comparing strings 
+        //in Unicode code point order. 
+
+        //If compareFunction is supplied, the array elements are sorted according to 
+        //the return value of the compare function. If a and b are two elements being compared, then:
+
+        //If compareFunction(a, b) is less than 0, sort a to a lower index than b, 
+        //i.e. a comes first.
+
+        //If compareFunction(a, b) returns 0, leave a and b unchanged with respect to each other,
+        //but sorted with respect to all different elements. 
+
+        //If compareFunction(a, b) is greater than 0, sort b to a lower index than a.
+        ///////////////////////////////////////////////////////////////
+
+        //Implementation ES5
+        function compareNumbers(a, b) {
+            return a - b;
+        }
+
+
+        var numbers = [4, 2, 5, 1, 10];
+
+        //normal sort
+        numbers.sort(); //alphapetic // 1,10,2,4,5
+        console.log(numbers);
+
+
+        // sort takes parameter with value: 0, -1, 1
+        numbers.sort(compareNumbers); // 1,2,4,5,10
+
+        //OR//
+        numbers.sort(function(a, b) {
+            return a - b;
+        });
+
+        console.log(numbers);
+
+        // [1, 2, 3, 4, 5, 10]
+
+
+        //--------------------------------------------//
+        //Implementation ES6
+
+        numbers.sort((a, b) => a - b);
+
+        console.log(numbers);
+
+        // [1, 2, 3, 4, 5, 10]
+        /////////////
+        //Other Array methods:
+        //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#instance_methods
+
+        var arr = [1, 10, 13, 40, 50, 55, 44, 53, 67];
+        let foundElem = arr.find((elem) => (elem > 40 && elem % 2 != 0));
+        console.log(`Found element: ${foundElem}`);
+
+        let filterArr = arr.filter((elem) => (elem > 40 && elem % 2 != 0));
+        //console.log(...filterArr);
+        console.log(`Found elements: ${filterArr}`);
+
+        let mapArr = arr.map(elem => elem * 10);
+        console.log(`map elements: ${mapArr}`);
+    </script>
+
+    <head>
+
+        <body>
+            Arrow functions test!
+        </body>
+
+</html>

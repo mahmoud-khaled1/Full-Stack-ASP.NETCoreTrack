@@ -1,0 +1,70 @@
+<!DOCType html>
+<html>
+
+<head>
+    <script>
+        /*
+                        		It takes an iterable object with promises, 
+                        		technically it can be any iterable, but usually it’s an array, 
+                        		and returns a new promise. 
+                        		The new promise resolves with when all of them are settled 
+                        		or when the iterable argument contains no promises. 
+                        		It has an array of their results.
+
+                        		If any of the promises is rejected, 
+                        		Promise.all immediately rejects with that error.
+
+                        		Note that the relative order is the same. 
+                        		Even though the first promise takes the longest time to resolve, 
+                        		it is still first in the array of results.
+                        		*/
+
+        Promise.all([
+            new Promise((resolve, reject) => setTimeout(() => resolve(1), 1000)), // 1
+            new Promise((resolve, reject) => setTimeout(() => resolve(2), 3000)), // 2
+            new Promise((resolve, reject) => setTimeout(() => resolve(3), 2000)) //  3
+        ]).then((values) => {
+            console.log("Testing promise.all");
+            console.log(values);
+        }); // 1,2,3 when promises are ready: each promise contributes an array member
+
+        //--------------------------------------------------------//
+        // //Promise.all can take array takes an iterable object with promises, 
+        // //technically it can be any iterable
+        // var promise1 = Promise.resolve(3);
+        // var promise2 = 42;
+        // var promise3 = new Promise(function(resolve, reject) {
+        //     setTimeout(() => resolve("foo"), 100);
+        // });
+
+        // Promise.all([promise1, promise2, promise3]).then(function(values) {
+        //     console.log("Testing promise.all with different objects");
+        //     console.log(values);
+        // }); // expected output: Array [3, 42, "foo"]
+
+        // //-----------------------------------------------------------------//
+        // /*If any of the promises is rejected, 
+        // Promise.all immediately rejects with that error.
+        // */
+        // Promise.all([
+        //     new Promise((resolve, reject) => setTimeout(() => resolve(1), 1000)),
+        //     new Promise((resolve, reject) => setTimeout(() => reject(new Error("Whoops!")), 2000)),
+        //     new Promise((resolve, reject) => setTimeout(() => resolve(3), 3000))
+        // ]).catch(function(err) {
+        //     console.log("Testing promise.all, with reject for one of the promises");
+        //     console.log(err.message);
+        // }); // Error: Whoops! 
+
+
+        //More: 
+        //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
+        //https://javascript.info/promise-api
+    </script>
+
+    <head>
+
+        <body>
+            asynchronous call - promise.all
+        </body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCType html>
+<html>
+    <head>
+		<script>
+			//ES5
+			function isBigEnough(element) {
+			  return element >= 15;
+			}
+
+	
+
+
+			var arr=[12, 5, 8, 130, 44];
+			
+			var res=arr.find(isBigEnough); 
+			alert(res); // 130
+
+			//arr.find() //return first match element.
+			//arr.filter()//return an array with all matched elements
+
+			var res2=arr.find(function(elem){
+										return elem>=15;
+									}); // 130
+			alert(res2);
+			
+			//---------------------------------------------//
+			//Using Arrow function
+			//ES6
+			var res2=arr.find(element=>element>=15); // 130
+			console.log(res2);
+
+			//---------------------------------------------//
+			var res3=arr.filter(elem=>elem>=15); // 130,44
+			console.log(`Filter: ${res3}`);
+		</script>
+        
+    <head>
+    <body>
+		Arrow functions test!
+    </body>
+
+</html>

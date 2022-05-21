@@ -1,0 +1,14 @@
+define(["require", "exports"], function (require, exports) {
+    "use strict";
+    exports.__esModule = true;
+    exports.Circle = void 0;
+    var Circle = /** @class */ (function () {
+        function Circle() {
+        }
+        Circle.prototype.draw = function () {
+            console.log("Cirlce is drawn (external module)");
+        };
+        return Circle;
+    }());
+    exports.Circle = Circle;
+});

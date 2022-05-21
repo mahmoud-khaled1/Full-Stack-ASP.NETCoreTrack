@@ -1,0 +1,150 @@
+<!DOCType html>
+<html>
+
+<head>
+    <script>
+        /*
+        The Promise object is used for asynchronous computations. 
+        A Promise represents a value which may be available now, or in the future, or never.
+
+        A Promise is a proxy for a value not necessarily known when the promise is created. 
+        It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. 
+        This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.
+
+        A Promise is in one of these states:
+
+            pending: initial state, not fulfilled or rejected.
+            fulfilled: meaning that the operation completed successfully.
+            rejected: meaning that the operation failed.
+        pending promise can either be fulfilled with a value, or rejected with a reason (error). When either of these options happen, the associated handlers queued up by a promise's then method are called. (If the promise has already been fulfilled or rejected when a corresponding handler is attached, the handler will be called, so there is no race condition between an asynchronous operation completing and its handlers being attached.)
+        */
+
+
+        //without promise
+        function myFun() {
+            setTimeout(function() {
+                console.log("I am setTimeout and Finished now!");
+            }, 2000);
+        }
+
+        function userFun() {
+            console.log("I am the function that should run after setTimeOut");
+        }
+        // Call the function
+        myFun();
+        //I want this function to be executed after setTimeout Finished.
+        userFun();
+
+
+
+        //-------------------------------//
+        //with Promise
+        //Creating promise
+        var myFirstPromise = new Promise(function(resolve, reject) {
+            //We call resolve(...) when what we were doing async succeeded, and reject(...) when it failed.
+            //In this example, we use setTimeout(...) to simulate async code. 
+            //In reality, you will probably be using something like XHR or an HTML5 API.
+            setTimeout(function() {
+                let usrName = prompt("Enter your Name...");
+                console.log("Validating user name on the server...");
+                setTimeout(() => {
+                    if (usrName.length > 3) {
+                        resolve("Registeration completed, and user ID: 50");
+                    } else {
+                        reject("Not valid user name");
+                    }
+                }, 3000);
+            });
+        });
+
+        //Consuming (running) the promise
+        /*
+        	A promise object serves as a link between the producing code (executor)
+        	 and the consuming functions – those that want to receive the result/error. Consuming functions can be registered using methods promise.then and promise.catch.
+
+        	The syntax of .then is:
+        	promise.then(
+        		function(result) {  //handle a successful result  },
+        		function(error) {  //handle an error  }
+        	);
+        */
+
+        // after promise finish then ....
+        myFirstPromise.then(function(successMessage) {
+            //successMessage is whatever we passed in the resolve(...) function above.
+            //It doesn't have to be a string, but if it is only a succeed message, it probably will be.
+            console.log("I am the function that should run after setTimeOut! And it returned: " + successMessage);
+        }, function(err) {
+            console.log("I am the function that should run after setTimeOut! And error occured: " + err);
+        });
+        //Promises are asynchronous. The following console.log 
+        //will be executed before promise
+        console.log("Testing: promises are async. - this is after promise call");
+
+        //OR//
+        myFirstPromise.then(function(successMessage) {
+                //successMessage is whatever we passed in the resolve(...) function above.
+                //It doesn't have to be a string, but if it is only a succeed message, it probably will be.
+                console.log("I am the function that should run after setTimeOut! And it returned: " + successMessage);
+            })
+            .catch(function(err) {
+                console.log("I am the function that should run after setTimeOut! And error occured (using catch): " + err);
+            });
+
+
+
+        //----------------------------------------------------------//
+        //Example using Arrow function
+        var wait1000 = new Promise((resolve, reject) => {
+            setTimeout(resolve, 2000)
+        }).then(() => {
+            console.log('Yay!')
+        });
+
+        /*wait1000.then(()=> {
+			  console.log('Yay!')
+			});8/
+
+			//--------------------------------------------------//
+			//handling resolve, reject by arrow functions
+
+			let promise = new Promise(function(resolve, reject) {
+				setTimeout(() => resolve("done!"), 1000);
+			});
+
+			// resolve runs the first function in .then
+			promise.then(
+				result => console.log(result), // shows "done!" after 1 second
+				error => console.log(error) // doesn't run
+				//the same as
+				//(result) => console.log(result), // shows "done!" after 1 second
+				//(error) => console.log(error) // doesn't run
+			);
+
+			//If we’re interested only in errors, then we can use 
+			//.then(null, function) or an “alias” to it: .catch(function)
+			let promise2 = new Promise((resolve, reject) => {
+				setTimeout(() => reject(new Error("Whoops!")), 1000);
+			});
+
+			// .catch(f) is the same as promise.then(null, f)
+			promise2.catch(err=>console.log(err.message)); // shows "Error: Whoops!" after 1 second
+			
+			
+			
+			////////////////////////////////////////////////////////////////////
+			//More:
+				//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+				//https://developers.google.com/web/fundamentals/getting-started/primers/promises
+				//https://webapplog.com/es6/
+				//https://scotch.io/tutorials/javascript-promises-for-dummies
+				//https://javascript.info/promise-basics
+    </script>
+
+    <head>
+
+        <body>
+            asynchronous call - promise
+        </body>
+
+</html>

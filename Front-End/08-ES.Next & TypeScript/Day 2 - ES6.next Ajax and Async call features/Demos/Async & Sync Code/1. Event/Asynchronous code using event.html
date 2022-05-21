@@ -1,0 +1,50 @@
+<!DOCType html>
+<html>
+    <head>
+		<script>
+			/*
+			Asynchronous code:
+			In asynchronous programs, you can have two lines of code 
+			(L1 followed by L2), where L1 schedules some task to be run in 
+			the future, but L2 runs before that task completes.
+
+			In the example below: 
+			setTimeout does not pause the execution of the code. 
+			It only schedules something to happen in the future, 
+			and then immediately continues to the next line.
+			*/
+			/*console.log("Testing Synchronous code"); 
+			console.log("Message before setTimout..."); 
+			setTimeout(function() { 
+				console.log("In setTimeout..."); 
+				}, 2000); 
+			console.log("Message after setTimeout");*/
+
+			//Real-life example (AJAX)
+			function getProduct()
+			{
+				var xhr=new XMLHttpRequest();
+				xhr.onreadystatechange=function(){
+					if(xhr.readyState==4 && xhr.status==200)
+					{
+						var res=xhr.responseText;
+						alert(res);
+					}	
+				};
+				var url="https://reqres.in/api/products/1";
+				xhr.open("get",url,true);//true makes the call to be async.
+				xhr.send();
+				alert("this is alert after ajax call");
+			}
+			//More: 
+				//https://www.pluralsight.com/guides/front-end-javascript/introduction-to-asynchronous-javascript
+				//https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests
+		</script>
+    <head>
+    <body>
+			difference between synchronous and asynchronous code
+			<br>
+			<button onclick="getProduct()">Get product</button>
+    </body>
+
+</html>

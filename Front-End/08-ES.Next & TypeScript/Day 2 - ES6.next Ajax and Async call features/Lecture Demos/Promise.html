@@ -1,0 +1,46 @@
+<!DOCType html>
+<html>
+    <head>
+		<script>	
+		function doSomeThing(){
+			return new Promise((resolve, reject)=>{
+				setTimeout(()=>{
+						console.log("I am Function that take some time and Finished now!");
+						if(true)
+							resolve("10 items found");
+						else
+							reject("Product Not Found");
+					}, 2000);
+			});
+		}
+
+		//doSomeThing();
+
+		doSomeThing().then((msg)=>{
+			console.log("I am the User function that should run after myFun");
+			console.log(msg);
+		},
+		(errMsg)=>{
+			console.log("Error Occured!");
+			console.log(errMsg);
+		});
+		
+	
+			
+	
+			
+			////////////////////////////////////////////////////////////////////
+			//More:
+				//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+				//https://developers.google.com/web/fundamentals/getting-started/primers/promises
+				//https://webapplog.com/es6/
+				//https://scotch.io/tutorials/javascript-promises-for-dummies
+				//https://javascript.info/promise-basics
+		</script>
+        
+    <head>
+    <body>
+		asynchronous  call - promise
+    </body>
+
+</html>

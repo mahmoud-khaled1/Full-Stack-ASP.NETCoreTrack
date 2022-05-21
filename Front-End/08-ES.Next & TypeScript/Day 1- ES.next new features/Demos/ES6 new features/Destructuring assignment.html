@@ -1,0 +1,92 @@
+<!DOCType html>
+<html>
+
+<head>
+    <script>
+        //Basic variable assignment
+        var foo = ['1st value', '2nd value', '3rd value', ];
+
+        //ES5
+        //var x=foo[0];
+        //var y=foo[1];
+        //var z=foo[2];
+
+        var [x, y, z] = foo;
+        console.log(x); // "1st value"
+        console.log(y); // "2nd value"
+        console.log(z); // "3rd value"
+
+        //Assignment separate from declaration
+        var a, b;
+
+        [a, b] = [1, 2];
+        console.log(a); // 1
+        console.log(b); // 2
+
+        //Default values
+        var x, y;
+
+        [x = 5, y = 7] = [1];
+        console.log(x); // 1
+        console.log(y); // 7
+
+        //Swapping variables
+        var n1 = 1;
+        var n2 = 3;
+
+        [n1, n2] = [n2, n1];
+        console.log(n1); // 3
+        console.log(n2); // 1
+
+        //Parsing an array returned from a function
+        function f() {
+            return [1, 2];
+        }
+
+        var j, k;
+        //var a= f();
+        ////console.log(a[0]); // 1
+        console.log(a[1]); // 2
+
+        var [j, k] = f();
+        console.log(j); // 1
+        console.log(k); // 2
+
+        //Ignoring some returned values
+        function f2() {
+            return [1, 2, 3];
+        }
+
+        var [a, , b] = f2();
+        console.log(a); // 1
+        console.log(b); // 3
+
+        //Assigning the rest of an array to a variable
+        var [s, ...d] = [1, 2, 3, 4, 5];
+        console.log(s); // 1
+        console.log(d); // [2, 3,4,5]
+
+        //Object destructuring
+        var obj = {
+            p: 42,
+            q: true
+        };
+        var {
+            p,
+            q
+        } = obj; // Variables must be with the same object properties names
+
+        //var p= obj.p;
+        //var q= obj.q;
+
+        console.log(x); // 42
+        console.log(y); // true
+    </script>
+
+    <head>
+
+        <body>
+            Array destructuring test!
+        </body>
+
+</html>

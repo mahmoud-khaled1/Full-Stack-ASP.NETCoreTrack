@@ -1,0 +1,77 @@
+<!DOCType html>
+<html>
+
+<head>
+    <script>
+        //Before arrow functions, every new function defined its own this value 
+        //An arrow function does not create its own this context, 
+        //so this has its original meaning from the enclosing context.
+
+        ///////////////////////////////////////////////////////////////
+
+        //this value with inner function
+        function Person() {
+            // The Person() constructor defines `this` as an instance of itself.
+            this.age = 0;
+
+            setInterval(function() {
+                // In non-strict mode, the growUp() function defines `this` 
+                // as the global object, which is different from the `this`
+                // defined by the Person() constructor.
+                this.age++;
+                console.log(this.age);
+            }, 1000);
+        }
+
+        var p = new Person();
+
+        setTimeout(function() {
+            alert("Solution in ES5: " + p.age);
+        }, 3500); //0
+
+        //-----------------------------------------------------------------------//
+        //Solution in ES5
+        function Person2() {
+            var personObj = this;
+
+            this.age = 0;
+
+            setInterval(function() {
+                // The callback refers to the `that` variable of which
+                // the value is the expected object.
+                personObj.age++;
+            }, 1000);
+        }
+
+        var p2 = new Person2();
+
+        setTimeout(function() {
+            alert("Solution in ES5: " + p2.age);
+        }, 3500); //3
+
+        //-------------------------------------------------------------------------//
+        //Solution with arrow function
+        //An arrow function does not create its own this context, so this has its original meaning from the enclosing context. 
+        //Thus, the following code works as expected
+        function Person3() {
+            this.age = 0;
+
+            setInterval(() => {
+                this.age++; // |this| properly refers to the person object
+            }, 1000);
+        }
+
+        var p3 = new Person3();
+
+        setTimeout(function() {
+            alert("Solution in ES6: " + p3.age);
+        }, 3500); //3
+    </script>
+
+    <head>
+
+        <body>
+            Arrow functions test!
+        </body>
+
+</html>

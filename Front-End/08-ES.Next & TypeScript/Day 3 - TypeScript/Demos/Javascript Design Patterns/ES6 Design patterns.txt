@@ -1,0 +1,4 @@
+
+JS Design patterns using ES6:
+https://loredanacirstea.github.io/es6-design-patterns/
+https://www.velotio.com/engineering-blog/design-patterns-in-es6

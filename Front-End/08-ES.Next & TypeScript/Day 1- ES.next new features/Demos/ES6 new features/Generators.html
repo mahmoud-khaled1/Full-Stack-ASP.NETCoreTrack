@@ -1,0 +1,138 @@
+<!DOCType html>
+<html>
+
+<head>
+    <script>
+        /*Generators are functions which can be exited and later re-entered. 
+                                                                                                                                                        				- Their context (variable bindings) will be saved across re-entrances.
+                                                                                                                                                        				Calling a generator function does not execute its body immediately; an iterator object for the function is returned instead. 
+                                                                                                                                                        				When the iterator's next() method is called, the generator function's body is executed until the first yield expression , which specifies the value to be returned from the iterator or, with yield*, delegates to another generator function.
+                                                                                                                                                        				 - The next() method returns an object with a value property containing the yielded value and a done property which indicates whether the generator has yielded its last value as a boolean.
+                                                                                                                                                        			*/
+
+        //Simple example
+        function* idMaker() {
+            var index = 0;
+            while (index < 3)
+                yield index++;
+        }
+
+        var gen = idMaker();
+
+        console.log(gen.next()); // {value: 0, done: false}
+        console.log(gen.next().value); // 1
+        console.log(gen.next().value); // 2
+        console.log(gen.next()); //{value: undefined, done: true}
+        console.log(gen.next().value); // undefined
+
+        //////////////////
+        //Example:
+        function* getStudent() {
+            var arr = ["aa", "bb", "dd"];
+            var index = 0;
+            while (index < arr.length)
+                yield arr[index++];
+        }
+
+        let stdGen = getStudent();
+        // console.log(stdGen.next().value);
+        // console.log(stdGen.next().value);
+        // console.log(stdGen.next().value);
+        // console.log(stdGen.next().value);
+        // ////////
+        // let std = stdGen.next();
+        // console.log(((std.done) ? "Finished" : std.value));
+
+        // std = stdGen.next();
+        // console.log(((std.done) ? "Finished" : std.value));
+
+        // std = stdGen.next();
+        // console.log(((std.done) ? "Finished" : std.value));
+
+        // std = stdGen.next();
+        // console.log(((std.done) ? "Finished" : std.value));
+
+        ////////////
+        console.log("For of with Generator");
+        for (let item of stdGen)
+            console.log(item);
+
+        for (let item of stdGen)
+            console.log(item);
+
+        stdGen = getStudent();
+        for (let item of stdGen)
+            console.log(item);
+        /*
+        //For ... of 
+        gen = idMaker();
+        console.log("Using for ... of");
+        for (let i of gen)
+        	console.log(i);
+
+        //While 
+        console.log("Using do while");
+        gen= idMaker();
+        var elem=gen.next()
+        while(!elem.done){
+        	console.log(elem.value)
+        	elem=gen.next()
+        } 
+
+        console.log("End of test") */
+
+        //---------------------------------------------//
+        //debugger;
+        /*
+        //Example with yield*
+        function* anotherGenerator(i) {
+            yield i + 1;
+            yield i + 2;
+            yield i + 3;
+        }
+
+        var gen = anotherGenerator(10);
+
+        console.log(gen.next().value); //11
+        console.log(gen.next().value); //12
+        console.log(gen.next().value); //13
+
+        function* generator(i) {
+            yield i;
+            yield* anotherGenerator(i);
+            yield i + 10;
+        }
+
+        var gen = generator(10);
+
+        console.log(gen.next().value); // 10
+        //var gen = generator(10);//start from beginning
+        console.log(gen.next().value); // 11
+        console.log(gen.next().value); // 12
+        console.log(gen.next().value); // 13
+        console.log(gen.next().value); // 20
+
+        //---------------------------------------------//
+        console.log("Using while loop");
+        let g = generator(10);
+        do {
+            var genObj = g.next();
+            if (!genObj.done)
+                console.log(genObj.value);
+        } while (!genObj.done);
+
+        //---------------------------------------------//
+        console.log("Using for ....of");
+        for (let item of generator(10))
+            console.log(item);
+
+        */
+    </script>
+
+    <head>
+
+        <body>
+            Generators test!
+        </body>
+
+</html>
