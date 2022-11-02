@@ -2,6 +2,8 @@
 
 
 A Full E-commerce website that allows people to buy physical goods, services, and digital products over the internet rather than at a brick-and-mortar location. Tools: ASP.Net Core MVC, C#, SQL Server, Entity Framework, Microsoft Identity, LINQ, JavaScript, Jquery , HTML , CSS, Bootstrap .
+a Video about Project : </br>
+https://www.linkedin.com/posts/mahmoud-khaled138_a-full-e-commerce-website-that-allows-people-activity-6879709181792804864-DMCk?utm_source=linkedin_share&utm_medium=member_desktop_web
 
 ## Some real photos from website :-
 ![1](https://user-images.githubusercontent.com/43557035/162190783-04a576cf-9d87-4a6b-be74-3cc7ea972119.PNG)![2](https://user-images.githubusercontent.com/43557035/162190958-14ea29d4-98b7-4d7e-8cf1-4d9a244f8c3c.PNG)
