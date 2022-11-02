@@ -1,0 +1,129 @@
+			" Code First "
+
+1-First Create new Project ASP.NETCoreMVC
+2- install Nuget Packages 
+	*Oracle.ManagedDataAccess.Core
+	*Oracle.EntityFrameworkCore
+	*Microsoft.EntityFrameworkCore
+	*Microsoft.Entityframeworkcore.sqlserver
+	*Microsoft.Entityframeworkcore.Tools
+	*Microsoft.Visualstudio.codeGeneration.Design
+
+3-Create Folders for Repository Design Pattern
+	* Services
+	* Interfaces
+4-add our Domain Classes in models folder 
+5-for every class in our Domain implement it's Services and interfaces class
+6- Add our connectionString in appsetting.json file 
+*For Sql server :
+	   "ConnectionStrings": {
+           "DefaultConnection": "Server=DESKTOP-8LEGH0C\\SQLEXPRESS;Database=OnlineShop;Trusted_Connection=True;MultipleActiveResultSets=true"
+           },
+*For OracleDb :-
+	 "ConnectionStrings":
+	  {
+    		"OracleDbConnection": "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=orcl)));User ID=system;Password=123;Persist Security Info=True;"
+  	  }
+	OR
+	 "OracleDbConnection": "Data Source=MyOracleDB;User Id=myUsername;Password=myPassword;Integrated Security=no;"
+
+7- Create DbContext in folder we create it named Data 
+	 public class ApplicationDbContext :DbContext  or  IdentityDbContext 
+   	 {
+        	public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            	: base(options)
+        	{
+       		}
+        	public DbSet<ProductTypes>ProductTypes { get; set; }
+	}
+
+8- add our Dependency Injection for DbContext in program.cs class
+	*For SqlServer:-
+	  var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+	  builder.Services.AddDbContext<ApplicationDbContext>(options =>
+          options.UseSqlServer(connectionString),ServiceLifetime.Transient);
+	*For Oracle :
+	  builder.Services.AddDbContext<ModelContext>(options =>
+          options.UseOracle(builder.Configuration.GetConnectionString("OracleDbConnection")));
+
+7-add our Dependency Injection for every class in program.cs class
+	 builder.Services.AddTransient<IStudentService,StudentService>();
+
+
+10- for every class in his constructor call DbContext and use it on the class to retrive and 
+ deal with DB
+
+-add your controller and inject in his constructor their depends to use them
+
+go ahead .......
+for more information about Code First Visit :-
+https://www.entityframeworktutorial.net/code-first/what-is-code-first.aspx
+--------------------------------------------------------------------------
+			" DataBase First "
+
+1-First Create new Project ASP.NETCoreMVC
+2- install Nuget Packages 
+	*Microsoft.Entityframeworkcore.sqlserver
+	*Oracle.ManagedDataAccess.Core
+	*Oracle.EntityFrameworkCore
+	*Microsoft.Entityframeworkcore.Tools
+	*Microsoft.EntityFrameworkCore
+	*Microsoft.Visualstudio.codeGeneration.Design
+	
+
+3-Scaffold-DbContext to mapping all tables in our DataBase as classes and objects in app
+open package manager console and copy paste
+
+for Oracle :
+Scaffold-DbContext "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=orcl)));User ID=system;Password=123;Persist Security Info=True" Oracle.EntityFrameworkCore -Tables STUDENT, DEPARTMENT -OutputDir Models -force
+
+for Sql Server :
+Scaffold-DbContext "Server=.\SQLExpress;Database=SchoolDB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+ - After Scaffolding completed will convert all Tables in DB to classes in Model folder 
+   and also will create DbContext for us .
+
+4- remove connection string in ModelContext Class and add connection string in appsetting to register it
+in program.cs file 
+
+for Oracle :
+"ConnectionStrings": {
+    "OracleDbConnection": "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=orcl)));User ID=system;Password=123;Persist Security Info=True;"
+  }
+for Sql Server :
+ "ConnectionStrings": {
+           "DefaultConnection": "Server=DESKTOP-8LEGH0C\\SQLEXPRESS;Database=OnlineShop;Trusted_Connection=True;MultipleActiveResultSets=true"
+           },
+
+for Oracle :
+builder.Services.AddDbContext<ModelContext>(options =>
+       options.UseOracle(builder.Configuration.GetConnectionString("OracleDbConnection")));
+
+for Sql Server :
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+	  builder.Services.AddDbContext<ApplicationDbContext>(options =>
+          options.UseSqlServer(connectionString),ServiceLifetime.Transient);
+
+5-Create Folders for Repository Design Pattern
+	* Services
+	* Interfaces
+6-for every class in our Domain implement it's Services and interfaces class
+
+
+7-add our Dependency Injection for every class  in program.cs class
+	 builder.Services.AddTransient<IStudentService,StudentService>();
+ 
+
+8- for every class in his constructor call DbContext and use it on the class to retrive and 
+ deal with DB
+
+-add your controller and inject in his constructor their depends to use 
+go ahead .......
+
+for more information about Database First Visit :-
+https://www.entityframeworktutorial.net/efcore/create-model-for-existing-database-in-ef-core.aspx
+
+----
+
+Tutorial :-
+https://www.youtube.com/watch?v=5yLXFS9ncq4&ab_channel=RMOnCoding
