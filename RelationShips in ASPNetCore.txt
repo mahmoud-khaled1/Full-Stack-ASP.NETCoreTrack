@@ -1,0 +1,66 @@
+1-One To One Relationship :
+ * Blog Has only one image and image is belong to one Blog 
+
+ public class Blog
+    {
+        public int  Id{ get; set; }
+        public string Url{ get; set; }
+        public DateTime CreateTime{ get; set; }
+        public int Rating { get; set; }
+
+        public virtual BlogImage Image { get; set; }
+    }
+
+ public  class BlogImage
+    {
+        public int Id { get; set; }
+        public byte[] Image { get; set; }
+        public string Caption  { get; set; }
+
+        public int BlogId { get; set; }
+        public virtual Blog Blog { get; set; }
+    }
+-------------------------------------------
+2- One To Many Relationship :
+* one Blog may have many Post and Post is Belong to one Blog
+ public class Blog
+    {
+        public int  Id{ get; set; }
+        public string Url{ get; set; }
+        public DateTime CreateTime{ get; set; }
+
+        public virtual ICollection<Post> Posts { get; set; }=new HashSet<Post>();
+
+    }
+ public class Post
+    {
+        public int Id { get; set; }
+        public string Title{ get; set; }
+        public string Content { get;set; }
+
+	public int BlogId { get; set; } // we can delete this line and will be same and work with one to many relationship
+        public virtual Blog Blog { get; set; }  // we can delete this line and will be same and work with one to many relationship but we can't access Blog from post table 
+    }
+-------------------------------------------
+2- Many To Many Relationship :
+* Post may have many Tag and Tag may belong to many Post
+if we do those Rules by default EF with create bridge table name PostTag and put prop PostsId and  TagsTagId
+ public class Post
+    {
+        public int Id { get; set; }
+        public string Title{ get; set; }
+        public string Content { get;set; }
+
+      
+        public virtual ICollection<Tag> Tags{ get; set; }=new HashSet<Tag>();
+    }
+
+ public class Tag
+    {
+        public int TagId { get; set; }
+
+        public virtual ICollection<Post> Posts { get; set; }=new HashSet<Post>();
+    }
+
+* note we use virtual key word to work lazy and Eager loading 
+Lazy loading is get post without it's tags and if we want to get it's tags we can work Eager loading by using .Includ()

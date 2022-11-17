@@ -36,6 +36,8 @@
        		}
         	public DbSet<ProductTypes>ProductTypes { get; set; }
 	}
+7- * add-migration InitalMigration 
+   * update-database
 
 8- add our Dependency Injection for DbContext in program.cs class
 	*For SqlServer:-
@@ -58,6 +60,8 @@
 go ahead .......
 for more information about Code First Visit :-
 https://www.entityframeworktutorial.net/code-first/what-is-code-first.aspx
+
+
 --------------------------------------------------------------------------
 			" DataBase First "
 
@@ -78,7 +82,7 @@ for Oracle :
 Scaffold-DbContext "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=orcl)));User ID=system;Password=123;Persist Security Info=True" Oracle.EntityFrameworkCore -Tables STUDENT, DEPARTMENT -OutputDir Models -force
 
 for Sql Server :
-Scaffold-DbContext "Server=.\SQLExpress;Database=SchoolDB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+Scaffold-DbContext "Server=.\SQLExpress;Database=SchoolDB;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -ContextDir Data -Context AppDbContext -DataAnnotation
 
  - After Scaffolding completed will convert all Tables in DB to classes in Model folder 
    and also will create DbContext for us .
