@@ -18,7 +18,7 @@
 6- Add our connectionString in appsetting.json file 
 *For Sql server :
 	   "ConnectionStrings": {
-           "DefaultConnection": "Server=DESKTOP-8LEGH0C\\SQLEXPRESS;Database=OnlineShop;Trusted_Connection=True;MultipleActiveResultSets=true"
+           "DefaultConnection": "Server=DESKTOP-8LEGH0C\\SQLEXPRESS;Database=OnlineShop;Trusted_Connection=True;MultipleActiveResultSets=true;Encrypt=false;"
            },
 *For OracleDb :-
 	 "ConnectionStrings":
