@@ -4,6 +4,7 @@
 2- install Nuget Packages 
 	*Oracle.ManagedDataAccess.Core
 	*Oracle.EntityFrameworkCore
+	*Microsoft.AspNetCore.Cors
 	*Microsoft.EntityFrameworkCore
 	*Microsoft.Entityframeworkcore.sqlserver
 	*Microsoft.Entityframeworkcore.Tools
