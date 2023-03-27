@@ -77,7 +77,18 @@ to prevent the property from next element
 -if i wnat to make padding for some element in the same element 
 must make them take property box-sizing:border-box;
 and change width of parent element container 90% for example 
-
+-----------
+-Align the flex items at the center of the container (Horizontal):
+.parent {
+  display: flex;
+  justify-content: center;
+}
+-Center the alignments for all the items of the flexible <div> element(Vertical)
+.parent {
+  display: flex;
+  align-items: center;
+}
+------------
 
 --------------------------------------------------------------------------------------------------------------------
 for more information about properites visit : https://www.w3schools.com/css/default.asp
