@@ -45,6 +45,7 @@
 2- Many To Many Relationship :
 * Post may have many Tag and Tag may belong to many Post
 if we do those Rules by default EF with create bridge table name PostTag and put prop PostsId and  TagsTagId
+but if your business needs to add another property in the bridge table, create it and add Post and Tag as property, and your property
  public class Post
     {
         public int Id { get; set; }
@@ -53,6 +54,14 @@ if we do those Rules by default EF with create bridge table name PostTag and put
 
       
         public virtual ICollection<Tag> Tags{ get; set; }=new HashSet<Tag>();
+    }
+ public class PostTag
+    {
+        public Post Post { get; set; }
+	public Tag Tag { get; set; }
+        public string Property{ get; set; }
+
+
     }
 
  public class Tag
