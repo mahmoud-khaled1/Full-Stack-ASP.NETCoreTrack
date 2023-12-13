@@ -71,5 +71,5 @@ but if your business needs to add another property in the bridge table, create i
         public virtual ICollection<Post> Posts { get; set; }=new HashSet<Post>();
     }
 
-* note we use virtual key word to work lazy and Eager loading 
+* note we use virtual key word to work lazy loading 
 Lazy loading is get post without it's tags and if we want to get it's tags we can work Eager loading by using .Includ()
